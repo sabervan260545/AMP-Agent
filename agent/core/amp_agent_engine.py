@@ -4,7 +4,8 @@
 """
 AMP Agent Core Engine
 =====================
-Agent 核心引擎，整合状态管理、对话管理、Skills 和 Tools 调度。
+Agent core engine, integrating state management, conversation management,
+Skills and Tools orchestration.
 """
 
 import logging
@@ -33,20 +34,20 @@ logger = logging.getLogger(__name__)
 
 class AMPAgentEngine:
     """
-    AMP Agent 核心引擎
+    AMP Agent core engine
     
-    职责:
-    1. 整合状态管理和对话管理
-    2. 实现 ReAct 推理循环
-    3. 调度 Skills 和 Tools
-    4. 处理意图识别和路由
+    Responsibilities:
+    1. Integrate state management and conversation management
+    2. Implement ReAct reasoning loop
+    3. Orchestrate Skills and Tools
+    4. Handle intent recognition and routing
     
     Attributes:
-        state: AgentState - 状态管理器
-        conversation: ConversationManager - 对话管理器
-        skill_registry: Skill 注册表
-        intent_recognizer: 意图识别器
-        tools_schema: Tools 的 JSON Schema 定义
+        state: AgentState - State manager
+        conversation: ConversationManager - Conversation manager
+        skill_registry: Skill registry
+        intent_recognizer: Intent recognizer
+        tools_schema: JSON Schema definitions for Tools
     """
     
     def __init__(
@@ -59,15 +60,15 @@ class AMPAgentEngine:
         tools_schema=None
     ):
         """
-        初始化 Agent 引擎
+        Initialize Agent engine
         
         Args:
             client: OpenAI-compatible API client
-            model_name: 模型名称
-            language: 界面语言
-            skill_registry: Skill 注册表
-            intent_recognizer: 意图识别器
-            tools_schema: Tools 的 JSON Schema
+            model_name: Model name
+            language: Interface language
+            skill_registry: Skill registry
+            intent_recognizer: Intent recognizer
+            tools_schema: JSON Schema for Tools
         """
         self.client = client
         self.model = model_name
@@ -76,7 +77,7 @@ class AMPAgentEngine:
         self.intent_recognizer = intent_recognizer
         self.tools_schema = tools_schema or []
         
-        # 初始化子组件
+        # Initialize subcomponents
         self.state = AgentState()
         self.conversation = ConversationManager(language)
         
@@ -84,39 +85,39 @@ class AMPAgentEngine:
     
     def chat(self, user_input: str, max_iterations: int = 10) -> Generator[str, None, None]:
         """
-        主要对话方法 - 整合意图识别和 ReAct 循环
+        Main conversation method - integrates intent recognition and ReAct loop
         
         Args:
-            user_input: 用户输入
-            max_iterations: 最大迭代次数
+            user_input: User input
+            max_iterations: Maximum number of iterations
         
         Yields:
-            响应文本块
+            Response text chunks
         """
-        # Step 1: 记录用户输入
+        # Step 1: Record user input
         self.state.add_message("user", user_input)
         self.state.set_current_input(user_input)
         self.state.reset_visualization()
         
         logger.info(f"📝 User input: {user_input[:50]}...")
         
-        # Step 2: 意图识别（优先使用 Skills）
+        # Step 2: Intent recognition (prioritize Skills)
         if self.intent_recognizer:
             yield from self._try_skill_execution(user_input)
             return
         
-        # Step 3: 降级到传统 ReAct 模式
+        # Step 3: Fall back to traditional ReAct mode
         yield from self._react_loop(user_input, max_iterations)
     
     def _try_skill_execution(self, user_input: str) -> Generator[str, None, None]:
         """
-        尝试使用 Skill 执行任务
+        Attempt to execute task using a Skill
         
         Args:
-            user_input: 用户输入
+            user_input: User input
         
         Yields:
-            响应文本块
+            Response text chunks
         """
         logger.info(f"🔍 Analyzing user input for skill intent: {user_input[:50]}...")
         
@@ -125,8 +126,8 @@ class AMPAgentEngine:
         if intent and intent['confidence'] >= 0.6:
             logger.info(f"🎯 Detected intent: {intent['skill_name']} (confidence: {intent['confidence']:.2f})")
             
-            yield f"**🤖 智能意图识别**: 识别到您的意图 → **{intent['skill_name']}**\n\n"
-            yield f"⚡ **启动自动化工作流**: 正在调用 {intent['skill_name']} 技能...\n\n"
+            yield f"**🤖 Smart Intent Recognition**: Detected intent → **{intent['skill_name']}**\n\n"
+            yield f"⚡ **Launching Automated Workflow**: Invoking {intent['skill_name']} skill...\n\n"
             
             try:
                 skill_func = self.skill_registry.get_skill(intent['skill_name'])
@@ -138,42 +139,42 @@ class AMPAgentEngine:
                         self.state.add_message("assistant", f"Skill {intent['skill_name']} executed successfully")
                         return
                     else:
-                        yield f"⚠️ {intent['skill_name']} 执行遇到问题，切换到传统 ReAct 模式...\n\n"
+                        yield f"⚠️ {intent['skill_name']} encountered issues, switching to traditional ReAct mode...\n\n"
                 
                 else:
-                    yield f"⚠️ 未找到技能 {intent['skill_name']}，使用传统模式...\n\n"
+                    yield f"⚠️ Skill {intent['skill_name']} not found, using traditional mode...\n\n"
             
             except Exception as e:
                 logger.error(f"❌ Skill execution failed: {e}", exc_info=True)
-                yield f"❌ 技能执行失败：{str(e)}\n\n"
-                yield "🔄 已切换到传统工具调用模式...\n\n"
+                yield f"❌ Skill execution failed: {str(e)}\n\n"
+                yield "🔄 Switched to traditional tool-calling mode...\n\n"
         
-        # Skill 执行失败或未匹配，降级到 ReAct
-        yield "🔄 使用传统工具调用模式...\n\n"
+        # Skill execution failed or no match, fall back to ReAct
+        yield "🔄 Using traditional tool-calling mode...\n\n"
         yield from self._react_loop(user_input)
     
     def _react_loop(self, user_input: str, max_iterations: int = 10) -> Generator[str, None, None]:
         """
-        ReAct 推理循环 - 完整迁移自 amp_agent_v3.py
+        ReAct reasoning loop - fully migrated from amp_agent_v3.py
         
         Args:
-            user_input: 用户输入
-            max_iterations: 最大迭代次数
+            user_input: User input
+            max_iterations: Maximum number of iterations
         
         Yields:
-            响应文本块
+            Response text chunks
         """
         iteration = 0
         while iteration < max_iterations:
             iteration += 1
             
-            # 获取对话历史
+            # Get conversation history
             history = self.state.get_history(last_n=10)
             messages = [
                 {"role": "system", "content": "You are AMP Agent."}
             ] + history
             
-            # Step 1: 调用 LLM
+            # Step 1: Call LLM
             try:
                 response = self.client.chat.completions.create(
                     model=self.model,
@@ -187,9 +188,9 @@ class AMPAgentEngine:
                 content = msg.content or ""
                 tool_calls = msg.tool_calls
                 
-                # Step 2: 手动解析（兼容不支持 tool_calls 的模型）
+                # Step 2: Manual parsing (compatible with models that don't support tool_calls)
                 if not tool_calls:
-                    # TODO: 实现 _parse_manual_tool_call 方法
+                    # TODO: implement _parse_manual_tool_call method
                     # manual = self._parse_manual_tool_call(content)
                     # if manual:
                     #     tool_calls = manual
@@ -199,17 +200,17 @@ class AMPAgentEngine:
                 if content:
                     yield f"{content}\n\n"
                 
-                # Step 4: 记录助手响应
+                # Step 4: Record assistant response
                 self.state.add_message("assistant", content)
                 
-                # Step 5: 检查是否完成（无工具调用）
+                # Step 5: Check if finished (no tool calls)
                 if not tool_calls:
-                    yield "✅ 任务完成"
+                    yield "✅ Task completed"
                     break
                 
-                # Step 6: 执行工具
+                # Step 6: Execute tools
                 for tool in tool_calls:
-                    # 解析工具调用
+                    # Parse tool call
                     if isinstance(tool, dict):
                         fn_name = tool['function']['name']
                         args_str = tool['function']['arguments']
@@ -219,20 +220,20 @@ class AMPAgentEngine:
                         args_str = tool.function.arguments
                         tool_id = getattr(tool, 'id', None)
                     
-                    # 解析参数
+                    # Parse arguments
                     try:
                         raw_args = json.loads(args_str)
                     except:
                         raw_args = {}
                     
-                    yield f"🔧 执行工具：{fn_name}\n"
+                    yield f"🔧 Executing tool: {fn_name}\n"
                     
-                    # 执行工具
+                    # Execute tool
                     tool_output = self._execute_tool(fn_name, raw_args)
                     
                     yield f"✅ {tool_output}\n"
                     
-                    # 记录工具结果
+                    # Record tool result
                     if tool_id:
                         self.state.add_message(
                             "tool",
@@ -246,41 +247,41 @@ class AMPAgentEngine:
                 yield f"❌ LLM API Error: {str(e)}"
                 break
         
-        # 释放资源
+        # Release resources
         # if self.orchestrator:
         #     self.orchestrator.switch_to_default()
     
     def _format_skill_result(self, result) -> Generator[str, None, None]:
         """
-        格式化 Skill 执行结果
+        Format Skill execution result
         
         Args:
-            result: SkillResult 对象
+            result: SkillResult object
         
         Yields:
-            格式化的文本块
+            Formatted text chunks
         """
-        yield f"✅ **任务完成**: {result.name}\n\n"
-        yield f"**结果**:\n{result.summary}\n\n"
+        yield f"✅ **Task Completed**: {result.name}\n\n"
+        yield f"**Result**:\n{result.summary}\n\n"
         
         if hasattr(result, 'visualization_data') and result.visualization_data:
-            yield "**可视化数据已生成**\n"
+            yield "**Visualization data generated**\n"
     
     def _execute_tool(self, tool_name: str, args: Dict[str, Any]) -> Any:
         """
-        执行工具的通用方法 - 完整迁移版
+        Generic tool execution method - fully migrated version
         
         Args:
-            tool_name: 工具名称
-            args: 工具参数
+            tool_name: Tool name
+            args: Tool arguments
         
         Returns:
-            工具执行结果
+            Tool execution result
         """
         logger.info(f"🔧 Executing tool: {tool_name}")
         
         try:
-            # 根据工具名称路由到不同的处理逻辑
+            # Route to appropriate handler based on tool name
             if tool_name == "generate_sequences":
                 return self._handle_generate_task(args)
             elif tool_name == "design_new_amps":
@@ -292,7 +293,7 @@ class AMPAgentEngine:
             elif tool_name == "structure_discrimination_pipeline":
                 return self._handle_structure_task(args)
             else:
-                # 通用工具执行
+                # Generic tool execution
                 logger.warning(f"⚠️ Unknown tool: {tool_name}, executing generically")
                 return f"Tool {tool_name} executed (generic)"
         
@@ -301,7 +302,7 @@ class AMPAgentEngine:
             return f"Error executing {tool_name}: {str(e)}"
     
     def _handle_generate_task(self, args: Dict[str, Any]) -> str:
-        """处理序列生成任务 - 真实实现"""
+        """Handle sequence generation task - real implementation"""
         if not TOOLS_AVAILABLE:
             return f"Generated sequences (placeholder): {args.get('num_samples', 0)} samples"
         
@@ -327,7 +328,7 @@ class AMPAgentEngine:
             return f"Error generating sequences: {str(e)}"
     
     def _handle_design_task(self, args: Dict[str, Any]) -> str:
-        """处理 AMP 设计任务 - 真实实现"""
+        """Handle AMP design task - real implementation"""
         if not TOOLS_AVAILABLE:
             return f"Designed AMPs against {args.get('target', 'unknown')} (placeholder)"
         
@@ -354,7 +355,7 @@ class AMPAgentEngine:
             return f"Error designing AMPs: {str(e)}"
     
     def _handle_evaluate_task(self, args: Dict[str, Any]) -> str:
-        """处理评估任务 - 真实实现"""
+        """Handle evaluation task - real implementation"""
         if not TOOLS_AVAILABLE:
             return f"Evaluated {len(args.get('sequences', []))} sequences (placeholder)"
         
@@ -377,7 +378,7 @@ class AMPAgentEngine:
             return f"Error evaluating sequences: {str(e)}"
     
     def _handle_rank_task(self, args: Dict[str, Any]) -> str:
-        """处理排序任务 - 真实实现"""
+        """Handle ranking task - real implementation"""
         if not TOOLS_AVAILABLE:
             return f"Ranked sequences using {args.get('strategy', 'default')} strategy (placeholder)"
         
@@ -401,7 +402,7 @@ class AMPAgentEngine:
             return f"Error ranking sequences: {str(e)}"
     
     def _handle_structure_task(self, args: Dict[str, Any]) -> str:
-        """处理结构预测任务 - 真实实现"""
+        """Handle structure prediction task - real implementation"""
         if not TOOLS_AVAILABLE:
             return f"Structure prediction completed for {args.get('target', 'unknown')} (placeholder)"
         
@@ -430,29 +431,29 @@ class AMPAgentEngine:
     
     def _clean_history_for_api(self, history: List[Dict]) -> List[Dict]:
         """
-        清理对话历史以符合 OpenAI API 格式
+        Clean conversation history to comply with OpenAI API format
         
         Args:
-            history: 原始对话历史
+            history: Raw conversation history
         
         Returns:
-            清理后的历史
+            Cleaned history
         """
-        # TODO: 完整实现历史清理逻辑
-        # 目前返回原历史（简化版本）
+        # TODO: fully implement history cleaning logic
+        # Currently returns raw history (simplified version)
         return history
     
     def get_state_statistics(self) -> Dict[str, Any]:
         """
-        获取 Agent 状态统计信息
+        Get Agent state statistics
         
         Returns:
-            统计数据字典
+            Statistics dictionary
         """
         return self.state.get_statistics()
     
     def clear_state(self):
-        """清空 Agent 状态"""
+        """Clear Agent state"""
         self.state.clear_history()
         self.conversation.clear_thoughts()
         logger.info("Agent state cleared")
