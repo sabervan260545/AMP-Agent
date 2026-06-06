@@ -1,0 +1,450 @@
+.chat-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: min-content;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.message-user {
+  align-items: flex-end;
+}
+
+.message-assistant {
+  align-items: flex-start;
+  width: 100%;
+}
+
+.message-bubble {
+  width: 100%;
+  max-width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  word-wrap: break-word;
+}
+
+.user-message {
+  background-color: #1890ff;
+  color: white;
+  max-width: 70%;
+  margin-left: auto;
+}
+
+.assistant-message {
+  background-color: transparent;
+  color: #000;
+  width: 100%;
+  max-width: 100%;
+  min-height: auto;
+  padding: 0;
+  border-radius: 0;
+  line-height: 1.6;
+}
+
+/* Markdown content styling */
+.assistant-message h1,
+.assistant-message h2,
+.assistant-message h3,
+.assistant-message h4 {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.assistant-message h1 { font-size: 28px; border-bottom: 2px solid #e8e8e8; padding-bottom: 8px; }
+.assistant-message h2 { font-size: 24px; border-bottom: 1px solid #f0f0f0; padding-bottom: 6px; }
+.assistant-message h3 { font-size: 20px; color: #333; }
+.assistant-message h4 { font-size: 16px; color: #555; }
+
+.assistant-message p {
+  margin: 8px 0;
+}
+
+.assistant-message ul,
+.assistant-message ol {
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
+.assistant-message li {
+  margin: 6px 0;
+}
+
+.assistant-message code {
+  background-color: #f5f5f5;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.9em;
+  color: #d63384;
+}
+
+.assistant-message pre {
+  background-color: #f6f8fa;
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 12px 0;
+}
+
+.assistant-message pre code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+.assistant-message blockquote {
+  border-left: 4px solid #1890ff;
+  padding-left: 16px;
+  margin: 12px 0;
+  color: #666;
+  font-style: italic;
+}
+
+.assistant-message table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.assistant-message thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.assistant-message th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+}
+
+.assistant-message td {
+  padding: 10px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+}
+
+.assistant-message tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.assistant-message tbody tr:hover {
+  background-color: #f0f7ff;
+  transition: background-color 0.2s;
+}
+
+.assistant-message strong {
+  font-weight: 600;
+  color: #1890ff;
+}
+
+.assistant-message em {
+  font-style: italic;
+  color: #666;
+}
+
+.assistant-message hr {
+  border: none;
+  border-top: 2px solid #e8e8e8;
+  margin: 20px 0;
+}
+
+/* Markdown 内容样式优化 */
+.assistant-message h1,
+.assistant-message h2,
+.assistant-message h3,
+.assistant-message h4 {
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.assistant-message h1 {
+  font-size: 1.8em;
+  border-bottom: 2px solid #1890ff;
+  padding-bottom: 0.3em;
+}
+
+.assistant-message h2 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 0.3em;
+}
+
+.assistant-message h3 {
+  font-size: 1.3em;
+  color: #1890ff;
+}
+
+.assistant-message h4 {
+  font-size: 1.1em;
+  color: #595959;
+}
+
+.assistant-message blockquote {
+  border-left: 4px solid #1890ff;
+  padding-left: 12px;
+  margin: 12px 0;
+  color: #595959;
+  background-color: #f5f5f5;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.assistant-message ul,
+.assistant-message ol {
+  padding-left: 24px;
+  margin: 8px 0;
+}
+
+.assistant-message li {
+  margin: 4px 0;
+  line-height: 1.6;
+}
+
+.assistant-message code {
+  background-color: #f5f5f5;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  color: #d63384;
+}
+
+.assistant-message hr {
+  border: none;
+  border-top: 1px solid #d9d9d9;
+  margin: 16px 0;
+}
+
+.assistant-message table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 12px 0;
+  font-size: 0.95em;
+  background-color: white;
+}
+
+.assistant-message table th {
+  background-color: #1890ff;
+  color: white;
+  padding: 10px 8px;
+  text-align: left;
+  font-weight: 600;
+  border: 1px solid #096dd9;
+}
+
+.assistant-message table td {
+  padding: 8px;
+  border: 1px solid #d9d9d9;
+}
+
+.assistant-message table tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.assistant-message table tbody tr:hover {
+  background-color: #e6f7ff;
+}
+
+.assistant-message p {
+  margin: 8px 0;
+  line-height: 1.7;
+}
+
+.message-loading {
+  align-items: center;
+  padding: 16px;
+}
+
+.plotly-container {
+  width: 100%;
+  margin: 8px 0;
+}
+
+.plotly-frame {
+  width: 100%;
+  min-height: 600px;
+  height: auto;
+  border: none;
+  margin: 8px 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* 🔥 专用：多生成器比对仪表盘全屏显示 */
+.plotly-frame-dashboard {
+  width: calc(100vw - 296px) !important;  /* 视口 - 侧边栏(200) - margin(48) - padding(48) */
+  min-height: 1100px !important;  /* 🔥 适配后端 1000px 高度 + 图例空间 */
+  height: auto;
+  border: none;
+  margin-left: -24px !important;  /* 抵消 Content padding */
+  margin-right: -24px !important;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  display: flex;
+  justify-content: center;  /* 🔥 水平居中 */
+  align-items: flex-start;
+}
+
+/* 图表容器支持并排布局 - 嵌套画布设计 */
+
+/* 画布标题样式 */
+.plotly-grid-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3436;
+  text-align: center;
+  margin-bottom: 12px;
+  padding: 12px 20px;
+  background: linear-gradient(90deg, rgba(52, 152, 219, 0.1) 0%, rgba(155, 89, 182, 0.1) 100%);
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.plotly-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 20px 0;
+  justify-content: center;
+  width: 100%;
+  /* 外层画布容器样式 */
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Pareto图表特殊样式：更紧凑的布局 */
+.plotly-grid.pareto-grid {
+  gap: 12px;
+  padding: 16px;
+}
+
+/* 3D结构画布容器（类似Pareto图表风格） */
+.pdb-structure-container {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  margin: 20px auto;  /* 居中 */
+  width: 100%;  /* 占满父容器 */
+  max-width: none !important;  /* 强制突破限制 */
+}
+
+.pdb-viewer {
+  width: 100%;
+  height: 700px;  /* 增大高度，平铺展示 */
+  position: relative;
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pdb-viewer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.plotly-grid .plotly-frame {
+  width: calc(33.333% - 12px);  /* 三列布局，减去 gap */
+  min-width: 480px;  /* 最小宽度，防止过窄 */
+  min-height: 480px;
+  height: 520px;
+  display: block;
+  flex-shrink: 1;  /* 允许缩小 */
+  overflow: visible;  /* 允许内容溢出 */
+  /* 内层卡片样式 */
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* 悬停效果 */
+.plotly-grid .plotly-frame:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 响应式设计：小屏幕时改为两列 */
+@media (max-width: 1600px) {
+  .plotly-grid .plotly-frame {
+    width: calc(50% - 8px);  /* 两列布局 */
+  }
+}
+
+/* 响应式设计：更小屏幕时改为单列 */
+@media (max-width: 1000px) {
+  .plotly-grid {
+    padding: 16px;  /* 小屏幕减少padding */
+  }
+  .plotly-grid .plotly-frame {
+    width: 100%;  /* 单列布局 */
+  }
+}
+
+.table-container {
+  width: 100%;
+  margin: 8px 0;
+  overflow-x: auto;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  padding: 8px;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.table-container th,
+.table-container td {
+  padding: 4px 8px;
+  border: 1px solid #d9d9d9;
+}
+
+.table-container thead tr {
+  background-color: #fafafa;
+}
+
+.table-container tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.table-container tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.table-container tbody tr:hover {
+  background-color: #e6f7ff;
+}

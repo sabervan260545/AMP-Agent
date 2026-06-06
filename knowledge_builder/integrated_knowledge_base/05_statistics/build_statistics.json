@@ -1,0 +1,26 @@
+{
+  "build_time": "2025-12-12T15:35:46.115930",
+  "data_sources": {
+    "literature": {
+      "files": 2,
+      "sequences": 36,
+      "patterns": 5,
+      "mechanisms": 4
+    },
+    "cpp": {
+      "total_sequences": 4404,
+      "cpp_positive": 1192,
+      "cpp_negative": 3212
+    },
+    "mic": {
+      "total_records": 482,
+      "mean_mic": 0.7978691769009641
+    },
+    "amp_databases": {
+      "total_databases": 8,
+      "total_sequences": 675711
+    }
+  },
+  "total_sequences": 675711,
+  "total_with_labels": 4404
+}

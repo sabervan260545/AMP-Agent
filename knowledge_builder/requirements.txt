@@ -1,0 +1,6 @@
+pandas
+pdfplumber
+tqdm
+sentence-transformers
+chromadb
+openai

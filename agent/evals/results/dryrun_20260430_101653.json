@@ -1,0 +1,712 @@
+{
+  "run_id": "20260430_101653",
+  "started_at": "2026-04-30T10:16:52.658746",
+  "finished_at": "2026-04-30T10:16:53.362715",
+  "mode": "dryrun",
+  "total_cases": 14,
+  "passed_cases": 6,
+  "avg_score": 0.5238,
+  "cases": [
+    {
+      "case_id": "smoke_001_greeting",
+      "passed": false,
+      "score": 0.0,
+      "latency_ms": 50.16,
+      "verdicts": [
+        {
+          "name": "greets_back",
+          "passed": false,
+          "score": 0.0,
+          "reason": "any_of: matched []"
+        }
+      ],
+      "response_preview": "Here is a quick comparison of three generators: AMP-Designer, HydrAMP and Diff-AMP. They all target Gram-negative bacteria but differ in 优点 / 缺点. The membrane-disrupting mechanism involves lipid bilay",
+      "tool_calls": [
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "amp_designer"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "hydramp"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "diff_amp"
+          }
+        },
+        {
+          "name": "search_knowledge",
+          "params": {
+            "query": "AMP mechanism"
+          }
+        },
+        {
+          "name": "tool_batch_evaluate",
+          "params": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "smoke_002_zh_greeting",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 50.12,
+      "verdicts": [
+        {
+          "name": "has_zh_intro",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['AMP']"
+        }
+      ],
+      "response_preview": "Here is a quick comparison of three generators: AMP-Designer, HydrAMP and Diff-AMP. They all target Gram-negative bacteria but differ in 优点 / 缺点. The membrane-disrupting mechanism involves lipid bilay",
+      "tool_calls": [
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "amp_designer"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "hydramp"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "diff_amp"
+          }
+        },
+        {
+          "name": "search_knowledge",
+          "params": {
+            "query": "AMP mechanism"
+          }
+        },
+        {
+          "name": "tool_batch_evaluate",
+          "params": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "smoke_003_capabilities",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 50.12,
+      "verdicts": [
+        {
+          "name": "mentions_capabilities",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['design']"
+        }
+      ],
+      "response_preview": "Here is a quick comparison of three generators: AMP-Designer, HydrAMP and Diff-AMP. They all target Gram-negative bacteria but differ in 优点 / 缺点. The membrane-disrupting mechanism involves lipid bilay",
+      "tool_calls": [
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "amp_designer"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "hydramp"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "diff_amp"
+          }
+        },
+        {
+          "name": "search_knowledge",
+          "params": {
+            "query": "AMP mechanism"
+          }
+        },
+        {
+          "name": "tool_batch_evaluate",
+          "params": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "gen_001_basic_five",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 50.15,
+      "verdicts": [
+        {
+          "name": "invokes_generator",
+          "passed": true,
+          "score": 1.0,
+          "reason": "Found 3 call(s) to 'tool_generate_amp', required >= 1"
+        },
+        {
+          "name": "mentions_count",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['5 ', 'peptides']"
+        }
+      ],
+      "response_preview": "Here is a quick comparison of three generators: AMP-Designer, HydrAMP and Diff-AMP. They all target Gram-negative bacteria but differ in 优点 / 缺点. The membrane-disrupting mechanism involves lipid bilay",
+      "tool_calls": [
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "amp_designer"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "hydramp"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "diff_amp"
+          }
+        },
+        {
+          "name": "search_knowledge",
+          "params": {
+            "query": "AMP mechanism"
+          }
+        },
+        {
+          "name": "tool_batch_evaluate",
+          "params": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "gen_002_zh_ten_gramneg",
+      "passed": false,
+      "score": 0.6667,
+      "latency_ms": 50.13,
+      "verdicts": [
+        {
+          "name": "invokes_generator",
+          "passed": true,
+          "score": 1.0,
+          "reason": "Found 3 call(s) to 'tool_generate_amp', required >= 1"
+        },
+        {
+          "name": "mentions_properties",
+          "passed": false,
+          "score": 0.0,
+          "reason": "any_of: matched []"
+        }
+      ],
+      "response_preview": "Here is a quick comparison of three generators: AMP-Designer, HydrAMP and Diff-AMP. They all target Gram-negative bacteria but differ in 优点 / 缺点. The membrane-disrupting mechanism involves lipid bilay",
+      "tool_calls": [
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "amp_designer"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "hydramp"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "diff_amp"
+          }
+        },
+        {
+          "name": "search_knowledge",
+          "params": {
+            "query": "AMP mechanism"
+          }
+        },
+        {
+          "name": "tool_batch_evaluate",
+          "params": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "gen_003_three_generators_compare",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 50.17,
+      "verdicts": [
+        {
+          "name": "calls_three_generators",
+          "passed": true,
+          "score": 1.0,
+          "reason": "Found 3 call(s) to 'tool_generate_amp', required >= 3"
+        },
+        {
+          "name": "mentions_all_three",
+          "passed": true,
+          "score": 1.0,
+          "reason": "all_of: matched 3/3 (['AMP-Designer', 'HydrAMP', 'Diff-AMP'])"
+        },
+        {
+          "name": "produces_comparison_signal",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['优点', '缺点', 'comparison']"
+        }
+      ],
+      "response_preview": "Here is a quick comparison of three generators: AMP-Designer, HydrAMP and Diff-AMP. They all target Gram-negative bacteria but differ in 优点 / 缺点. The membrane-disrupting mechanism involves lipid bilay",
+      "tool_calls": [
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "amp_designer"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "hydramp"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "diff_amp"
+          }
+        },
+        {
+          "name": "search_knowledge",
+          "params": {
+            "query": "AMP mechanism"
+          }
+        },
+        {
+          "name": "tool_batch_evaluate",
+          "params": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "rag_001_membrane_mechanism",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 50.13,
+      "verdicts": [
+        {
+          "name": "uses_search_knowledge",
+          "passed": true,
+          "score": 1.0,
+          "reason": "Found 1 call(s) to 'search_knowledge', required >= 1"
+        },
+        {
+          "name": "cites_mechanism_terms",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['membrane', 'lipid', 'pore', 'disrupt', 'bilayer']"
+        }
+      ],
+      "response_preview": "Here is a quick comparison of three generators: AMP-Designer, HydrAMP and Diff-AMP. They all target Gram-negative bacteria but differ in 优点 / 缺点. The membrane-disrupting mechanism involves lipid bilay",
+      "tool_calls": [
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "amp_designer"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "hydramp"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "diff_amp"
+          }
+        },
+        {
+          "name": "search_knowledge",
+          "params": {
+            "query": "AMP mechanism"
+          }
+        },
+        {
+          "name": "tool_batch_evaluate",
+          "params": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "rag_002_resistance",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 50.13,
+      "verdicts": [
+        {
+          "name": "uses_search_knowledge",
+          "passed": true,
+          "score": 1.0,
+          "reason": "Found 1 call(s) to 'search_knowledge', required >= 1"
+        },
+        {
+          "name": "mentions_resistance_terms",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['target', 'mechanism']"
+        }
+      ],
+      "response_preview": "Here is a quick comparison of three generators: AMP-Designer, HydrAMP and Diff-AMP. They all target Gram-negative bacteria but differ in 优点 / 缺点. The membrane-disrupting mechanism involves lipid bilay",
+      "tool_calls": [
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "amp_designer"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "hydramp"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "diff_amp"
+          }
+        },
+        {
+          "name": "search_knowledge",
+          "params": {
+            "query": "AMP mechanism"
+          }
+        },
+        {
+          "name": "tool_batch_evaluate",
+          "params": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "rag_003_zh_toxicity",
+      "passed": false,
+      "score": 0.6667,
+      "latency_ms": 50.13,
+      "verdicts": [
+        {
+          "name": "uses_search_knowledge",
+          "passed": true,
+          "score": 1.0,
+          "reason": "Found 1 call(s) to 'search_knowledge', required >= 1"
+        },
+        {
+          "name": "mentions_toxicity_factors",
+          "passed": false,
+          "score": 0.0,
+          "reason": "any_of: matched []"
+        }
+      ],
+      "response_preview": "Here is a quick comparison of three generators: AMP-Designer, HydrAMP and Diff-AMP. They all target Gram-negative bacteria but differ in 优点 / 缺点. The membrane-disrupting mechanism involves lipid bilay",
+      "tool_calls": [
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "amp_designer"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "hydramp"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "diff_amp"
+          }
+        },
+        {
+          "name": "search_knowledge",
+          "params": {
+            "query": "AMP mechanism"
+          }
+        },
+        {
+          "name": "tool_batch_evaluate",
+          "params": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "struct_001_fold_sequence",
+      "passed": false,
+      "score": 0.0,
+      "latency_ms": 50.13,
+      "verdicts": [
+        {
+          "name": "invokes_structure_tool",
+          "passed": false,
+          "score": 0.0,
+          "reason": "Found 0 call(s) to 'tool_fold_structure', required >= 1"
+        },
+        {
+          "name": "mentions_structure_terms",
+          "passed": false,
+          "score": 0.0,
+          "reason": "any_of: matched []"
+        }
+      ],
+      "response_preview": "Here is a quick comparison of three generators: AMP-Designer, HydrAMP and Diff-AMP. They all target Gram-negative bacteria but differ in 优点 / 缺点. The membrane-disrupting mechanism involves lipid bilay",
+      "tool_calls": [
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "amp_designer"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "hydramp"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "diff_amp"
+          }
+        },
+        {
+          "name": "search_knowledge",
+          "params": {
+            "query": "AMP mechanism"
+          }
+        },
+        {
+          "name": "tool_batch_evaluate",
+          "params": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "struct_002_analyze_pdb",
+      "passed": false,
+      "score": 0.0,
+      "latency_ms": 50.11,
+      "verdicts": [
+        {
+          "name": "mentions_amphipathic",
+          "passed": false,
+          "score": 0.0,
+          "reason": "any_of: matched []"
+        }
+      ],
+      "response_preview": "Here is a quick comparison of three generators: AMP-Designer, HydrAMP and Diff-AMP. They all target Gram-negative bacteria but differ in 优点 / 缺点. The membrane-disrupting mechanism involves lipid bilay",
+      "tool_calls": [
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "amp_designer"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "hydramp"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "diff_amp"
+          }
+        },
+        {
+          "name": "search_knowledge",
+          "params": {
+            "query": "AMP mechanism"
+          }
+        },
+        {
+          "name": "tool_batch_evaluate",
+          "params": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "mut_001_single_site",
+      "passed": false,
+      "score": 0.0,
+      "latency_ms": 50.15,
+      "verdicts": [
+        {
+          "name": "proposes_mutation",
+          "passed": false,
+          "score": 0.0,
+          "reason": "any_of: matched []"
+        },
+        {
+          "name": "mentions_hemolysis",
+          "passed": false,
+          "score": 0.0,
+          "reason": "any_of: matched []"
+        }
+      ],
+      "response_preview": "Here is a quick comparison of three generators: AMP-Designer, HydrAMP and Diff-AMP. They all target Gram-negative bacteria but differ in 优点 / 缺点. The membrane-disrupting mechanism involves lipid bilay",
+      "tool_calls": [
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "amp_designer"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "hydramp"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "diff_amp"
+          }
+        },
+        {
+          "name": "search_knowledge",
+          "params": {
+            "query": "AMP mechanism"
+          }
+        },
+        {
+          "name": "tool_batch_evaluate",
+          "params": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "edge_001_ambiguous",
+      "passed": false,
+      "score": 0.0,
+      "latency_ms": 50.12,
+      "verdicts": [
+        {
+          "name": "asks_for_clarification",
+          "passed": false,
+          "score": 0.0,
+          "reason": "any_of: matched []"
+        }
+      ],
+      "response_preview": "Here is a quick comparison of three generators: AMP-Designer, HydrAMP and Diff-AMP. They all target Gram-negative bacteria but differ in 优点 / 缺点. The membrane-disrupting mechanism involves lipid bilay",
+      "tool_calls": [
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "amp_designer"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "hydramp"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "diff_amp"
+          }
+        },
+        {
+          "name": "search_knowledge",
+          "params": {
+            "query": "AMP mechanism"
+          }
+        },
+        {
+          "name": "tool_batch_evaluate",
+          "params": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "edge_002_nonsense_sequence",
+      "passed": false,
+      "score": 0.0,
+      "latency_ms": 50.11,
+      "verdicts": [
+        {
+          "name": "rejects_invalid",
+          "passed": false,
+          "score": 0.0,
+          "reason": "any_of: matched []"
+        }
+      ],
+      "response_preview": "Here is a quick comparison of three generators: AMP-Designer, HydrAMP and Diff-AMP. They all target Gram-negative bacteria but differ in 优点 / 缺点. The membrane-disrupting mechanism involves lipid bilay",
+      "tool_calls": [
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "amp_designer"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "hydramp"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "diff_amp"
+          }
+        },
+        {
+          "name": "search_knowledge",
+          "params": {
+            "query": "AMP mechanism"
+          }
+        },
+        {
+          "name": "tool_batch_evaluate",
+          "params": {}
+        }
+      ],
+      "error": null
+    }
+  ],
+  "meta": {
+    "set_file": "golden_prompts.yaml"
+  }
+}

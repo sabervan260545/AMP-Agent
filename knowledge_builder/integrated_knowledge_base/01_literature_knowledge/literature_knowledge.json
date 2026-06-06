@@ -1,0 +1,752 @@
+[
+  {
+    "metadata": {
+      "source": "AMPresearch.txt",
+      "file_type": "literature",
+      "processed_date": "2026-03-11T12:27:36.615918",
+      "has_sequences": true,
+      "has_experimental_data": false
+    },
+    "knowledge_core": {
+      "design_principles": [
+        "cationic_enhancement",
+        "tryptophan_anchoring",
+        "cyclization_stability",
+        "hydrophobic_balance",
+        "amphipathic_helix"
+      ],
+      "action_mechanisms": [
+        "membrane_disruption",
+        "pore_formation",
+        "intracellular_targeting",
+        "immune_modulation"
+      ],
+      "target_organisms": [
+        "Gram-negative"
+      ]
+    },
+    "evidence_bank": {
+      "extracted_sequences": [
+        {
+          "sequence": "AMPGAN",
+          "length": 6,
+          "context_snippet": "...n and Analysis Tools Platforms such as AIPAMPDS, AMPGAN v2, and sAMPpred-GAT leverage machine learning an..."
+        },
+        {
+          "sequence": "AIPAMPDS",
+          "length": 8,
+          "context_snippet": "...Prediction and Analysis Tools Platforms such as AIPAMPDS, AMPGAN v2, and sAMPpred-GAT leverage machine lea..."
+        }
+      ],
+      "experimental_values": [],
+      "mechanism_details": [
+        {
+          "mechanism": "membrane_disruption",
+          "description_snippet": "...anisms of Action The antimicrobial activity of AMPs primarily arises from their interactions with microbial cell membranes, a process that typically involves two stages: electrostatic attraction and membrane disruption or translocation. 2.1.1 Membrane-Targeting Mechanisms The cationic nature of AMPs enables preferential binding to negatively charged bacterial membranes, which are enriched in phosphatidylglycerol..."
+        },
+        {
+          "mechanism": "pore_formation",
+          "description_snippet": "...hicity Hydrophobicity governs the ability of AMPs to insert into lipid bilayers, while amphipathicity—the spatial segregation of hydrophobic and hydrophilic residues—enables membrane interaction and pore formation. Hydrophobicity is a double-edged sword: insufficient hydrophobicity compromises membrane insertion and antimicrobial activity, whereas excessive hydrophobicity increases nonspecific membrane disrupt..."
+        },
+        {
+          "mechanism": "intracellular_targeting",
+          "description_snippet": "...rgets, including: Inhibition of nucleic acid synthesis: For example, buforin II binds DNA and RNA, interfering with replication and transcription. Inhibition of protein synthesis: Certain AMPs bind ribosomes and block translation. Inhibition of cell wall synthesis: Some peptides target lipid II, disrupting peptidoglycan assembly. Inhibition of essential enzymes: Targeting enzymes critical for bacteria..."
+        },
+        {
+          "mechanism": "immune_modulation",
+          "description_snippet": "...1. Introduction: Antimicrobial Peptides—A Beacon of Hope in the Post-Antibiotic Era 1.1 Definition, Sources, and Classification Antimicrobial peptides (AMPs) are essential components of the innate immune system. They are typically short peptides composed of 10–100 amino acid residues and are characterized by amphipathic and cationic properties. AMPs are widely distributed across nearly all forms of l..."
+        }
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "source": "AMPGPT2.txt",
+      "file_type": "literature",
+      "processed_date": "2026-03-11T12:27:36.628151",
+      "has_sequences": true,
+      "has_experimental_data": true
+    },
+    "knowledge_core": {
+      "design_principles": [
+        "amphipathic_helix",
+        "cationic_enhancement",
+        "hydrophobic_balance"
+      ],
+      "action_mechanisms": [
+        "membrane_disruption"
+      ],
+      "target_organisms": [
+        "E.coli",
+        "K.pneumoniae",
+        "S.aureus",
+        "Gram-negative"
+      ]
+    },
+    "evidence_bank": {
+      "extracted_sequences": [
+        {
+          "sequence": "ESKAPE",
+          "length": 6,
+          "context_snippet": "...ilities) of spectrum activities across all tested ESKAPE strains. Consequently, the AMP predictor increase..."
+        },
+        {
+          "sequence": "HITACHI",
+          "length": 7,
+          "context_snippet": "...The images 168–177 (2013). were taken with a TEM (HITACHI H-7 650). 11. l. c. h. W. Fingerhut, d. J. Miller..."
+        },
+        {
+          "sequence": "REFERENCES",
+          "length": 10,
+          "context_snippet": "...aware generative adversarial networks. ACS Omega REFERENCES AND NOTES 5, 22847–22851 (2020). 1. Antimicrobial..."
+        }
+      ],
+      "experimental_values": [
+        {
+          "original_value": 4.0,
+          "original_unit": "μg/ml",
+          "normalized_value_uM": 2.67,
+          "context": "...lls upon KW13 treat- exhibited the highest antibacterial activity against both Gram-n egative ment (MIC = 4 μg/ml, treated with 1× and 10× MIC for 5 hours). bacteria (MICs range from 4 to 16 μg/ml) and Gram-p osit..."
+        },
+        {
+          "original_value": 2.0,
+          "original_unit": "μg/ml",
+          "normalized_value_uM": 1.33,
+          "context": "...bacterium P. acnes in the pilosebaceous follicles of human cacy against P. acnes with an impressive MIC value of 2.0 μg/ml. skin is closely related to the severity of acne vulgaris (75). Conven- Property- activity correlat..."
+        }
+      ],
+      "mechanism_details": [
+        {
+          "mechanism": "membrane_disruption",
+          "description_snippet": "...of the peptides generated by AMP- GPT are similar to those of AMPs into the lipid bilayer of cellular membranes, thereby induc- of the UniProt training dataset. This observation demonstrates that ing membrane disruption. Therefore, building upon AMP- GPT, we AMP-G PT has effectively learned the physiochemical characteristics trained the AMP- MIC predictors for different bacteria, considering of peptides in the UniPr..."
+        }
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "source": "Antimicrobial-peptides-structure-functions-and-translational-applications.txt",
+      "file_type": "literature",
+      "processed_date": "2026-03-11T12:27:36.635773",
+      "has_sequences": false,
+      "has_experimental_data": false
+    },
+    "knowledge_core": {
+      "design_principles": [
+        "cationic_enhancement",
+        "tryptophan_anchoring",
+        "cyclization_stability",
+        "arginine_rich",
+        "hydrophobic_balance",
+        "amphipathic_helix"
+      ],
+      "action_mechanisms": [
+        "membrane_disruption",
+        "pore_formation",
+        "intracellular_targeting",
+        "immune_modulation"
+      ],
+      "target_organisms": [
+        "S.aureus",
+        "Gram-positive",
+        "E.coli",
+        "Gram-negative",
+        "K.pneumoniae",
+        "P.aeruginosa",
+        "A.baumannii"
+      ]
+    },
+    "evidence_bank": {
+      "extracted_sequences": [],
+      "experimental_values": [],
+      "mechanism_details": [
+        {
+          "mechanism": "membrane_disruption",
+          "description_snippet": "...action relies on membrane interactions and pore forma- their antimicrobial activity and specificity27. This combination allows tion, enabling translocation into cells to impair functions such as DNA membrane disruption and intracellular targeting, reducing resistance a b AMPs Antibiotics Macrophage Direct killing HDPs Degradated AMPs Active antibiotics Cytokines LPS TLR4 LPS MAPK NF-κB Healthy microbiome Resistant..."
+        },
+        {
+          "mechanism": "pore_formation",
+          "description_snippet": "...spontaneous HII (inverse hexagonal) the membrane to the inner layer, which can occur through transient phase in negative monolayer curvature31. Overall, a disruption in the toroidal pores or without pore formation37. However, during this pro- integrity of the bilayer may occur after cationic AMP interaction with cess there is an association between the polar AMP face and the polar anionic membrane molecules, o..."
+        },
+        {
+          "mechanism": "intracellular_targeting",
+          "description_snippet": "...views MicrobiologyReview article a AMP classes Linear extended α-Helical β-Structured Mixed α/β-structured Cyclic b Disordered toroidal pore Aggregate Carpet Toroidal pore Barrel stave LptB2FG BamA c Ribosome RNA polymerase Protein folding (DnaK) Nucleic acid phase transition Arginine decarboxylase Bacterial cell division (FtsZ) Nature Reviews MicrobiologyReview article Fig. 2 | Structures, mechanisms of..."
+        },
+        {
+          "mechanism": "immune_modulation",
+          "description_snippet": "...o conventional antibiotics, their production referred to as host defence peptides (HDPs)3. HDPs have a crucial role by methods present challenges regarding sustainability. Traditional pep- modulating immune responses and other cellular processes in animals. tide synthesis often relies on toxic solvents, raising environmental They also defend plants against pathogens through pattern recognition concerns...."
+        }
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "source": "1-s2.0-S2589004224019436-main.txt",
+      "file_type": "literature",
+      "processed_date": "2026-03-11T12:27:36.640931",
+      "has_sequences": true,
+      "has_experimental_data": false
+    },
+    "knowledge_core": {
+      "design_principles": [
+        "cationic_enhancement"
+      ],
+      "action_mechanisms": [
+        "immune_modulation"
+      ],
+      "target_organisms": [
+        "S.aureus",
+        "Gram-positive",
+        "E.coli",
+        "Gram-negative",
+        "K.pneumoniae",
+        "P.aeruginosa",
+        "A.baumannii"
+      ]
+    },
+    "evidence_bank": {
+      "extracted_sequences": [
+        {
+          "sequence": "ESKAPE",
+          "length": 6,
+          "context_snippet": "...and the benefits of antibiotics are at risk.1 The ESKAPE pathogens, including Enterococcus faecium, Staphy..."
+        },
+        {
+          "sequence": "ESKAPEE",
+          "length": 7,
+          "context_snippet": "...e predictions. Meanwhile, Sharma et al.18 created ESKAPEE-MICpred, which employs language models and the en..."
+        }
+      ],
+      "experimental_values": [],
+      "mechanism_details": [
+        {
+          "mechanism": "immune_modulation",
+          "description_snippet": "...anisms in need of urgent research and development of new antibiotics.Antimicrobial peptides(AMPs)are apromising approach for the development of new therapeutic strategies. AMPs are part of the body's immune defense system and possess several beneficial properties,such as antimicrobial, immunomodulating,woundhealing,andanti-tumoractivities.3,4 In contrast to traditional antibiotics,AMPs exhibit rapid bac..."
+        }
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "source": "Antimicrobial Peptides.txt",
+      "file_type": "literature",
+      "processed_date": "2026-03-11T12:27:37.054099",
+      "has_sequences": true,
+      "has_experimental_data": false
+    },
+    "knowledge_core": {
+      "design_principles": [
+        "cationic_enhancement",
+        "tryptophan_anchoring",
+        "cyclization_stability",
+        "arginine_rich",
+        "hydrophobic_balance",
+        "amphipathic_helix"
+      ],
+      "action_mechanisms": [
+        "membrane_disruption",
+        "pore_formation",
+        "intracellular_targeting",
+        "immune_modulation"
+      ],
+      "target_organisms": [
+        "S.aureus",
+        "Gram-positive",
+        "E.coli",
+        "Gram-negative",
+        "P.aeruginosa",
+        "A.baumannii"
+      ]
+    },
+    "evidence_bank": {
+      "extracted_sequences": [
+        {
+          "sequence": "MGSSHHHHHHSSGLVPRGSHMASMTGGQQMGRGS",
+          "length": 34,
+          "context_snippet": "...ET-28a: 34 amino acids upstream of the EcoRIsite: MGSSHHHHHHSSGLVPRGSHMASMTGGQQMGRGS(EF)MET- peptide TGATGASalI 6x-His EcoRI Stops Fig..."
+        },
+        {
+          "sequence": "TAGTTATTGCTCAGC",
+          "length": 15,
+          "context_snippet": "...rimers KSI (GGCAAGGTGGTGAGCATC) and T7 term (TGC- TAGTTATTGCTCAGC)(7). • Isolate the plasmid and determine the nucl..."
+        },
+        {
+          "sequence": "LLSVPIAPVIRSK",
+          "length": 13,
+          "context_snippet": "...inI .1-RDInodelledomeditpeprem-5:lacinilcerP HNOC-LLSVPIAPVIRSK 249XMI 2 moc.amrahpxemini.www hguorhtkrowotdetart..."
+        },
+        {
+          "sequence": "ACWQVSRRRRG",
+          "length": 11,
+          "context_snippet": "...ahP-MA PDHnamuhfotnemgarflanimret-N:aIIesahP HOOC-ACWQVSRRRRG 11-1FLh ,)sdnalrehteN yrotaludomonummidetacidnisa..."
+        },
+        {
+          "sequence": "RRWFWR",
+          "length": 6,
+          "context_snippet": "...em- branescomparedtothelessactivelinearsequenceAc-RRWFWR- NH . The synthesis protocol can be applied for t..."
+        },
+        {
+          "sequence": "RRRWFW",
+          "length": 6,
+          "context_snippet": "...l, the highly active antimicrobial peptide, cyclo-RRRWFW with three adjacent aromatic residues was taken a..."
+        },
+        {
+          "sequence": "GERMAP",
+          "length": 6,
+          "context_snippet": "...trationsorthereisnoinhibitionatall. References 1. GERMAP (2008), Antibiotika-Resistenz 7. Hilpert,K.,Winkl..."
+        },
+        {
+          "sequence": "DLSLERGDNLK",
+          "length": 11,
+          "context_snippet": "...vitavirededitpeprem-21adnasdlofteehs-(cid:4) HOOC-DLSLERGDNLK murtceps-daorbdetartsnomedsaH.foereht gnizilartue..."
+        },
+        {
+          "sequence": "DESIGN",
+          "length": 6,
+          "context_snippet": "...mbinant form of AMPs from natural sources and the design and synthesis of unnatural compounds; the methodo..."
+        },
+        {
+          "sequence": "LLKLLKKLLKKLLKL",
+          "length": 15,
+          "context_snippet": "...S ecneuqeS ecruoS editpeP )32( lacileH-(cid:2) HN-LLKLLKKLLKKLLKL citehtnyS L K 2 9 6 )42( lacileH-(cid:2) HN-LIRGL..."
+        },
+        {
+          "sequence": "LIRGLFKSFWQVF",
+          "length": 13,
+          "context_snippet": "...KLLKL citehtnyS L K 2 9 6 )42( lacileH-(cid:2) HN-LIRGLFKSFWQVF )niksgorf(airaropmetanaR LniropmeT 2 )72( lacileH..."
+        },
+        {
+          "sequence": "MLFYNGSCTYTVETGQPFQGYKQEVGIKVKHEAH",
+          "length": 34,
+          "context_snippet": "...dnutorsuiprocsonicraC 1S )barceohsesroh( ,ciremiD MLFYNGSCTYTVETGQPFQGYKQEVGIKVKHEAH aduacidnutor.C 3S ralucelomretni )barceohsesroh(..."
+        },
+        {
+          "sequence": "DANIELA",
+          "length": 7,
+          "context_snippet": ".... . . . . . . . . . . . . . . . . . . . . . . 31 DanielaJabesandStefanoDonadio 4. ExpressionandPurificatio..."
+        },
+        {
+          "sequence": "KENNETH",
+          "length": 7,
+          "context_snippet": ".... . . 47 SharelFigueredo, JenniferR.Mastroianni, KennethP.Tai, andAndre´ J.Ouellette 5. Production of Reco..."
+        },
+        {
+          "sequence": "IRCPYPIQGYERWAKWVKRGTKGIKRGLKQIRKRTKRFKKRLG",
+          "length": 43,
+          "context_snippet": "...KGIKEKSKRFFDGLL slihportuennamuH 73-LL 2 ,ciremiD IRCPYPIQGYERWAKWVKRGTKGIKRGLKQIRKRTKRFKKRLG slihportuengipaeniuG 11PAC ralucelomretni )53( dn..."
+        },
+        {
+          "sequence": "TQEHSNRWN",
+          "length": 9,
+          "context_snippet": "...rol). Illustrativeexample: Sequence Activityclass TQEHSNRWN worsethancontrol KWRWRVKKR fullyactive 2. A quant..."
+        },
+        {
+          "sequence": "IIKWKLHRKFLK",
+          "length": 12,
+          "context_snippet": "...na stnemirepxeovivnidnaortivnihtobniytivitca HNOC-IIKWKLHRKFLK 4CS/500XTP 2 -fiidomlanimret-Cdna-N.sgniriaprieht..."
+        },
+        {
+          "sequence": "MICHAEL",
+          "length": 7,
+          "context_snippet": "...ecretions . . . . . . . . . . . . . . . . . . 3 J.MichaelConlonandAgnesSonnevend 2. PurificationofAntimicro..."
+        },
+        {
+          "sequence": "MADHYASTHA",
+          "length": 10,
+          "context_snippet": ".... . . . . . . . . . . 383 KarenLoVetriandSrinivasaMadhyastha 25. Characterization of the Leishmanicidal Activi..."
+        },
+        {
+          "sequence": "KWRWRVKKR",
+          "length": 9,
+          "context_snippet": "...Sequence Activityclass TQEHSNRWN worsethancontrol KWRWRVKKR fullyactive 2. A quantitative value characterizin..."
+        },
+        {
+          "sequence": "AGENTS",
+          "length": 6,
+          "context_snippet": "..., and so on) of AMPs, and on theiruseastherapeuticagents.Contributionsgatheredinthefirstpartwillleadtherea..."
+        },
+        {
+          "sequence": "RINALDI",
+          "length": 7,
+          "context_snippet": "...SpiderBiotech,Colleretto,Giacosa,Italy Andrea C. Rinaldi UniversityofCagliari,Monserrato,ItalyEditors Andr..."
+        },
+        {
+          "sequence": "SRINIVASA",
+          "length": 9,
+          "context_snippet": ".... . . . . . . . . . . . . . . 383 KarenLoVetriandSrinivasaMadhyastha 25. Characterization of the Leishmanici..."
+        },
+        {
+          "sequence": "WINKLER",
+          "length": 7,
+          "context_snippet": "...ingtheSPOTTechnique . . . . . . . . . 111 DirkF.H.WinklerandKaiHilpert 9. High-ThroughputScreeningforAntimi..."
+        },
+        {
+          "sequence": "PHILIPPE",
+          "length": 8,
+          "context_snippet": ".... . . . . . . . . . . . 209 ChristopherAisenbrey, PhilippeBertani,andBurkhardBechinger 15. Use of Atomic For..."
+        },
+        {
+          "sequence": "PISEMA",
+          "length": 6,
+          "context_snippet": "...ift anisotropy and 15N–1H dipolar coupling in the PISEMA or related experiments has been very successful...."
+        },
+        {
+          "sequence": "WCRRYRVLVGRVRVYAYVCWR",
+          "length": 21,
+          "context_snippet": "...ohsesroh( )72( cilcyc,dnobS–S )03( cilcyc,dnobS–S WCRRYRVLVGRVRVYAYVCWR )mrowgul(aniramalocinerA 1-nicinerA )43( lacileH-..."
+        },
+        {
+          "sequence": "ANTIMIC",
+          "length": 7,
+          "context_snippet": "...shedinthisseries,goto www.springer.com/series/7651Antimicrobial Peptides MethodsandProtocols Editedby Andre..."
+        },
+        {
+          "sequence": "SERGII",
+          "length": 6,
+          "context_snippet": ".... . . . . . . . . . . . . . . 183 StephanL.Grage, SergiiAfonin,andAnneS.Ulrich 14. Solid-StateNMRInvestiga..."
+        },
+        {
+          "sequence": "STEPHAN",
+          "length": 7,
+          "context_snippet": "...ctivePeptides . . . . . . . . . . . . . . . . 183 StephanL.Grage, SergiiAfonin,andAnneS.Ulrich 14. Solid-St..."
+        },
+        {
+          "sequence": "LANGHAM",
+          "length": 7,
+          "context_snippet": "...ides . . . . . . . . . . . . . . . . . 267 AllisonLanghamandYiannisN.Kaznessis 18. Computer-BasedAnalysis,V..."
+        },
+        {
+          "sequence": "GGCAAGGTGGTGAGCATC",
+          "length": 18,
+          "context_snippet": "...s harboring the plasmid by PCR using primers KSI (GGCAAGGTGGTGAGCATC) and T7 term (TGC- TAGTTATTGCTCAGC)(7). • Isolate..."
+        },
+        {
+          "sequence": "CHARMM",
+          "length": 6,
+          "context_snippet": "...ionareprovidedaswell. Keywords: Moleculardynamics,CHARMM,NAMD,micelles,lipidbilayers. 1. Introduction 1.1...."
+        },
+        {
+          "sequence": "ITAAQGVVAVAPGAKVIGDRINQGVKEIKKFIKWR",
+          "length": 35,
+          "context_snippet": "...ralucelomretni )53( dnobS–S )83( lacileH-(cid:2) ITAAQGVVAVAPGAKVIGDRINQGVKEIKKFIKWR iromxybmoB 4MC )mrowklisesenihC( )24( orPnihcir,r..."
+        },
+        {
+          "sequence": "EVELINA",
+          "length": 7,
+          "context_snippet": "...Anti-inflammatoryActivity . . . . . . . . . . 349 EvelinaRubinchikandChristopherPasetka 22. ExVivoSkinInfec..."
+        },
+        {
+          "sequence": "RRWWRF",
+          "length": 6,
+          "context_snippet": "...bial peptides (2) or the synthetic hexapeptide Ac-RRWWRF-NH identified by screen- 2 ing synthetic combinat..."
+        },
+        {
+          "sequence": "PASETKA",
+          "length": 7,
+          "context_snippet": ".... . . . . . . . 349 EvelinaRubinchikandChristopherPasetka 22. ExVivoSkinInfectionModel . . . . . . . . . ...."
+        },
+        {
+          "sequence": "PFRPPFRPPFGPPIRPPLRPPFFPPPRPRPLYPPRPRRR",
+          "length": 39,
+          "context_snippet": "...ybmoB 4MC )mrowklisesenihC( )24( orPnihcir,raeniL PFRPPFRPPFGPPIRPPLRPPFFPPPRPRPLYPPRPRRR enitsetnigiP 93-RP grAdnaAntimicrobialPeptidesand..."
+        },
+        {
+          "sequence": "SGSLSTFFRLFNASFTQALGK",
+          "length": 21,
+          "context_snippet": "...FNRSFTQALGK)anditsanalogue(see Note 1), KBI-3221 (SGSLSTFFRLFNASFTQALGK) are synthesized by Mimotopes (Roseville, MN, USA..."
+        },
+        {
+          "sequence": "SSVMACERICKPPFNSWQGNPLCSIRAMGKLKFG",
+          "length": 34,
+          "context_snippet": "...f(airaropmetanaR LniropmeT 2 )72( lacileH-(cid:2) SSVMACERICKPPFNSWQGNPLCSIRAMGKLKFG aduacidnutorsuiprocsonicraC 1S )barceohsesroh( ,c..."
+        },
+        {
+          "sequence": "CVFGGKA",
+          "length": 7,
+          "context_snippet": "...aB( nitceffeevitisop-marGtnetopdetartsnomed -Y CK CVFGGKA CYGGKYGKISK 4112ZN 3 2 1 moc.semyzovon.www laccoc..."
+        },
+        {
+          "sequence": "HAEHKVKIGVEQKYGQFPQGTEVTYTCSGNYFLM",
+          "length": 34,
+          "context_snippet": "...to > 95% peptide purity. The S3 34’mer sequence N-HAEHKVKIGVEQKYGQFPQGTEVTYTCSGNYFLM- C, with a molecular weight of 3,892, corresponds..."
+        },
+        {
+          "sequence": "ANALYSIS",
+          "length": 8,
+          "context_snippet": "...forbriefexcerptsinconnectionwithreviewsorscholarlyanalysis.Useinconnectionwithanyformof informationstoragean..."
+        },
+        {
+          "sequence": "MECHANISMS",
+          "length": 10,
+          "context_snippet": "...KaiHilpert SECTION II: ANALYSIS, PROPERTIES, AND MECHANISMS OF ANTIMICROBIALPEPTIDES 10. AntimicrobialPeptide..."
+        },
+        {
+          "sequence": "ANDREA",
+          "length": 6,
+          "context_snippet": "...timicrobial Peptides MethodsandProtocols Editedby Andrea Giuliani SpiderBiotech,Colleretto,Giacosa,Italy A..."
+        },
+        {
+          "sequence": "SARSTEDT",
+          "length": 8,
+          "context_snippet": "...aporator, cuvettes (polystyrene 10 × 10 × 45 mm) (SARSTEDT, Aktiengesellschaft & Co., Germany), round- botto..."
+        },
+        {
+          "sequence": "ALMEIDA",
+          "length": 7,
+          "context_snippet": ".... . . . . . . . . . . . . . . . . . . 155 PauloF.AlmeidaandAntjePokorny 12. Comparing Bacterial Membrane I..."
+        },
+        {
+          "sequence": "HFKRKYGHHRKA",
+          "length": 12,
+          "context_snippet": "...cnaV(negcaP nitneserptnemgesrem-21A:bIIesahP HNOC-HFKRKYGHHRKA 311-CAP 2 moc.mrahpoibnegcap.www larosecuderhcihw..."
+        },
+        {
+          "sequence": "SGSLSTFFRLFNRSFTQALGK",
+          "length": 21,
+          "context_snippet": "...(ThermoFisherScientific Nepean,ON,Canada). 8. CSP(SGSLSTFFRLFNRSFTQALGK)anditsanalogue(see Note 1), KBI-3221 (SGSLSTFFRLF..."
+        },
+        {
+          "sequence": "SETRPVLNRLFDKIRQVIRKFEKGIKEKSKRFFDGLL",
+          "length": 37,
+          "context_snippet": "...niramalocinerA 1-nicinerA )43( lacileH-(cid:2) HN-SETRPVLNRLFDKIRQVIRKFEKGIKEKSKRFFDGLL slihportuennamuH 73-LL 2 ,ciremiD IRCPYPIQGYERWAK..."
+        },
+        {
+          "sequence": "CYGGKYGKISK",
+          "length": 11,
+          "context_snippet": "...effeevitisop-marGtnetopdetartsnomed -Y CK CVFGGKA CYGGKYGKISK 4112ZN 3 2 1 moc.semyzovon.www laccocotpertsdnala..."
+        },
+        {
+          "sequence": "SASRIN",
+          "length": 6,
+          "context_snippet": "...B)-resin, Wang resin, super acid sensitive resin (SASRIN), or TentaGel S AC. The coupling of the first ami..."
+        },
+        {
+          "sequence": "VIIKWKAQKRFLKMSVNLDQIS",
+          "length": 22,
+          "context_snippet": "...xTpeP tcnitsidowthtiweditpeprem-33:esahpyrevocsiD VIIKWKAQKRFLKMSVNLDQIS 200XTP )701,601(moc.xtpep.www evitavirededitpepre..."
+        },
+        {
+          "sequence": "KRRWPWWPWRLI",
+          "length": 12,
+          "context_snippet": "...enatuC/xinegiM PMAenivobfoeugolanA: IIIesahP HNOC-KRRWPWWPWRLI /(cid:5)RnanagimO 2 ,moc.xinegim.www,)adanaC,CB n..."
+        },
+        {
+          "sequence": "MARCELLINI",
+          "length": 10,
+          "context_snippet": "...(s)ofAction . . . . . . . . . . . . . 249 LudovicaMarcellini, MariaGiammatteo, PierpaoloAimola, andMariaLuisaM..."
+        },
+        {
+          "sequence": "ANNELISE",
+          "length": 8,
+          "context_snippet": ".... . . . . . . . 171 NathanielP.ChongsiriwatanaandAnneliseE.Barron 13. DynamicTransitionsofMembrane-ActivePe..."
+        },
+        {
+          "sequence": "GAATTC",
+          "length": 6,
+          "context_snippet": "...NBr cleavage site immediately down- stream of the GAATTC EcoRI site. Underlined residues in thepC4-Rclonin..."
+        },
+        {
+          "sequence": "HEALTH",
+          "length": 6,
+          "context_snippet": "...partment of Biochemistry, Faculty of Medicine and Health Sciences,UnitedArabEmiratesUniversity,Al-Ain,UAE..."
+        },
+        {
+          "sequence": "YIANNIS",
+          "length": 7,
+          "context_snippet": ".... . . . . . . . . . . . . . 267 AllisonLanghamandYiannisN.Kaznessis 18. Computer-BasedAnalysis,Visualizati..."
+        },
+        {
+          "sequence": "SHAREL",
+          "length": 6,
+          "context_snippet": ".... . . . . . . . . . . . . . . . . . . . . . . 47 SharelFigueredo, JenniferR.Mastroianni, KennethP.Tai, an..."
+        },
+        {
+          "sequence": "CQMDDEDWPGN",
+          "length": 11,
+          "context_snippet": "...ovoN sahhcihwnisatcelpfotnairavA:lacinilcerP CHNH CQMDDEDWPGN CGFG nisatcelP 3 2 1 ,)kramneD,drœvsgaB( nitceffe..."
+        },
+        {
+          "sequence": "NATHANIEL",
+          "length": 9,
+          "context_snippet": "...rMimics . . . . . . . . . . . . . . . . . . . 171 NathanielP.ChongsiriwatanaandAnneliseE.Barron 13. DynamicTr..."
+        },
+        {
+          "sequence": "HILPERT",
+          "length": 7,
+          "context_snippet": "...hnique . . . . . . . . . 111 DirkF.H.WinklerandKaiHilpert 9. High-ThroughputScreeningforAntimicrobialPeptid..."
+        }
+      ],
+      "experimental_values": [],
+      "mechanism_details": [
+        {
+          "mechanism": "membrane_disruption",
+          "description_snippet": "...J., and FEBSLett.581,515–520. Gizeli, E. (2008) Mechanisms of alpha- 20. Pazgier, M., Li, X., Lu, W., and Lubkowski, defensin bactericidal action: comparative J. (2007) Human defensins: synthesis and membrane disruption by Cryptdin-4 and structural properties. Curr. Pharm. Des. 13, its disulfide-null analogue. Biochemistry 47, 3096–3118. 12626–12634. 21. Wu, Z., Li, X., Ericksen, B., de Leeuw, 8. White, S. H., Wimle..."
+        },
+        {
+          "mechanism": "pore_formation",
+          "description_snippet": "...been proposed, wherein the amphiphilic peptides dissolve the lipid bilayer, yielding micellar or bicellar membrane patches. Finally, peptides can also increase permeability of the membrane by direct pore formation. Such pores can be lined by the peptide as in the “barrel-stave” model, or the peptides can stabilize a pore that is intrinsically formed by lipids according to the“wormhole”model. The different mode..."
+        },
+        {
+          "mechanism": "intracellular_targeting",
+          "description_snippet": "...ABE mutant eases.TrendsMicrobiol.14,141–147. library in Pseudomonas aeruginosa PAO1: a 4. Brogden, K. A. (2005) Antimicrobial pep- tool for identifying differentially regulated tides: pore formers or metabolic inhibitors genes.GenomeRes.15,583–589. in bacteria? Nat. Rev. Microbiol. 3, 10. Hilpert, K., Volkmer-Engert, R., Walter, 238–250. T., and Hancock, R. E. W. (2005) High- 5. Cherkasov,A.,Hilpert,K.,Jen..."
+        },
+        {
+          "mechanism": "immune_modulation",
+          "description_snippet": "...s, and, as a warm wish, to all those, including some of the authors of the present volume, that will have to build their future from scratch. (Andrea C. Rinaldi)Preface As our knowledge of the innate immune systems in multicellular organisms has grown steadily in the last two decades, so has our comprehension of the basic role played by gene-encoded,ribosomallysynthesizedantimicrobialpeptides(AMPs)inthi..."
+        }
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "source": "AMP.txt",
+      "file_type": "literature",
+      "processed_date": "2026-03-11T12:27:37.082166",
+      "has_sequences": true,
+      "has_experimental_data": true
+    },
+    "knowledge_core": {
+      "design_principles": [
+        "cationic_enhancement",
+        "tryptophan_anchoring",
+        "cyclization_stability",
+        "hydrophobic_balance",
+        "amphipathic_helix"
+      ],
+      "action_mechanisms": [
+        "membrane_disruption",
+        "pore_formation",
+        "intracellular_targeting",
+        "immune_modulation"
+      ],
+      "target_organisms": [
+        "S.aureus",
+        "Gram-positive",
+        "E.coli",
+        "Gram-negative",
+        "P.aeruginosa"
+      ]
+    },
+    "evidence_bank": {
+      "extracted_sequences": [
+        {
+          "sequence": "RRWWRF",
+          "length": 6,
+          "context_snippet": "...while synthetic examples like the hexapeptide Ac-RRWWRF-NH₂ have been identified through screening combin..."
+        },
+        {
+          "sequence": "SGSLSTFFRLFNRSFTQALGK",
+          "length": 21,
+          "context_snippet": "...ynthesis and Characterization** The CSP peptide (SGSLSTFFRLFNRSFTQALGK) and its analogue, KBI-3221 (SGSLSTFFRLFNASFTQALG..."
+        },
+        {
+          "sequence": "MARTINI",
+          "length": 7,
+          "context_snippet": "...formation, which occur on longer timescales. The MARTINI force field is a popular CG force field for biomo..."
+        },
+        {
+          "sequence": "RRRWFW",
+          "length": 6,
+          "context_snippet": "...l, the highly active antimicrobial peptide, cyclo-RRRWFW with three adjacent aromatic residues, is used as..."
+        },
+        {
+          "sequence": "SGSLSTFFRLFNASFTQALGK",
+          "length": 21,
+          "context_snippet": "...GSLSTFFRLFNRSFTQALGK) and its analogue, KBI-3221 (SGSLSTFFRLFNASFTQALGK), are synthesized using solid-phase peptide synth..."
+        },
+        {
+          "sequence": "CHARMM",
+          "length": 6,
+          "context_snippet": "...es and lipids. Commonly used force fields include CHARMM and AMBER. The chapter notes that CHARMM is a wid..."
+        }
+      ],
+      "experimental_values": [
+        {
+          "original_value": 10.0,
+          "original_unit": "μm",
+          "normalized_value_uM": 10.0,
+          "context": "...on-adhered cells . 3. **Peptide Treatment:** The immobilized bacteria are then treated with the antimicrobial peptide of interest. This is typically done by adding a solution of the peptide (e.g., the Sushi peptide) at a specific concentration (e.g., 10 μM) onto the sample and incubating for a defined period (e.g., 30 minutes) at room temperature. A cont..."
+        }
+      ],
+      "mechanism_details": [
+        {
+          "mechanism": "membrane_disruption",
+          "description_snippet": "...is the most well-known function. HDPs can kill a broad spectrum of pathogens, including Gram-positive and Gram-negative bacteria, fungi, and some viruses. Their mechanisms are varied, often involving membrane disruption, but can also include targeting intracellular components . * **Immunomodulation:** This is a critical function where HDPs act as modulators of the immune system. They can: * **Neutralize Endotoxins:..."
+        },
+        {
+          "mechanism": "pore_formation",
+          "description_snippet": "...ace of the helix interacts with the lipid headgroup region, while the cationic face remains associated with the negatively charged phosphates. This state is often a precursor to membrane insertion or pore formation. A classic example is the antimicrobial peptide PGLa. Solid-state ¹⁹F- and ²H-NMR studies revealed that PGLa initially binds to the membrane in a surface-bound S-state, where it lies flat on the mem..."
+        },
+        {
+          "mechanism": "intracellular_targeting",
+          "description_snippet": "...red to produce its fatty aldehyde substrate . The luciferase enzyme produces light when it has access to reduced flavin mononucleotide (FMNH₂) and molecular oxygen, both of which are provided by the metabolically active bacteria . The key principle is that any event that disturbs the energy balance of the bacteria will also disturb the amount of available FMNH₂, which is then registered as a change in lig..."
+        },
+        {
+          "mechanism": "immune_modulation",
+          "description_snippet": "...istant to conventional antibiotics, which poses a serious threat to public health and necessitates the search for novel antimicrobial agents . These peptides are a key component of the frog's innate immune system, defending the animal against invading pathogenic microorganisms . Structurally, frog skin antimicrobial peptides typically consist of 10 to 48 amino acid residues. A key characteristic is tha..."
+        }
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "source": "example.txt",
+      "file_type": "literature",
+      "processed_date": "2026-03-11T12:27:37.082424",
+      "has_sequences": true,
+      "has_experimental_data": true
+    },
+    "knowledge_core": {
+      "design_principles": [
+        "amphipathic_helix",
+        "cationic_enhancement"
+      ],
+      "action_mechanisms": [
+        "membrane_disruption",
+        "pore_formation"
+      ],
+      "target_organisms": [
+        "S.aureus",
+        "E.coli"
+      ]
+    },
+    "evidence_bank": {
+      "extracted_sequences": [
+        {
+          "sequence": "RRWRIVVIRK",
+          "length": 10,
+          "context_snippet": "...tion in the bacterial membrane. Another sequence RRWRIVVIRK showed excellent activity against S.aureus with M..."
+        },
+        {
+          "sequence": "KLWKKIKKLAKKV",
+          "length": 13,
+          "context_snippet": "...We designed an antimicrobial peptide KLWKKIKKLAKKV targeting E.coli. The peptide adopts an amphipath..."
+        }
+      ],
+      "experimental_values": [
+        {
+          "original_value": 12.5,
+          "original_unit": "μm",
+          "normalized_value_uM": 12.5,
+          "context": "...KV targeting E.coli. The peptide adopts an amphipathic α-helical structure with a net charge of +5. MIC against E.coli was 12.5 μM. The mechanism involves membrane disruption through pore formation in the bacterial membrane. Anot..."
+        },
+        {
+          "original_value": 8.2,
+          "original_unit": "μm",
+          "normalized_value_uM": 8.2,
+          "context": "...he bacterial membrane. Another sequence RRWRIVVIRK showed excellent activity against S.aureus with MIC of 8.2 μM. This cationic peptide contains high lysine and arginine content...."
+        }
+      ],
+      "mechanism_details": [
+        {
+          "mechanism": "membrane_disruption",
+          "description_snippet": "...designed an antimicrobial peptide KLWKKIKKLAKKV targeting E.coli. The peptide adopts an amphipathic α-helical structure with a net charge of +5. MIC against E.coli was 12.5 μM. The mechanism involves membrane disruption through pore formation in the bacterial membrane. Another sequence RRWRIVVIRK showed excellent activity against S.aureus with MIC of 8.2 μM. This cationic peptide contains high lysine and arginine c..."
+        },
+        {
+          "mechanism": "pore_formation",
+          "description_snippet": "...ptide KLWKKIKKLAKKV targeting E.coli. The peptide adopts an amphipathic α-helical structure with a net charge of +5. MIC against E.coli was 12.5 μM. The mechanism involves membrane disruption through pore formation in the bacterial membrane. Another sequence RRWRIVVIRK showed excellent activity against S.aureus with MIC of 8.2 μM. This cationic peptide contains high lysine and arginine content...."
+        }
+      ]
+    }
+  }
+]

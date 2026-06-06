@@ -1,0 +1,2433 @@
+{
+  "source_file": "/data/amp-generator-platform/services/04-mic/real_mic_data_500.csv",
+  "total_records": 482,
+  "mic_distribution": {
+    "high_activity": 44,
+    "medium_activity": 326,
+    "low_activity": 112
+  },
+  "data_by_activity": {
+    "high_activity": [
+      {
+        "sequence": "RRWCFRVCYRGICYRRCR",
+        "mic_value": -0.0969100130080563,
+        "length": 18
+      },
+      {
+        "sequence": "RRWWRFKKLWWRM",
+        "mic_value": -0.0222763947111522,
+        "length": 13
+      },
+      {
+        "sequence": "RRWCQRVCYRGICYRRCR",
+        "mic_value": -0.1601591892944717,
+        "length": 18
+      },
+      {
+        "sequence": "RRACFRVCYRGACYRRCR",
+        "mic_value": -0.0259498238813233,
+        "length": 18
+      },
+      {
+        "sequence": "RRWCFRVCYRGIYYRRCR",
+        "mic_value": -0.0396200499100675,
+        "length": 18
+      },
+      {
+        "sequence": "RRWCFRVCYRMICYRRCR",
+        "mic_value": -0.0917509641348355,
+        "length": 18
+      },
+      {
+        "sequence": "RRWCFRVYYIGICYRRCR",
+        "mic_value": -0.10065559004911,
+        "length": 18
+      },
+      {
+        "sequence": "RPWCFRVCYRDICYRRCR",
+        "mic_value": -0.0560403325784436,
+        "length": 18
+      },
+      {
+        "sequence": "RRWCFRVCYRGICARRCR",
+        "mic_value": -0.0999378286706956,
+        "length": 18
+      },
+      {
+        "sequence": "RREWRFKKLWWRM",
+        "mic_value": -0.109090760361428,
+        "length": 13
+      },
+      {
+        "sequence": "MRWWRFKKLWWRM",
+        "mic_value": -0.0496849987990875,
+        "length": 13
+      },
+      {
+        "sequence": "KRWCFRHCYRGICYRRCR",
+        "mic_value": -0.1167866090285057,
+        "length": 18
+      },
+      {
+        "sequence": "RRWWRWKKLWWRM",
+        "mic_value": -0.0884389179326763,
+        "length": 13
+      },
+      {
+        "sequence": "RRWWRFKMLWWRM",
+        "mic_value": -0.1019069998559778,
+        "length": 13
+      },
+      {
+        "sequence": "RDWCFRVCYRGICYRRCR",
+        "mic_value": -0.1486651061228461,
+        "length": 18
+      },
+      {
+        "sequence": "RRWWRFKKLWWKM",
+        "mic_value": -0.0302353785839104,
+        "length": 13
+      },
+      {
+        "sequence": "RRWCFRVCYRGICYRWCR",
+        "mic_value": -0.0633970172679901,
+        "length": 18
+      },
+      {
+        "sequence": "RWWWRFKKLWWRM",
+        "mic_value": -0.0958860848795944,
+        "length": 13
+      },
+      {
+        "sequence": "RRWERFKKLWWRM",
+        "mic_value": -0.0117096504307539,
+        "length": 13
+      },
+      {
+        "sequence": "RRWFIVVIRVRRCWN",
+        "mic_value": -0.0118197901202226,
+        "length": 15
+      },
+      {
+        "sequence": "RRWCFRVCYRSICYRCCR",
+        "mic_value": -0.1082496691899083,
+        "length": 18
+      },
+      {
+        "sequence": "RRWCPRVCYRGICYRTCR",
+        "mic_value": -0.0599350222764051,
+        "length": 18
+      },
+      {
+        "sequence": "RRWRRFKKLWWRM",
+        "mic_value": -0.0652450075954056,
+        "length": 13
+      },
+      {
+        "sequence": "IRWWRFKKLWDRM",
+        "mic_value": -0.0310276137111188,
+        "length": 13
+      },
+      {
+        "sequence": "RRWCFRVCARGICYRRCR",
+        "mic_value": -0.0336562986521815,
+        "length": 18
+      },
+      {
+        "sequence": "DRWWRFQKLWWRM",
+        "mic_value": -0.0927958512125336,
+        "length": 13
+      },
+      {
+        "sequence": "RRWWRFKINWWRM",
+        "mic_value": -0.1021705839919137,
+        "length": 13
+      },
+      {
+        "sequence": "RRWCNQVCYRGICYRRCR",
+        "mic_value": -0.1225076920853709,
+        "length": 18
+      },
+      {
+        "sequence": "WRWCFRVCIRGICYRRCR",
+        "mic_value": -0.0505285810243416,
+        "length": 18
+      },
+      {
+        "sequence": "RRWCFRVCYRGVCYRRCR",
+        "mic_value": -0.1359752470467742,
+        "length": 18
+      },
+      {
+        "sequence": "RRWRIVVKRVRRCWI",
+        "mic_value": -0.0122611525709035,
+        "length": 15
+      },
+      {
+        "sequence": "RRWRIVVIRKRRCWN",
+        "mic_value": -0.0172164905763021,
+        "length": 15
+      },
+      {
+        "sequence": "RRKWRFKKLWWRM",
+        "mic_value": -0.0066999416133602,
+        "length": 13
+      },
+      {
+        "sequence": "RRWWRFKALAWRM",
+        "mic_value": -0.0007012582188992,
+        "length": 13
+      },
+      {
+        "sequence": "RRWWRFKKLWHRM",
+        "mic_value": -0.0247084081481133,
+        "length": 13
+      },
+      {
+        "sequence": "RRWCFTVCYRGICYRRCR",
+        "mic_value": -0.121123471144949,
+        "length": 18
+      },
+      {
+        "sequence": "RRWCFRVCYRGICYRRGK",
+        "mic_value": -0.078405063503291,
+        "length": 18
+      },
+      {
+        "sequence": "RRTCFRVCYRGICYRRCR",
+        "mic_value": -0.0880489062244724,
+        "length": 18
+      },
+      {
+        "sequence": "RRWCFECCYRGICYRRCR",
+        "mic_value": -0.0730476392870435,
+        "length": 18
+      },
+      {
+        "sequence": "RRWCERVCYRGICYRRCR",
+        "mic_value": -0.1909597329358749,
+        "length": 18
+      },
+      {
+        "sequence": "RGWWRFKHLWWRM",
+        "mic_value": -0.0763305623780082,
+        "length": 13
+      },
+      {
+        "sequence": "RRWCLRVCYRNICYRRCR",
+        "mic_value": -0.1257123231868545,
+        "length": 18
+      },
+      {
+        "sequence": "RRWCFRVCYRWICYRRCT",
+        "mic_value": -0.1732668868117856,
+        "length": 18
+      },
+      {
+        "sequence": "RRWCFRVCYRGICVRRCR",
+        "mic_value": -0.1748972745658604,
+        "length": 18
+      }
+    ],
+    "medium_activity": [
+      {
+        "sequence": "GIGKFLHSAKKFGKAFVGEIMNS",
+        "mic_value": 0.6532125137753437,
+        "length": 23
+      },
+      {
+        "sequence": "GIGKFLHSAKKFGKAFVKILKK",
+        "mic_value": 0.9138138523837168,
+        "length": 22
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQNIRDGIIKAGPAVAVVGQATQIAK",
+        "mic_value": 0.3979400086720376,
+        "length": 37
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQNIR",
+        "mic_value": 0.8325089127062363,
+        "length": 16
+      },
+      {
+        "sequence": "KWKLFKKIGIGKFLQSAKKF",
+        "mic_value": 0.255272505103306,
+        "length": 20
+      },
+      {
+        "sequence": "LLGDFFRKSKEKIGKEFKRIVQRIKDFLRNLVPRTES",
+        "mic_value": 0.505149978319906,
+        "length": 37
+      },
+      {
+        "sequence": "RRWRIVVIRVRRCWN",
+        "mic_value": 0.0791812460476248,
+        "length": 15
+      },
+      {
+        "sequence": "KLLKLLKKLLKLLK",
+        "mic_value": 0.7403626894942439,
+        "length": 14
+      },
+      {
+        "sequence": "GLLGPLLKIAAKVGSNLL",
+        "mic_value": 0.9030899869919436,
+        "length": 18
+      },
+      {
+        "sequence": "FLGALFKALSKLL",
+        "mic_value": 0.7993405494535817,
+        "length": 13
+      },
+      {
+        "sequence": "FFKKIRRFRPKVTITIQGSARF",
+        "mic_value": 0.5797835966168101,
+        "length": 22
+      },
+      {
+        "sequence": "GFGCNGPWSEDDIQCHNHCKSIKGYKGGYCARGGFVCKCY",
+        "mic_value": 0.3222192947339193,
+        "length": 40
+      },
+      {
+        "sequence": "GIGAVLKVLTTGLPALISWIKRKRQQ",
+        "mic_value": 0.6232492903979004,
+        "length": 26
+      },
+      {
+        "sequence": "KWKSFIKKLTSAAKKVVTTAKPLISS",
+        "mic_value": 0.8750612633917001,
+        "length": 26
+      },
+      {
+        "sequence": "RLSGPVLPLLKKLAKKIL",
+        "mic_value": 0.505149978319906,
+        "length": 18
+      },
+      {
+        "sequence": "GLFDIKKVASVIGGL",
+        "mic_value": 0.7634279935629372,
+        "length": 15
+      },
+      {
+        "sequence": "RLSGPVLDLLTKLAKKIL",
+        "mic_value": 0.5002703641195085,
+        "length": 18
+      },
+      {
+        "sequence": "GLFDIKKVASVIHGM",
+        "mic_value": 0.688796262019068,
+        "length": 15
+      },
+      {
+        "sequence": "GIGKFLHSAKKFGKQFVGEIMNS",
+        "mic_value": 0.6465422039064448,
+        "length": 23
+      },
+      {
+        "sequence": "FFKKLRRFRPKVTITIQGSARF",
+        "mic_value": 0.6162516723452146,
+        "length": 22
+      },
+      {
+        "sequence": "LLGDFFRKSKTKIGKEFKRIVQRIKDFLRNLVPRTES",
+        "mic_value": 0.434985825243706,
+        "length": 37
+      },
+      {
+        "sequence": "RRWRIVVIRVRRNWN",
+        "mic_value": 0.0534815895527442,
+        "length": 15
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQNGR",
+        "mic_value": 0.7614261582022289,
+        "length": 16
+      },
+      {
+        "sequence": "KWKLFKPIEKVGQNIR",
+        "mic_value": 0.9103866524287004,
+        "length": 16
+      },
+      {
+        "sequence": "FFRKIRRFRPKVTITIQGSGRF",
+        "mic_value": 0.5155391048463424,
+        "length": 22
+      },
+      {
+        "sequence": "GFGCNGPWSEDDPQCHNHCKSIKGYKGGYRARGGFVCKCY",
+        "mic_value": 0.2937191238997165,
+        "length": 40
+      },
+      {
+        "sequence": "FFQKIRRFRPKCTITIQGSARF",
+        "mic_value": 0.6393488254006721,
+        "length": 22
+      },
+      {
+        "sequence": "ALLGPLLKIAAKVGSNLL",
+        "mic_value": 0.9538513498373988,
+        "length": 18
+      },
+      {
+        "sequence": "KWKSFIKKLTSAAKKVVTTAKPLIFS",
+        "mic_value": 0.9018678829183204,
+        "length": 26
+      },
+      {
+        "sequence": "GIGKFVHSAKKFGKAFVKILKD",
+        "mic_value": 0.9560630929613024,
+        "length": 22
+      },
+      {
+        "sequence": "GIGKFLHSAKKVGKAFVKILKK",
+        "mic_value": 0.9155069055064204,
+        "length": 22
+      },
+      {
+        "sequence": "GIGKFLHSAKKFGKAFIEEIMNS",
+        "mic_value": 0.6420196905184331,
+        "length": 23
+      },
+      {
+        "sequence": "FFKGIRRFRPKVTITIQGSARF",
+        "mic_value": 0.6480648448267508,
+        "length": 22
+      },
+      {
+        "sequence": "GLFDIKKMDSVIGGL",
+        "mic_value": 0.7938803781741636,
+        "length": 15
+      },
+      {
+        "sequence": "GIGAVLKVLTTGLPALISWKKRKRQQ",
+        "mic_value": 0.5520094992046704,
+        "length": 26
+      },
+      {
+        "sequence": "FLGWLFKALEKLL",
+        "mic_value": 0.8162456008175515,
+        "length": 13
+      },
+      {
+        "sequence": "RRWGIVSIRVRRCWN",
+        "mic_value": 0.1535175077652059,
+        "length": 15
+      },
+      {
+        "sequence": "GIIAVLKVLTTGLPALISWIKRKRQQ",
+        "mic_value": 0.5385533472309603,
+        "length": 26
+      },
+      {
+        "sequence": "GIGKFLHSAKKFGKAFVGEKMNS",
+        "mic_value": 0.6203924282882545,
+        "length": 23
+      },
+      {
+        "sequence": "KLLKLLKKLLKLLY",
+        "mic_value": 0.7357144312795605,
+        "length": 14
+      },
+      {
+        "sequence": "GFGCNGPWSEDDDQCHNHCKSIKGYKGGYCARGGFVCKCY",
+        "mic_value": 0.2483427513588558,
+        "length": 40
+      },
+      {
+        "sequence": "GIGAVLKVQTTGLPALISWIKRKRQQ",
+        "mic_value": 0.5862498666502172,
+        "length": 26
+      },
+      {
+        "sequence": "KWKLFKFIEKVGQNIRDGIAKAGPAVAVVGQATQIAK",
+        "mic_value": 0.319885911265172,
+        "length": 37
+      },
+      {
+        "sequence": "GIGKFLHSAKKYGKAFVGEIMNS",
+        "mic_value": 0.7168826852856486,
+        "length": 23
+      },
+      {
+        "sequence": "GIGAVLKVLTTGLPALRSWIKRKRQQ",
+        "mic_value": 0.6834792847099688,
+        "length": 26
+      },
+      {
+        "sequence": "GIGKVLHSAKKFGKAFVKIFKK",
+        "mic_value": 0.9029431997952038,
+        "length": 22
+      },
+      {
+        "sequence": "FLGACFKKLSKLL",
+        "mic_value": 0.8465627254658118,
+        "length": 13
+      },
+      {
+        "sequence": "GLFDWKKVISVIGGL",
+        "mic_value": 0.7442291183816183,
+        "length": 15
+      },
+      {
+        "sequence": "FFKKQRRFHPKVTITIQGSARF",
+        "mic_value": 0.6069388597115586,
+        "length": 22
+      },
+      {
+        "sequence": "FFKKIRRFRPKVTITIQGSKRF",
+        "mic_value": 0.4992322370412105,
+        "length": 22
+      },
+      {
+        "sequence": "KWKLFKKIGKVGQNIRDGIIKAGPAVAVVGQATQIAK",
+        "mic_value": 0.3680458400877211,
+        "length": 37
+      },
+      {
+        "sequence": "GIGAVLKVLPTGLPALISWIKRKRQQ",
+        "mic_value": 0.5758366367500011,
+        "length": 26
+      },
+      {
+        "sequence": "KWKSFIKKLTSAAKKVATTAKPLISS",
+        "mic_value": 0.8016631056259287,
+        "length": 26
+      },
+      {
+        "sequence": "GIGKFLHSAAKFGKAFVKGLKK",
+        "mic_value": 0.8883845518475859,
+        "length": 22
+      },
+      {
+        "sequence": "RLSGPVLPLYKLLAKKIL",
+        "mic_value": 0.5060787319262635,
+        "length": 18
+      },
+      {
+        "sequence": "GIGAVLKVLTMGLTALISWIKRKRQQ",
+        "mic_value": 0.6390493984296696,
+        "length": 26
+      },
+      {
+        "sequence": "FLGALFKACSKLL",
+        "mic_value": 0.8305229029989813,
+        "length": 13
+      },
+      {
+        "sequence": "FFGKIRRFRPKMTITIQGSARF",
+        "mic_value": 0.5216395060612178,
+        "length": 22
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQNIRDGIIRAGPAVAVVGQATQIAK",
+        "mic_value": 0.4101744290002548,
+        "length": 37
+      },
+      {
+        "sequence": "KWKSFIKHLTSAAKKVVTTAKPLISS",
+        "mic_value": 0.8735762149055798,
+        "length": 26
+      },
+      {
+        "sequence": "KWKHFKKIEKVGQNIR",
+        "mic_value": 0.9008579328969007,
+        "length": 16
+      },
+      {
+        "sequence": "KWKLFKKIEKVGKNIR",
+        "mic_value": 0.790423910456025,
+        "length": 16
+      },
+      {
+        "sequence": "HLGALFKALSKLL",
+        "mic_value": 0.8635700036296513,
+        "length": 13
+      },
+      {
+        "sequence": "KWKRFKKIEKVGQNIR",
+        "mic_value": 0.8208931378280744,
+        "length": 16
+      },
+      {
+        "sequence": "FLGTLTKALSKLL",
+        "mic_value": 0.8588888330296799,
+        "length": 13
+      },
+      {
+        "sequence": "FFIKIRRFRPKSTITIQGSARF",
+        "mic_value": 0.6280075636765758,
+        "length": 22
+      },
+      {
+        "sequence": "GLLGPLLKGAAKVGSNLL",
+        "mic_value": 0.9727564243066658,
+        "length": 18
+      },
+      {
+        "sequence": "KWKLFKKIGIGKFLQSAKEF",
+        "mic_value": 0.21034635998685,
+        "length": 20
+      },
+      {
+        "sequence": "WWKLFKKWGIGKFLQSAKKF",
+        "mic_value": 0.2550739989447625,
+        "length": 20
+      },
+      {
+        "sequence": "GFGCNGPWSEDDIQCHPHCKSIKGYKGGYCARGGFECKCY",
+        "mic_value": 0.3579563738752272,
+        "length": 40
+      },
+      {
+        "sequence": "KWKLFKDIEKVGQNIRDGIIKAGPAVAVVGQATQIAK",
+        "mic_value": 0.43558628858582,
+        "length": 37
+      },
+      {
+        "sequence": "RLVGPGLPLLKKLAKKIL",
+        "mic_value": 0.5369134611752743,
+        "length": 18
+      },
+      {
+        "sequence": "GIGRFLHSAKKFGKAFVKILKK",
+        "mic_value": 0.9472393929746536,
+        "length": 22
+      },
+      {
+        "sequence": "RLSGNVLPLLKKLAKKIL",
+        "mic_value": 0.4817413222403309,
+        "length": 18
+      },
+      {
+        "sequence": "KLLKLLKKLLKLLR",
+        "mic_value": 0.7452650219615516,
+        "length": 14
+      },
+      {
+        "sequence": "RRWWRIKKLTWRM",
+        "mic_value": 0.0360282010598138,
+        "length": 13
+      },
+      {
+        "sequence": "GLLGPLLCIAAKVGSNLL",
+        "mic_value": 0.8392327859950716,
+        "length": 18
+      },
+      {
+        "sequence": "GLLGPLLKIAAKVGKNLL",
+        "mic_value": 0.8618375307329615,
+        "length": 18
+      },
+      {
+        "sequence": "QLGALFKALSKLL",
+        "mic_value": 0.8271427610086015,
+        "length": 13
+      },
+      {
+        "sequence": "KWKLFKKIEKPGQNIR",
+        "mic_value": 0.8947167979715636,
+        "length": 16
+      },
+      {
+        "sequence": "GIGKFVHKAKKFGKAFVKILKK",
+        "mic_value": 0.8945604097592011,
+        "length": 22
+      },
+      {
+        "sequence": "KLLKLLKKLRKLLK",
+        "mic_value": 0.7614496009119752,
+        "length": 14
+      },
+      {
+        "sequence": "GLLGPLLKIAAKMGTNLL",
+        "mic_value": 0.8218611729809047,
+        "length": 18
+      },
+      {
+        "sequence": "RRWRIVVIRRRYCWN",
+        "mic_value": 0.0526320691764021,
+        "length": 15
+      },
+      {
+        "sequence": "GIGAVLKVLTTGLPFLISEIKRKRQQ",
+        "mic_value": 0.6325194640768886,
+        "length": 26
+      },
+      {
+        "sequence": "GIGKFLHSAKKFGKAFVGEIMMS",
+        "mic_value": 0.7318741963369088,
+        "length": 23
+      },
+      {
+        "sequence": "KWKIFIKKLTSAAKKVVTTAKPLISS",
+        "mic_value": 0.819535055206051,
+        "length": 26
+      },
+      {
+        "sequence": "GLLGPLLYIAAKVGSNLL",
+        "mic_value": 0.9814248729047232,
+        "length": 18
+      },
+      {
+        "sequence": "KYGLFKKIEKVGQNIR",
+        "mic_value": 0.8310779299943678,
+        "length": 16
+      },
+      {
+        "sequence": "KWKSSIAKLTSAAKKVVTTAKPLISS",
+        "mic_value": 0.8923395592642095,
+        "length": 26
+      },
+      {
+        "sequence": "LNGDFFRQSKEKIGKEFKRIVQRIKDFLRNLVPRTES",
+        "mic_value": 0.5569350644985153,
+        "length": 37
+      },
+      {
+        "sequence": "GLAGPLLKIAAKYGSNLL",
+        "mic_value": 0.8414924779056889,
+        "length": 18
+      },
+      {
+        "sequence": "KWKSFIKKLTSAAKKVVTTAKCLISS",
+        "mic_value": 0.9475675958611812,
+        "length": 26
+      },
+      {
+        "sequence": "GIGKFPHSAKKFGKKFVKILKK",
+        "mic_value": 0.9097520231146088,
+        "length": 22
+      },
+      {
+        "sequence": "RRWWRFKKKWWRM",
+        "mic_value": 0.0531341279069486,
+        "length": 13
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQNIRDGIISAGPAVAVVGQMTQIAK",
+        "mic_value": 0.3065821527504323,
+        "length": 37
+      },
+      {
+        "sequence": "GLLGPLVKIAAKVGSCLL",
+        "mic_value": 0.9693202857347818,
+        "length": 18
+      },
+      {
+        "sequence": "KWASFIKKLTSAAKGVVTTAKPLISS",
+        "mic_value": 0.9467260501509772,
+        "length": 26
+      },
+      {
+        "sequence": "RRWWRCIKLWWRM",
+        "mic_value": 0.0107080745196894,
+        "length": 13
+      },
+      {
+        "sequence": "GIGPVLWVLTTGLPALISWIKRKRQQ",
+        "mic_value": 0.6205170219518219,
+        "length": 26
+      },
+      {
+        "sequence": "GLFDIKKVAQVIGGL",
+        "mic_value": 0.7651899723857225,
+        "length": 15
+      },
+      {
+        "sequence": "RLRGPVDPLLKKLAKKIL",
+        "mic_value": 0.4292639848356959,
+        "length": 18
+      },
+      {
+        "sequence": "FFKKIRRFRPKVTITIQFSCRF",
+        "mic_value": 0.533770222244487,
+        "length": 22
+      },
+      {
+        "sequence": "RIWRIVVIRVRRCWN",
+        "mic_value": 0.0496668010822876,
+        "length": 15
+      },
+      {
+        "sequence": "KLLKLLKKLLQLLR",
+        "mic_value": 0.784307018521966,
+        "length": 14
+      },
+      {
+        "sequence": "RRWRIVVIDVRRCWN",
+        "mic_value": 0.1581280940812604,
+        "length": 15
+      },
+      {
+        "sequence": "KWKLFKKIGIGKFLESAKKF",
+        "mic_value": 0.1895794405054553,
+        "length": 20
+      },
+      {
+        "sequence": "RRSRIVVIRVRRCWN",
+        "mic_value": 0.1074828339793718,
+        "length": 15
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQNIRDGIIKAGPWVAVVGQATQIPK",
+        "mic_value": 0.3237139028177561,
+        "length": 37
+      },
+      {
+        "sequence": "GIGAVLKVLTTGPPALISWIKRKRQQ",
+        "mic_value": 0.641615837240621,
+        "length": 26
+      },
+      {
+        "sequence": "GFGCNGPWSEDAIQCHNHCKSILGYKGGYCARGGFVCKCY",
+        "mic_value": 0.3670525168971238,
+        "length": 40
+      },
+      {
+        "sequence": "GIGAVLKVLTTGLPALISWFKRKRQQ",
+        "mic_value": 0.5516195441313492,
+        "length": 26
+      },
+      {
+        "sequence": "DLYALFKALSKLL",
+        "mic_value": 0.8632770965658172,
+        "length": 13
+      },
+      {
+        "sequence": "KLLKLLKKLPKLLK",
+        "mic_value": 0.795473977915043,
+        "length": 14
+      },
+      {
+        "sequence": "LLGDFFRKSKEKIGKEFKRIVQTIKDFLRNLVPNTES",
+        "mic_value": 0.555083625061742,
+        "length": 37
+      },
+      {
+        "sequence": "RRWRINVIRVRLCWN",
+        "mic_value": 0.0562752182609841,
+        "length": 15
+      },
+      {
+        "sequence": "FLGALFQALSKLL",
+        "mic_value": 0.8156113960455352,
+        "length": 13
+      },
+      {
+        "sequence": "KNKLFKKIGIQKFLQSAKKF",
+        "mic_value": 0.314706389446623,
+        "length": 20
+      },
+      {
+        "sequence": "KWKSGIKKLTSAADKVVTTAKPLISS",
+        "mic_value": 0.884531391075729,
+        "length": 26
+      },
+      {
+        "sequence": "GLLGPLLKWAAKVGSNLL",
+        "mic_value": 0.893598316519618,
+        "length": 18
+      },
+      {
+        "sequence": "FLGNLFKALSKLL",
+        "mic_value": 0.7859278220799448,
+        "length": 13
+      },
+      {
+        "sequence": "KWKLFKKIGIGKNLQSAKKF",
+        "mic_value": 0.1850228619495234,
+        "length": 20
+      },
+      {
+        "sequence": "RRWRIVVIRVRRCHN",
+        "mic_value": 0.0231768588288435,
+        "length": 15
+      },
+      {
+        "sequence": "FLGALFKALSKLV",
+        "mic_value": 0.786222969311883,
+        "length": 13
+      },
+      {
+        "sequence": "GLLGPLWKIAAKVGSNLL",
+        "mic_value": 0.905182228386486,
+        "length": 18
+      },
+      {
+        "sequence": "LLGDFFRKSKEKIGKEFKRIVQRIKDFLRNIVPRTES",
+        "mic_value": 0.5763403027555354,
+        "length": 37
+      },
+      {
+        "sequence": "GFGCNGPWSEDDIQCHNHCKSIKWYKGGYSARGGFVCKCY",
+        "mic_value": 0.2857154163442275,
+        "length": 40
+      },
+      {
+        "sequence": "WIGKFLHSAKKFGKAFVGEIMNS",
+        "mic_value": 0.6246986342113162,
+        "length": 23
+      },
+      {
+        "sequence": "LLGDFFRKSKEKTGKEFKRWVQRIKDFLRNLVPRTES",
+        "mic_value": 0.4783638569534248,
+        "length": 37
+      },
+      {
+        "sequence": "CIGKFLHSAKKFGKAFVGEIMNS",
+        "mic_value": 0.7288564120066894,
+        "length": 23
+      },
+      {
+        "sequence": "PWKLFKPIGIGKFLQSAKKF",
+        "mic_value": 0.3333017799836704,
+        "length": 20
+      },
+      {
+        "sequence": "GLFDIKKVASVIGSL",
+        "mic_value": 0.8398990853375773,
+        "length": 15
+      },
+      {
+        "sequence": "VIGKFLHFAKKFGKAFVGEIMNS",
+        "mic_value": 0.6799517233893492,
+        "length": 23
+      },
+      {
+        "sequence": "FRGALFKALSKTL",
+        "mic_value": 0.8147484102212407,
+        "length": 13
+      },
+      {
+        "sequence": "GLFDIKKVASPIGGL",
+        "mic_value": 0.8213872214727551,
+        "length": 15
+      },
+      {
+        "sequence": "GIGKCLHSAKWFGKAFVKILKK",
+        "mic_value": 0.9004710503803248,
+        "length": 22
+      },
+      {
+        "sequence": "RLSGPVLPLLKKLAKKIA",
+        "mic_value": 0.5172736126565878,
+        "length": 18
+      },
+      {
+        "sequence": "GIGAVLKVLTTGNPALISWIKRKRQQ",
+        "mic_value": 0.5331320608853802,
+        "length": 26
+      },
+      {
+        "sequence": "GIGAVLKVLTTGLPALISWIKRKRWQ",
+        "mic_value": 0.6417030382118409,
+        "length": 26
+      },
+      {
+        "sequence": "KWKLFKKIEKVYQNIRDGIIKAGPAVAVVKQATQIAK",
+        "mic_value": 0.4500625852947565,
+        "length": 37
+      },
+      {
+        "sequence": "KVKLFKKIGIGKFLQSAKKF",
+        "mic_value": 0.2812820299622673,
+        "length": 20
+      },
+      {
+        "sequence": "KLLKLLYKLLKLLK",
+        "mic_value": 0.7537302483478595,
+        "length": 14
+      },
+      {
+        "sequence": "RRWRIVVIRVRFCWN",
+        "mic_value": 0.0015070906376648,
+        "length": 15
+      },
+      {
+        "sequence": "GIGAVLKVLTTGLPALISWIKRKRQF",
+        "mic_value": 0.6416274020131011,
+        "length": 26
+      },
+      {
+        "sequence": "LLGDFFRKSKEKIGKEFKRIVQRIKDFLRNLVPRTEQ",
+        "mic_value": 0.5683782166696265,
+        "length": 37
+      },
+      {
+        "sequence": "LIGAVLKVLTTGLPALISWIKRKRQQ",
+        "mic_value": 0.693029277658254,
+        "length": 26
+      },
+      {
+        "sequence": "RRWRIVVIPVRRCWN",
+        "mic_value": 0.0367415830750025,
+        "length": 15
+      },
+      {
+        "sequence": "KLLKLLKQLPKLLK",
+        "mic_value": 0.7601305485930363,
+        "length": 14
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQNIRDGIIKWGPAVAVVGQATQIAK",
+        "mic_value": 0.4011322640082266,
+        "length": 37
+      },
+      {
+        "sequence": "GFGCNGPWSEDDIQCHNHCKSIKGYKGGYCARHGLVCKCY",
+        "mic_value": 0.266452104448628,
+        "length": 40
+      },
+      {
+        "sequence": "KWKSFITKLTSAAKKVVTTAKPLISS",
+        "mic_value": 0.9393074607258336,
+        "length": 26
+      },
+      {
+        "sequence": "GIGKFLHSAKVFGKAFVGEIMNS",
+        "mic_value": 0.6437793573693252,
+        "length": 23
+      },
+      {
+        "sequence": "KWKLFKDIGIGKFLQSAKKF",
+        "mic_value": 0.2262126863069116,
+        "length": 20
+      },
+      {
+        "sequence": "RLSGPVLFLLKKLAKKIL",
+        "mic_value": 0.4236488912853035,
+        "length": 18
+      },
+      {
+        "sequence": "RIGKFLHSAKKFGKAFVKILEK",
+        "mic_value": 0.9541273727472226,
+        "length": 22
+      },
+      {
+        "sequence": "GIGAVLKVETTHLPALISWIKRKRQQ",
+        "mic_value": 0.6807415453440653,
+        "length": 26
+      },
+      {
+        "sequence": "KWKSFIFLLTSAAKKVVTTAKPLISS",
+        "mic_value": 0.9302320205410748,
+        "length": 26
+      },
+      {
+        "sequence": "RRWRIVVIRVRRCVN",
+        "mic_value": 0.1565599798449776,
+        "length": 15
+      },
+      {
+        "sequence": "KWKLFKQIGIGKFLTSAKKF",
+        "mic_value": 0.2559849465200756,
+        "length": 20
+      },
+      {
+        "sequence": "GIGKGLHSAKKFGKAFVGEIMNS",
+        "mic_value": 0.6191799939662789,
+        "length": 23
+      },
+      {
+        "sequence": "RLSGPVLPLLWKLAKKIL",
+        "mic_value": 0.5584594011196973,
+        "length": 18
+      },
+      {
+        "sequence": "KWKSFIKKLTPAAKKVVTTAKPLISS",
+        "mic_value": 0.7891318043199959,
+        "length": 26
+      },
+      {
+        "sequence": "GFGCNGPWSEDDINCHNHCKSIKGYKGGYHARGGFVCKCY",
+        "mic_value": 0.2688412459718677,
+        "length": 40
+      },
+      {
+        "sequence": "GLFDIKKVASVIGGV",
+        "mic_value": 0.8045249334312777,
+        "length": 15
+      },
+      {
+        "sequence": "GIGAVLKVLTTGLMALISWIKRKRQQ",
+        "mic_value": 0.6615700070755711,
+        "length": 26
+      },
+      {
+        "sequence": "KWKSFIKKLTSAAKKVVTMAKPLISS",
+        "mic_value": 0.8260748266309911,
+        "length": 26
+      },
+      {
+        "sequence": "GIGCFLHSAKKFGWAFVKILKK",
+        "mic_value": 0.9870125523437092,
+        "length": 22
+      },
+      {
+        "sequence": "LLGDFFRKSKEKIGKEFKRIVQRIKDFLRNLVYRTES",
+        "mic_value": 0.452576472597624,
+        "length": 37
+      },
+      {
+        "sequence": "KLLKLDKKLLKLLK",
+        "mic_value": 0.7542357508666488,
+        "length": 14
+      },
+      {
+        "sequence": "KWKSFPKKLTSAAKKFVTTAKPLISS",
+        "mic_value": 0.8958966236126379,
+        "length": 26
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQTIR",
+        "mic_value": 0.8764709496176235,
+        "length": 16
+      },
+      {
+        "sequence": "KLLVLLKKLLKLLE",
+        "mic_value": 0.7918242814375722,
+        "length": 14
+      },
+      {
+        "sequence": "KWKSEIKKLTSAAKSVVTTAKPLISS",
+        "mic_value": 0.9503475178154064,
+        "length": 26
+      },
+      {
+        "sequence": "GFGCNGPWSEDDIQCHNHCKSIKGYKGGYCARGGFVCKCC",
+        "mic_value": 0.2550095227907561,
+        "length": 40
+      },
+      {
+        "sequence": "GGGKFLHWAKKFGKAFVGEIMNS",
+        "mic_value": 0.6977886714587339,
+        "length": 23
+      },
+      {
+        "sequence": "CLFDIKKVASCIGGL",
+        "mic_value": 0.7040463177929689,
+        "length": 15
+      },
+      {
+        "sequence": "RLSGPVLPLRKKLAKKIL",
+        "mic_value": 0.5071003166498113,
+        "length": 18
+      },
+      {
+        "sequence": "KWKLFKKIMKVGQNIRDGIIKAGPAVAVVGQATQIAK",
+        "mic_value": 0.4752212036051854,
+        "length": 37
+      },
+      {
+        "sequence": "KPKSFIKKLTSAAKKVVTTAKPLISS",
+        "mic_value": 0.8020677132147425,
+        "length": 26
+      },
+      {
+        "sequence": "KWKLFKKIGCGKFLQSAKKF",
+        "mic_value": 0.297486868810939,
+        "length": 20
+      },
+      {
+        "sequence": "KLLQLLKKLLMLLK",
+        "mic_value": 0.7140962737869807,
+        "length": 14
+      },
+      {
+        "sequence": "KWKLFKKIEKVCQNIRDGIIKAGPAVAVVGQATQIAK",
+        "mic_value": 0.4577671545140714,
+        "length": 37
+      },
+      {
+        "sequence": "KLLKLLKKLLKALK",
+        "mic_value": 0.6763203554379474,
+        "length": 14
+      },
+      {
+        "sequence": "KWKLFKKIEIGKFLQSAKKF",
+        "mic_value": 0.1848506753408876,
+        "length": 20
+      },
+      {
+        "sequence": "KWKLEVKIGIGKFLQSAKKF",
+        "mic_value": 0.3124190054672515,
+        "length": 20
+      },
+      {
+        "sequence": "GFGCDGPWSEDDIQCHNHCKSIKGYKGGYCARGGFVCKCY",
+        "mic_value": 0.3817150636263347,
+        "length": 40
+      },
+      {
+        "sequence": "GFGCNGPWSEQDIQCHNHCKSIKGYKGGYCARGGFVCKCY",
+        "mic_value": 0.2810388316238547,
+        "length": 40
+      },
+      {
+        "sequence": "KWDLFAKIEKVGQNIR",
+        "mic_value": 0.8411334974356793,
+        "length": 16
+      },
+      {
+        "sequence": "GIGKLLHSAKKFGKAFVGEIMNS",
+        "mic_value": 0.6527644197141923,
+        "length": 23
+      },
+      {
+        "sequence": "RRWRIVVIRVPRCWN",
+        "mic_value": 0.0913492461003318,
+        "length": 15
+      },
+      {
+        "sequence": "GLLGPLLKIAAEVGSNLL",
+        "mic_value": 0.9421466570093948,
+        "length": 18
+      },
+      {
+        "sequence": "FLCALIKALSKLL",
+        "mic_value": 0.7372948009025447,
+        "length": 13
+      },
+      {
+        "sequence": "KWKSFIKKLTSAAKKYVCTAKPLISS",
+        "mic_value": 0.892448653038211,
+        "length": 26
+      },
+      {
+        "sequence": "GLFDYKKVASVIGGL",
+        "mic_value": 0.7537630368313465,
+        "length": 15
+      },
+      {
+        "sequence": "QWKLFKKIEKVGQNIR",
+        "mic_value": 0.761275791060001,
+        "length": 16
+      },
+      {
+        "sequence": "FLGARFKALSKLL",
+        "mic_value": 0.7183328394247133,
+        "length": 13
+      },
+      {
+        "sequence": "GPGKFLHSAKKFGKANVKILKK",
+        "mic_value": 0.839135926670406,
+        "length": 22
+      },
+      {
+        "sequence": "KWKLFKKIEIVGQNIRDGIIKAGPAVAEVGQATQIAK",
+        "mic_value": 0.4543869707526481,
+        "length": 37
+      },
+      {
+        "sequence": "GLLGPLLKIMAKVGSNLL",
+        "mic_value": 0.8973823789047332,
+        "length": 18
+      },
+      {
+        "sequence": "KWKKFKKIGIGKFLQYAKKF",
+        "mic_value": 0.331844376965633,
+        "length": 20
+      },
+      {
+        "sequence": "DIGKFLHSAKKFGKAFNKILKK",
+        "mic_value": 0.904633218707522,
+        "length": 22
+      },
+      {
+        "sequence": "FFKKQRRFRPKVTITIQGSARI",
+        "mic_value": 0.6206221502636773,
+        "length": 22
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQNIRDGIDKAGPAVAVVGQATQIAK",
+        "mic_value": 0.3158358238468406,
+        "length": 37
+      },
+      {
+        "sequence": "RRWWRFKKLWMRM",
+        "mic_value": 0.0491676156793708,
+        "length": 13
+      },
+      {
+        "sequence": "GLFDGKIVASVIGGL",
+        "mic_value": 0.7462108678292636,
+        "length": 15
+      },
+      {
+        "sequence": "KWKLFKKIEKFGQNIR",
+        "mic_value": 0.8843352905700568,
+        "length": 16
+      },
+      {
+        "sequence": "GLLGPFLKIAAKVGSNLL",
+        "mic_value": 0.9614644989418428,
+        "length": 18
+      },
+      {
+        "sequence": "GIGKFLHSACKFGKAFVKILKK",
+        "mic_value": 0.9440399532940544,
+        "length": 22
+      },
+      {
+        "sequence": "GIGKFLHSAHKFGKAFVKILKK",
+        "mic_value": 0.8578150667090544,
+        "length": 22
+      },
+      {
+        "sequence": "FLGALFKKLSKLF",
+        "mic_value": 0.8013958093381629,
+        "length": 13
+      },
+      {
+        "sequence": "RRWRIVVIRVRRCWW",
+        "mic_value": 0.0817064239732946,
+        "length": 15
+      },
+      {
+        "sequence": "KWKLFKIIGIGKFLQSAKKF",
+        "mic_value": 0.3011476918264846,
+        "length": 20
+      },
+      {
+        "sequence": "KWKLFKKIEKVGRNIRDGIIKAGPAAAVVGQATQIAK",
+        "mic_value": 0.4094777232795154,
+        "length": 37
+      },
+      {
+        "sequence": "DLGDFFRKSKEKIGKEFKRIVQRIKDFLRNLVPRTQS",
+        "mic_value": 0.5257991896102645,
+        "length": 37
+      },
+      {
+        "sequence": "RLSGPVCPLLKKLAKKIL",
+        "mic_value": 0.4895615106534976,
+        "length": 18
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQNIRDGIIKAGPAVAFVGQATQIAK",
+        "mic_value": 0.4013363237607037,
+        "length": 37
+      },
+      {
+        "sequence": "GIGAVLKVLTTGLPAGISWIKRKRQQ",
+        "mic_value": 0.6331250132141274,
+        "length": 26
+      },
+      {
+        "sequence": "DLGALFKALSKLL",
+        "mic_value": 0.8298060002392326,
+        "length": 13
+      },
+      {
+        "sequence": "KCALKLALKALKAALKLA",
+        "mic_value": 0.9966564748614268,
+        "length": 18
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQNRRDGIIKAGPAVAVVGQATQIAG",
+        "mic_value": 0.3526976398781076,
+        "length": 37
+      },
+      {
+        "sequence": "KQLKLLKKLLKLEK",
+        "mic_value": 0.7059666563356685,
+        "length": 14
+      },
+      {
+        "sequence": "GFGCNGPWSEDDIQCHNHCKSIKGYKGGACARGGFVCKCY",
+        "mic_value": 0.2598150002788207,
+        "length": 40
+      },
+      {
+        "sequence": "GLFDIKKVASAIGGL",
+        "mic_value": 0.7794777255920244,
+        "length": 15
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQNIN",
+        "mic_value": 0.7834381173928557,
+        "length": 16
+      },
+      {
+        "sequence": "GFGCNGHWSEDDIQGHNHCKSIKGYKGGYCARGGFVCKCY",
+        "mic_value": 0.3617366020044759,
+        "length": 40
+      },
+      {
+        "sequence": "LLGDFFRKSKEKIGKEFKRIVQRIKDFLRNWVPRTES",
+        "mic_value": 0.5256687958777726,
+        "length": 37
+      },
+      {
+        "sequence": "LLGDFFRKMKEKIGKEGKRIVQRIKDFLRNLVPRTES",
+        "mic_value": 0.5115444507389572,
+        "length": 37
+      },
+      {
+        "sequence": "GIGKFLASAKKFGKAFVKILKK",
+        "mic_value": 0.8869874265368982,
+        "length": 22
+      },
+      {
+        "sequence": "GIGKFLHMAKKFGKAFVGEIMNS",
+        "mic_value": 0.7194507953587852,
+        "length": 23
+      },
+      {
+        "sequence": "KWKSFIMKLTSAAKKVVTTAKPLISS",
+        "mic_value": 0.941104171555586,
+        "length": 26
+      },
+      {
+        "sequence": "KLGDFFRKSKEKIGKEFKRIVQRIKDFLRNLVPRTES",
+        "mic_value": 0.528581167890597,
+        "length": 37
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQNIRDGIIKAGPAVAVVGQATQIPK",
+        "mic_value": 0.4205743404787597,
+        "length": 37
+      },
+      {
+        "sequence": "GIGKFLHPKKKFGKAFVGEIMNS",
+        "mic_value": 0.7301261274923553,
+        "length": 23
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQNIRDGIIKAGPAGAVVGQATQIQK",
+        "mic_value": 0.4187196293579462,
+        "length": 37
+      },
+      {
+        "sequence": "GIGKFLHSAKKFGKAFRGEIMNS",
+        "mic_value": 0.723584704271408,
+        "length": 23
+      },
+      {
+        "sequence": "GIGKFLHSACKFGKAFVGEIMNP",
+        "mic_value": 0.695049630972992,
+        "length": 23
+      },
+      {
+        "sequence": "FLGALHKALMKLL",
+        "mic_value": 0.8749971822934431,
+        "length": 13
+      },
+      {
+        "sequence": "GIGAVLKVLTTGTPALISWIKRKFQQ",
+        "mic_value": 0.5972589675972515,
+        "length": 26
+      },
+      {
+        "sequence": "RLSGPFLPLLKKLAKKIL",
+        "mic_value": 0.5726942850268834,
+        "length": 18
+      },
+      {
+        "sequence": "KWKSFIKKLTSAAKKVVTTAKPLESS",
+        "mic_value": 0.8215057912038838,
+        "length": 26
+      },
+      {
+        "sequence": "GFGCNGPWSEDDIQCHNHCKSIKGEKGGYCARGGFVCKCY",
+        "mic_value": 0.3724962698918425,
+        "length": 40
+      },
+      {
+        "sequence": "FFKKIRRFRPKKTITIQGSARF",
+        "mic_value": 0.5367217061625661,
+        "length": 22
+      },
+      {
+        "sequence": "QWKLFKKIEKVGQNIRDGIIKAGPAVAVVGQSTQIAK",
+        "mic_value": 0.474214691240201,
+        "length": 37
+      },
+      {
+        "sequence": "GIGKALHSAKKCGKAFVKILKK",
+        "mic_value": 0.9408213840519416,
+        "length": 22
+      },
+      {
+        "sequence": "KWWLFKKIEKVGQNIR",
+        "mic_value": 0.8386940561649028,
+        "length": 16
+      },
+      {
+        "sequence": "GIGKCLHSAKKFGKAFVKILKK",
+        "mic_value": 0.8561632349149445,
+        "length": 22
+      },
+      {
+        "sequence": "GIGKFLHSAKKIGKAFVGEIMNS",
+        "mic_value": 0.7183635333218763,
+        "length": 23
+      },
+      {
+        "sequence": "GIGKFLHSAKKFGKAFVKHLKK",
+        "mic_value": 0.9361112678547008,
+        "length": 22
+      },
+      {
+        "sequence": "YWKSFIEKLTSAAKKVVTTAKPLISS",
+        "mic_value": 0.8594566631060081,
+        "length": 26
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQNIRDGIIKAGPAVAVVGQTTQIAK",
+        "mic_value": 0.392784694461007,
+        "length": 37
+      },
+      {
+        "sequence": "RRWRIQNIRVRRCWN",
+        "mic_value": 0.1572328878229735,
+        "length": 15
+      },
+      {
+        "sequence": "FLGALFKATSKLE",
+        "mic_value": 0.7891990314540457,
+        "length": 13
+      },
+      {
+        "sequence": "RHSGPVLPLLKNLAKKIL",
+        "mic_value": 0.4961152753513642,
+        "length": 18
+      },
+      {
+        "sequence": "GLLGPLLKIAAKVGMNLL",
+        "mic_value": 0.9187365298112724,
+        "length": 18
+      },
+      {
+        "sequence": "KWKLFKKNEKVGQNIR",
+        "mic_value": 0.7591318593504519,
+        "length": 16
+      },
+      {
+        "sequence": "DFKKIRRFRPKVTITIQGSARF",
+        "mic_value": 0.5878622409101967,
+        "length": 22
+      },
+      {
+        "sequence": "ALGALFKALSKYL",
+        "mic_value": 0.8049806753938963,
+        "length": 13
+      },
+      {
+        "sequence": "GFGSNGPWSEDDIQCHEHCKSIKGYKGGYCARGGFVCKCY",
+        "mic_value": 0.2793705220422967,
+        "length": 40
+      },
+      {
+        "sequence": "KWKLFKKIGIGKFHQPAKKF",
+        "mic_value": 0.3117274863324276,
+        "length": 20
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQNIRDGIIKAGPAVAVKGQATQIAK",
+        "mic_value": 0.3059009067083121,
+        "length": 37
+      },
+      {
+        "sequence": "KWKLFKKFGWGKFLQSAKKF",
+        "mic_value": 0.2499274741010202,
+        "length": 20
+      },
+      {
+        "sequence": "RLSGPVLPLLKKLAKKIC",
+        "mic_value": 0.5055227484806347,
+        "length": 18
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQNIRDEIIKAGPAVAVVGQTTQIAK",
+        "mic_value": 0.3255675635352009,
+        "length": 37
+      },
+      {
+        "sequence": "KWKLFKKICKVGQNIRDGIIKAGPAVPVVGQATQIAK",
+        "mic_value": 0.4580682065119716,
+        "length": 37
+      },
+      {
+        "sequence": "GFGCNGPWSEDDIQCHNHCKWIKGYKHGYCARGGFVCKCY",
+        "mic_value": 0.2520940561731356,
+        "length": 40
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQNIRDGIIKVGPAVAVVGPATQIAK",
+        "mic_value": 0.4073389073395068,
+        "length": 37
+      },
+      {
+        "sequence": "KLLKLLKYLLKLLK",
+        "mic_value": 0.7881440640276953,
+        "length": 14
+      },
+      {
+        "sequence": "RLSLPVLPLLKKLAKKIL",
+        "mic_value": 0.5686155392195478,
+        "length": 18
+      },
+      {
+        "sequence": "WWKLFKKIGIGRFLQSAKKF",
+        "mic_value": 0.2350919767261234,
+        "length": 20
+      },
+      {
+        "sequence": "GLLGPGNKIAAKVGSNLL",
+        "mic_value": 0.8972909783068629,
+        "length": 18
+      },
+      {
+        "sequence": "GIGKFLHSAKKFGKAFVGEIMRS",
+        "mic_value": 0.5909813575614588,
+        "length": 23
+      },
+      {
+        "sequence": "KWKLFKKIEKVGMNIR",
+        "mic_value": 0.7919228612854095,
+        "length": 16
+      },
+      {
+        "sequence": "GFGCNGPWSEDDIQCMNHCKSIKGYKGGYCARGGFVCYCY",
+        "mic_value": 0.2897135390835678,
+        "length": 40
+      },
+      {
+        "sequence": "YFKKIRRFRPKVTITIQGSARF",
+        "mic_value": 0.5072654821304681,
+        "length": 22
+      },
+      {
+        "sequence": "FLGALEKALSKLL",
+        "mic_value": 0.8065563807418605,
+        "length": 13
+      },
+      {
+        "sequence": "GLLDIKKVASVIGGL",
+        "mic_value": 0.670985556343767,
+        "length": 15
+      },
+      {
+        "sequence": "KWKLFKKIEYVGQNIR",
+        "mic_value": 0.7663324208615909,
+        "length": 16
+      },
+      {
+        "sequence": "RLSGPVNPLLKKLAKKIL",
+        "mic_value": 0.4997622656654251,
+        "length": 18
+      },
+      {
+        "sequence": "GLLGPPLKIAAKVGDNLL",
+        "mic_value": 0.822057193331553,
+        "length": 18
+      },
+      {
+        "sequence": "KLLKLCKKLLKLLK",
+        "mic_value": 0.7163250515576873,
+        "length": 14
+      },
+      {
+        "sequence": "FFKKIRCFRPKVTITIQGSARF",
+        "mic_value": 0.6493610402615871,
+        "length": 22
+      },
+      {
+        "sequence": "RLSGWVLPLLKQLAKKIL",
+        "mic_value": 0.5194013118534462,
+        "length": 18
+      },
+      {
+        "sequence": "LLGDFFRKSKEKIFKEFKRIVQRIKDFLRNLVPRTES",
+        "mic_value": 0.4100924949924866,
+        "length": 37
+      },
+      {
+        "sequence": "KWALFKKIEKVGQNIR",
+        "mic_value": 0.8042592268882545,
+        "length": 16
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQNQR",
+        "mic_value": 0.8560391390777166,
+        "length": 16
+      },
+      {
+        "sequence": "LLGALFKALSKLL",
+        "mic_value": 0.8156382668488942,
+        "length": 13
+      },
+      {
+        "sequence": "QFKKIRRFRPKVTITIQGSARF",
+        "mic_value": 0.6508577333853998,
+        "length": 22
+      },
+      {
+        "sequence": "KLLKLLTKLLKRLK",
+        "mic_value": 0.6563726445751827,
+        "length": 14
+      },
+      {
+        "sequence": "RRNRIVVIRVRRCWN",
+        "mic_value": 0.1246271144478824,
+        "length": 15
+      },
+      {
+        "sequence": "FFKKIRRFRPKVTITIQGSAKF",
+        "mic_value": 0.5928085768550286,
+        "length": 22
+      },
+      {
+        "sequence": "RLSGPVLPLLKKLEKKIL",
+        "mic_value": 0.4846463360198501,
+        "length": 18
+      },
+      {
+        "sequence": "GIGKFLHSGKKFGKAFVGEIMNS",
+        "mic_value": 0.5730649217648518,
+        "length": 23
+      },
+      {
+        "sequence": "KLLKLQKKLLKLLK",
+        "mic_value": 0.7823842801664403,
+        "length": 14
+      },
+      {
+        "sequence": "RRWRIVVIRVRRCWP",
+        "mic_value": 0.0993591519553022,
+        "length": 15
+      },
+      {
+        "sequence": "KWKSFIKKWTSAAKKVVTTAKPLISS",
+        "mic_value": 0.9433916384200206,
+        "length": 26
+      },
+      {
+        "sequence": "RRWRICVIRVRRCWN",
+        "mic_value": 0.0907003063902961,
+        "length": 15
+      },
+      {
+        "sequence": "GLFDIKKVASVIFGL",
+        "mic_value": 0.6920773238216433,
+        "length": 15
+      },
+      {
+        "sequence": "RRWRIVVIRSRRIWN",
+        "mic_value": 0.0563571662116576,
+        "length": 15
+      },
+      {
+        "sequence": "KLLKLLKKLLKHLK",
+        "mic_value": 0.7405592941627271,
+        "length": 14
+      },
+      {
+        "sequence": "RLYGPVLPLLKKLAKKIL",
+        "mic_value": 0.5664785073757712,
+        "length": 18
+      },
+      {
+        "sequence": "GFGCNGPWSEDDIQCHNHCKSIKGPKGGYCARGGFVCKCY",
+        "mic_value": 0.3702714858060593,
+        "length": 40
+      },
+      {
+        "sequence": "GLLYPLLKIAAKVGSNAL",
+        "mic_value": 0.8936359747365423,
+        "length": 18
+      },
+      {
+        "sequence": "KWKLFKKIGIGKFLQSWKKF",
+        "mic_value": 0.2037948234194461,
+        "length": 20
+      },
+      {
+        "sequence": "GIGAVLKVLTTVLPALFSWIKRKRQQ",
+        "mic_value": 0.5476475070969596,
+        "length": 26
+      },
+      {
+        "sequence": "RRWRIVVIRVDRCHN",
+        "mic_value": 0.0758924131354068,
+        "length": 15
+      },
+      {
+        "sequence": "KWKLFKKIGIGKFLQSAKQF",
+        "mic_value": 0.2061243458141909,
+        "length": 20
+      },
+      {
+        "sequence": "FFKKIRRFRPKVTITIPGSFRF",
+        "mic_value": 0.5138861761470578,
+        "length": 22
+      },
+      {
+        "sequence": "RLSGPVLPLLKKLAKKSL",
+        "mic_value": 0.4916884493272185,
+        "length": 18
+      },
+      {
+        "sequence": "GLFKIKKVASVHGGL",
+        "mic_value": 0.8111942522894002,
+        "length": 15
+      },
+      {
+        "sequence": "GMSKFLHSAKKFGKAFVGEIMNS",
+        "mic_value": 0.6076386538707256,
+        "length": 23
+      },
+      {
+        "sequence": "MWKLFKKIEKVGQNIR",
+        "mic_value": 0.8783921825822584,
+        "length": 16
+      },
+      {
+        "sequence": "KWKLFKKIEKVGQNLRDGIIKAGPAWAVVGQATQIAK",
+        "mic_value": 0.3356619112549884,
+        "length": 37
+      },
+      {
+        "sequence": "WWKSFIKKLTSAAKKVVTTAKPLISS",
+        "mic_value": 0.8449947959574966,
+        "length": 26
+      },
+      {
+        "sequence": "RRWRILVIRVRRPWN",
+        "mic_value": 0.0699005801995037,
+        "length": 15
+      },
+      {
+        "sequence": "TLFDIKKVASVISGL",
+        "mic_value": 0.780586595295815,
+        "length": 15
+      },
+      {
+        "sequence": "KWKSFIKKLTSAAKKVVTTDKPLISS",
+        "mic_value": 0.9253902589851276,
+        "length": 26
+      },
+      {
+        "sequence": "KWKLWKKIGIGKFLQSAKKF",
+        "mic_value": 0.1679511487977873,
+        "length": 20
+      },
+      {
+        "sequence": "KRKLFKKIFKVGQNIR",
+        "mic_value": 0.7975761367862029,
+        "length": 16
+      },
+      {
+        "sequence": "GIGAVLKVLTTGLEALISWIKRKRQQ",
+        "mic_value": 0.5807237153231439,
+        "length": 26
+      },
+      {
+        "sequence": "FLGAVFKAQSKLL",
+        "mic_value": 0.8781694111036252,
+        "length": 13
+      },
+      {
+        "sequence": "GIGKFLHSWKKFGKAFVKILKK",
+        "mic_value": 0.8720660090531461,
+        "length": 22
+      },
+      {
+        "sequence": "FSGALFKALSKLL",
+        "mic_value": 0.845707434981015,
+        "length": 13
+      },
+      {
+        "sequence": "KWKSFIKKLTSAAKFAVTTAKPLISS",
+        "mic_value": 0.9305673020548532,
+        "length": 26
+      },
+      {
+        "sequence": "GLFDIKKVASVIIGL",
+        "mic_value": 0.748881163182331,
+        "length": 15
+      },
+      {
+        "sequence": "GIGMFLMSAKKFGKAFVGEIMNS",
+        "mic_value": 0.7048688442074748,
+        "length": 23
+      },
+      {
+        "sequence": "GIGKFLHSAKKFGKNFVKILKK",
+        "mic_value": 0.824545337163198,
+        "length": 22
+      }
+    ],
+    "low_activity": [
+      {
+        "sequence": "GIGKFLHSAKKF",
+        "mic_value": 1.1760912590556811,
+        "length": 12
+      },
+      {
+        "sequence": "KLALKLALKALKAALKLA",
+        "mic_value": 1.0791812460476249,
+        "length": 18
+      },
+      {
+        "sequence": "ILGPVLGLVSDTLDDVLGIL",
+        "mic_value": 1.255272505103306,
+        "length": 20
+      },
+      {
+        "sequence": "AAAAAAAAAAAA",
+        "mic_value": 2.1760912590556813,
+        "length": 12
+      },
+      {
+        "sequence": "GGGGGGGGGGGG",
+        "mic_value": 2.255272505103306,
+        "length": 12
+      },
+      {
+        "sequence": "PPPPPPPPPPPP",
+        "mic_value": 2.3010299956639813,
+        "length": 12
+      },
+      {
+        "sequence": "GGNGGGGGGGGF",
+        "mic_value": 2.278177406382465,
+        "length": 12
+      },
+      {
+        "sequence": "GIGKFLHNAKKF",
+        "mic_value": 1.2104521934954726,
+        "length": 12
+      },
+      {
+        "sequence": "AAAAAAASAAWA",
+        "mic_value": 2.248350395820643,
+        "length": 12
+      },
+      {
+        "sequence": "PPPPPFPPPPPP",
+        "mic_value": 2.367489376376701,
+        "length": 12
+      },
+      {
+        "sequence": "WLALKLALKAVKAALKLA",
+        "mic_value": 1.10199466800581,
+        "length": 18
+      },
+      {
+        "sequence": "GGANGGGGGGGG",
+        "mic_value": 2.2316652025544594,
+        "length": 12
+      },
+      {
+        "sequence": "GIGKCLASAKKF",
+        "mic_value": 1.203601758496763,
+        "length": 12
+      },
+      {
+        "sequence": "NGGGGGGGGGGG",
+        "mic_value": 2.243185882824541,
+        "length": 12
+      },
+      {
+        "sequence": "AIDKFLHSAKKF",
+        "mic_value": 1.1109925861106555,
+        "length": 12
+      },
+      {
+        "sequence": "AAAGAAAAAAAN",
+        "mic_value": 2.24280958531445,
+        "length": 12
+      },
+      {
+        "sequence": "KLALKLALKALGAALELA",
+        "mic_value": 1.0349628378407834,
+        "length": 18
+      },
+      {
+        "sequence": "ILGPVKGLVSDTLDDVLGIL",
+        "mic_value": 1.3340625857316262,
+        "length": 20
+      },
+      {
+        "sequence": "HRGGGGGGGGGG",
+        "mic_value": 2.221257970931727,
+        "length": 12
+      },
+      {
+        "sequence": "PPKPPPPPPPPP",
+        "mic_value": 2.3147647035222416,
+        "length": 12
+      },
+      {
+        "sequence": "GGAGGGGGGGGG",
+        "mic_value": 2.3325627735137537,
+        "length": 12
+      },
+      {
+        "sequence": "AAAAAAAAAAAH",
+        "mic_value": 2.175697580080254,
+        "length": 12
+      },
+      {
+        "sequence": "ALYAAAAAAAAA",
+        "mic_value": 2.107555694104914,
+        "length": 12
+      },
+      {
+        "sequence": "GIGKFLHSAKPF",
+        "mic_value": 1.2539362743522036,
+        "length": 12
+      },
+      {
+        "sequence": "AAAAAAAANAAA",
+        "mic_value": 2.21034459622335,
+        "length": 12
+      },
+      {
+        "sequence": "ILGPVLGLVSRTLDDVLGIL",
+        "mic_value": 1.295074439924808,
+        "length": 20
+      },
+      {
+        "sequence": "GIGKFLHSAWKF",
+        "mic_value": 1.2016775488323812,
+        "length": 12
+      },
+      {
+        "sequence": "GGGDGGWGGGGG",
+        "mic_value": 2.231293844314416,
+        "length": 12
+      },
+      {
+        "sequence": "AADAAAAAAAAA",
+        "mic_value": 2.246227528658976,
+        "length": 12
+      },
+      {
+        "sequence": "GGGVGGGGGNGG",
+        "mic_value": 2.1939977294231503,
+        "length": 12
+      },
+      {
+        "sequence": "KLALKLALWALKAALKLA",
+        "mic_value": 1.1172510797957385,
+        "length": 18
+      },
+      {
+        "sequence": "AANAAAAAAAAA",
+        "mic_value": 2.114148244841524,
+        "length": 12
+      },
+      {
+        "sequence": "GGGGGGGAGGGG",
+        "mic_value": 2.205771777159411,
+        "length": 12
+      },
+      {
+        "sequence": "ILGPVLGLVEDTLDDVLGIL",
+        "mic_value": 1.1889867295044736,
+        "length": 20
+      },
+      {
+        "sequence": "AAAAAAAAAQAA",
+        "mic_value": 2.129575771767251,
+        "length": 12
+      },
+      {
+        "sequence": "KLALKLASKALKAALKLA",
+        "mic_value": 1.066343125187795,
+        "length": 18
+      },
+      {
+        "sequence": "PIGKFLHSPKKF",
+        "mic_value": 1.215001946725714,
+        "length": 12
+      },
+      {
+        "sequence": "ILGPVLGLVLDTLDDVLGIL",
+        "mic_value": 1.282057462225126,
+        "length": 20
+      },
+      {
+        "sequence": "AAAAKHAAAAAA",
+        "mic_value": 2.248323791030072,
+        "length": 12
+      },
+      {
+        "sequence": "AAAPAAAFAAAA",
+        "mic_value": 2.251981089736112,
+        "length": 12
+      },
+      {
+        "sequence": "TIGKFLHSAKDF",
+        "mic_value": 1.2380695147637404,
+        "length": 12
+      },
+      {
+        "sequence": "GGGGGHGGTGGG",
+        "mic_value": 2.187594435689729,
+        "length": 12
+      },
+      {
+        "sequence": "KLALKLAIKALKALLKLA",
+        "mic_value": 1.0324336568423989,
+        "length": 18
+      },
+      {
+        "sequence": "GIVKFLHSAKKF",
+        "mic_value": 1.1724380343499237,
+        "length": 12
+      },
+      {
+        "sequence": "AIGKFLHSAKKF",
+        "mic_value": 1.2463488750930811,
+        "length": 12
+      },
+      {
+        "sequence": "GGGGGGGMGHGG",
+        "mic_value": 2.2739275195051394,
+        "length": 12
+      },
+      {
+        "sequence": "ILGPVLGLVWDTLDDVLGIL",
+        "mic_value": 1.231355273458895,
+        "length": 20
+      },
+      {
+        "sequence": "KLALKLALKALKADLKLA",
+        "mic_value": 1.0697018868334596,
+        "length": 18
+      },
+      {
+        "sequence": "PPPPPGPPPPPP",
+        "mic_value": 2.210419924432129,
+        "length": 12
+      },
+      {
+        "sequence": "ILSPVLGLVSDTLDDVLGIL",
+        "mic_value": 1.2813785250443412,
+        "length": 20
+      },
+      {
+        "sequence": "AAAAAAAAAAAK",
+        "mic_value": 2.111055510022016,
+        "length": 12
+      },
+      {
+        "sequence": "AAPAEAAAAAAA",
+        "mic_value": 2.1064535555546184,
+        "length": 12
+      },
+      {
+        "sequence": "GIGKFLHSAKVF",
+        "mic_value": 1.096029924369466,
+        "length": 12
+      },
+      {
+        "sequence": "KLALKLALKALKAAIKLA",
+        "mic_value": 1.0859278839658393,
+        "length": 18
+      },
+      {
+        "sequence": "GGGGGGGNGGGG",
+        "mic_value": 2.317637230211344,
+        "length": 12
+      },
+      {
+        "sequence": "AAAAAAAAQAAA",
+        "mic_value": 2.17414952126979,
+        "length": 12
+      },
+      {
+        "sequence": "ILGPVLGLVSDTLDDLLGIL",
+        "mic_value": 1.205391477397898,
+        "length": 20
+      },
+      {
+        "sequence": "GGGGGGHGGGTG",
+        "mic_value": 2.2542106450122463,
+        "length": 12
+      },
+      {
+        "sequence": "KAAAAAAAAAAA",
+        "mic_value": 2.2344032559800526,
+        "length": 12
+      },
+      {
+        "sequence": "KVALKLALKALKAALKLA",
+        "mic_value": 1.036694691253261,
+        "length": 18
+      },
+      {
+        "sequence": "GIGKFLTSAKKF",
+        "mic_value": 1.135890207634506,
+        "length": 12
+      },
+      {
+        "sequence": "PPPPQPPPPPPP",
+        "mic_value": 2.36589569000089,
+        "length": 12
+      },
+      {
+        "sequence": "GGGGKGGGGGGG",
+        "mic_value": 2.266807544466064,
+        "length": 12
+      },
+      {
+        "sequence": "KLALKLALTALKAALKLA",
+        "mic_value": 1.0369490908760222,
+        "length": 18
+      },
+      {
+        "sequence": "GITTFLHSAKKF",
+        "mic_value": 1.2171593096585949,
+        "length": 12
+      },
+      {
+        "sequence": "ILGPVLGLVSDTQDDVLGIL",
+        "mic_value": 1.2210887583299717,
+        "length": 20
+      },
+      {
+        "sequence": "IEGPVLGLVEDTLDDVLGIL",
+        "mic_value": 1.2859451020136683,
+        "length": 20
+      },
+      {
+        "sequence": "KLALKCALKALKAALKLA",
+        "mic_value": 1.0681113949029934,
+        "length": 18
+      },
+      {
+        "sequence": "AAAAATAAAAAA",
+        "mic_value": 2.082511985589028,
+        "length": 12
+      },
+      {
+        "sequence": "PPPPPPPPPLPP",
+        "mic_value": 2.2684267597276606,
+        "length": 12
+      },
+      {
+        "sequence": "PTPPPPPPNPPP",
+        "mic_value": 2.3192262815234885,
+        "length": 12
+      },
+      {
+        "sequence": "GIGKFLLSANKF",
+        "mic_value": 1.0826680370197477,
+        "length": 12
+      },
+      {
+        "sequence": "ILGGVLGLVSDTLDDVLVIL",
+        "mic_value": 1.2455934308312175,
+        "length": 20
+      },
+      {
+        "sequence": "KLALKLALKALKARLKLA",
+        "mic_value": 1.0830881442929152,
+        "length": 18
+      },
+      {
+        "sequence": "ILGPVLGLVSTTLDDVLGIL",
+        "mic_value": 1.1652957302635585,
+        "length": 20
+      },
+      {
+        "sequence": "AAAAAAFAAAAA",
+        "mic_value": 2.158186329342783,
+        "length": 12
+      },
+      {
+        "sequence": "AAAAADAAAAAA",
+        "mic_value": 2.143910687200215,
+        "length": 12
+      },
+      {
+        "sequence": "AVAAAALAAAAA",
+        "mic_value": 2.1259356131015688,
+        "length": 12
+      },
+      {
+        "sequence": "KQALKLALKALKVALKLA",
+        "mic_value": 1.088034342000837,
+        "length": 18
+      },
+      {
+        "sequence": "QAAAAAAAAAAA",
+        "mic_value": 2.172541539452285,
+        "length": 12
+      },
+      {
+        "sequence": "GGGAGGGPGGGG",
+        "mic_value": 2.3249624023374627,
+        "length": 12
+      },
+      {
+        "sequence": "ILGPVLGLVSDYLDDVLGDL",
+        "mic_value": 1.2468052765960884,
+        "length": 20
+      },
+      {
+        "sequence": "GIGKKLHSAKKF",
+        "mic_value": 1.1339258905766774,
+        "length": 12
+      },
+      {
+        "sequence": "GIRKFLHSSKKF",
+        "mic_value": 1.1244453748650751,
+        "length": 12
+      },
+      {
+        "sequence": "GIGKFLNSAKKF",
+        "mic_value": 1.161767319952958,
+        "length": 12
+      },
+      {
+        "sequence": "GIGKFLHPAKKS",
+        "mic_value": 1.141559135075494,
+        "length": 12
+      },
+      {
+        "sequence": "ILGPVLGLVSDTLDDLLYIL",
+        "mic_value": 1.220798115276115,
+        "length": 20
+      },
+      {
+        "sequence": "PSPPPPPPPPPP",
+        "mic_value": 2.277622276359468,
+        "length": 12
+      },
+      {
+        "sequence": "SAAAAAAAAQAA",
+        "mic_value": 2.2159553926042754,
+        "length": 12
+      },
+      {
+        "sequence": "GGGGGGGANGGG",
+        "mic_value": 2.2964858070407077,
+        "length": 12
+      },
+      {
+        "sequence": "GIGKFLHSAGGF",
+        "mic_value": 1.198149064229943,
+        "length": 12
+      },
+      {
+        "sequence": "KLALKLALKAPKAALKHA",
+        "mic_value": 1.099810775757789,
+        "length": 18
+      },
+      {
+        "sequence": "KGGGGGGTGGGG",
+        "mic_value": 2.203294739152134,
+        "length": 12
+      },
+      {
+        "sequence": "PPPPCPPPPPPP",
+        "mic_value": 2.3287025528803,
+        "length": 12
+      },
+      {
+        "sequence": "KLALKWALKALKAALKLA",
+        "mic_value": 1.023667437785191,
+        "length": 18
+      },
+      {
+        "sequence": "PYPPPPPPPPPP",
+        "mic_value": 2.296331978666216,
+        "length": 12
+      },
+      {
+        "sequence": "GIGKFLHSADKF",
+        "mic_value": 1.122558384066558,
+        "length": 12
+      },
+      {
+        "sequence": "FPPPPPPPCPPP",
+        "mic_value": 2.279902002958537,
+        "length": 12
+      },
+      {
+        "sequence": "GGGGGGGDEGGG",
+        "mic_value": 2.276446235359408,
+        "length": 12
+      },
+      {
+        "sequence": "KLAQKLALKALKAALKLA",
+        "mic_value": 1.0595280164888474,
+        "length": 18
+      },
+      {
+        "sequence": "GGGGGTGGGGGG",
+        "mic_value": 2.3336766192872496,
+        "length": 12
+      },
+      {
+        "sequence": "TIGKFLHCAKKF",
+        "mic_value": 1.223472207934423,
+        "length": 12
+      },
+      {
+        "sequence": "PKPPPPPPPPPP",
+        "mic_value": 2.3700083474049545,
+        "length": 12
+      },
+      {
+        "sequence": "ILGPVLGLVSDTLDDVLGTL",
+        "mic_value": 1.2897618553424386,
+        "length": 20
+      },
+      {
+        "sequence": "AAAAAAAGKAAA",
+        "mic_value": 2.08855515527768,
+        "length": 12
+      },
+      {
+        "sequence": "AAAAAAANAAAA",
+        "mic_value": 2.2451126545324414,
+        "length": 12
+      },
+      {
+        "sequence": "ILGPVLGLVSDTLDPVLGIL",
+        "mic_value": 1.2723619617507218,
+        "length": 20
+      },
+      {
+        "sequence": "ILGPVLGLVSDTLDDVLGCL",
+        "mic_value": 1.2387801591935084,
+        "length": 20
+      },
+      {
+        "sequence": "PPPPPPPPPKPP",
+        "mic_value": 2.2372837954813463,
+        "length": 12
+      },
+      {
+        "sequence": "ILGPVLMLVSDGLDDVLGIL",
+        "mic_value": 1.169590973107394,
+        "length": 20
+      },
+      {
+        "sequence": "ILGPVLGLVMDTLDDVLGIL",
+        "mic_value": 1.3153119312102863,
+        "length": 20
+      },
+      {
+        "sequence": "PPSPPPPPPPPP",
+        "mic_value": 2.2665744250416835,
+        "length": 12
+      }
+    ]
+  },
+  "statistics": {
+    "mean_mic": 0.7978691769009641,
+    "median_mic": 0.7423942062721727,
+    "min_mic": -0.1909597329358749,
+    "max_mic": 2.3700083474049545
+  }
+}

@@ -1,0 +1,31 @@
+# Lightweight Python base image
+FROM python:3.10-slim
+
+# Working directory
+WORKDIR /app
+
+# -------------------------------------------------------
+# [Optional mirror] If `apt-get update` is slow, uncomment the two lines
+# below to switch the Debian repositories to an Aliyun mirror:
+# RUN sed -i 's/deb.debian.org/mirrors.aliyun.com/g' /etc/apt/sources.list && \
+#     sed -i 's/security.debian.org/mirrors.aliyun.com/g' /etc/apt/sources.list
+# -------------------------------------------------------
+
+# System dependencies occasionally required by PDF parsers
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy the dependency manifest first for better layer caching
+COPY requirements.txt .
+
+# Install Python packages.
+# `sentence-transformers` and `chromadb` are the core runtime dependencies.
+# The `-i` flag points pip at an Aliyun mirror; adjust/remove it for your network.
+RUN pip install --no-cache-dir -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
+
+# Copy the remaining source tree
+COPY . .
+
+# Default entrypoint (can be overridden via docker-compose)
+CMD ["python", "run_pdf_processing.py"]

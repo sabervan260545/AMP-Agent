@@ -1,0 +1,176 @@
+{
+  "run_id": "20260430_095545",
+  "started_at": "2026-04-30T09:55:45.166907",
+  "finished_at": "2026-04-30T09:55:45.317802",
+  "mode": "dryrun",
+  "total_cases": 3,
+  "passed_cases": 3,
+  "avg_score": 1.0,
+  "cases": [
+    {
+      "case_id": "bench_001_three_generators_compare",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 50.22,
+      "verdicts": [
+        {
+          "name": "calls_three_generators",
+          "passed": true,
+          "score": 1.0,
+          "reason": "Found 3 call(s) to 'tool_generate_amp', required >= 3"
+        },
+        {
+          "name": "mentions_all_three",
+          "passed": true,
+          "score": 1.0,
+          "reason": "all_of: matched 3/3 (['AMP-Designer', 'HydrAMP', 'Diff-AMP'])"
+        },
+        {
+          "name": "produces_comparison_table",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['优点', '缺点', 'comparison']"
+        }
+      ],
+      "response_preview": "Here is a quick comparison of three generators: AMP-Designer, HydrAMP and Diff-AMP. They all target Gram-negative bacteria but differ in 优点 / 缺点. The membrane-disrupting mechanism involves lipid bilay",
+      "tool_calls": [
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "amp_designer"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "hydramp"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "diff_amp"
+          }
+        },
+        {
+          "name": "search_knowledge",
+          "params": {
+            "query": "AMP mechanism"
+          }
+        },
+        {
+          "name": "tool_batch_evaluate",
+          "params": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_002_rag_mechanism",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 50.13,
+      "verdicts": [
+        {
+          "name": "uses_search_knowledge",
+          "passed": true,
+          "score": 1.0,
+          "reason": "Found 1 call(s) to 'search_knowledge', required >= 1"
+        },
+        {
+          "name": "cites_literature",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['membrane', 'lipid', 'pore', 'disrupt']"
+        }
+      ],
+      "response_preview": "Here is a quick comparison of three generators: AMP-Designer, HydrAMP and Diff-AMP. They all target Gram-negative bacteria but differ in 优点 / 缺点. The membrane-disrupting mechanism involves lipid bilay",
+      "tool_calls": [
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "amp_designer"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "hydramp"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "diff_amp"
+          }
+        },
+        {
+          "name": "search_knowledge",
+          "params": {
+            "query": "AMP mechanism"
+          }
+        },
+        {
+          "name": "tool_batch_evaluate",
+          "params": {}
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_003_generate_with_count",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 50.11,
+      "verdicts": [
+        {
+          "name": "generates_at_least_five",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['5 ', '5 peptides']"
+        },
+        {
+          "name": "invokes_generator",
+          "passed": true,
+          "score": 1.0,
+          "reason": "Found 3 call(s) to 'tool_generate_amp', required >= 1"
+        }
+      ],
+      "response_preview": "Here is a quick comparison of three generators: AMP-Designer, HydrAMP and Diff-AMP. They all target Gram-negative bacteria but differ in 优点 / 缺点. The membrane-disrupting mechanism involves lipid bilay",
+      "tool_calls": [
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "amp_designer"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "hydramp"
+          }
+        },
+        {
+          "name": "tool_generate_amp",
+          "params": {
+            "generator": "diff_amp"
+          }
+        },
+        {
+          "name": "search_knowledge",
+          "params": {
+            "query": "AMP mechanism"
+          }
+        },
+        {
+          "name": "tool_batch_evaluate",
+          "params": {}
+        }
+      ],
+      "error": null
+    }
+  ],
+  "meta": {
+    "set_file": "golden_prompts.yaml"
+  }
+}

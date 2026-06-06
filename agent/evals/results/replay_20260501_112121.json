@@ -1,0 +1,86 @@
+{
+  "run_id": "20260501_112121",
+  "mode": "replay",
+  "started_at": "2026-05-01T11:21:21.141955",
+  "finished_at": "2026-05-01T11:21:21.141958",
+  "total_cases": 3,
+  "passed_cases": 3,
+  "avg_score": 1.0,
+  "cases": [
+    {
+      "case_id": "smoke_001_greeting",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 0.02,
+      "verdicts": [
+        {
+          "name": "greets_back",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['hello', 'assistant']"
+        }
+      ],
+      "response_preview": "Hello, I'm your scientific assistant designed to help with antimicrobial peptide research.",
+      "tool_calls": [],
+      "error": null
+    },
+    {
+      "case_id": "smoke_002_zh_greeting",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 0.01,
+      "verdicts": [
+        {
+          "name": "has_zh_intro",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['AMP', '抗菌肽', '助手', '设计']"
+        }
+      ],
+      "response_preview": "我是 AMP-Agent，一个专注于利用人工智能进行抗菌肽序列设计、理化特性分析与科学假设生成的科研助手。",
+      "tool_calls": [],
+      "error": null
+    },
+    {
+      "case_id": "smoke_003_capabilities",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 0.01,
+      "verdicts": [
+        {
+          "name": "mentions_capabilities",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['design', 'analy']"
+        }
+      ],
+      "response_preview": "1. **Design novel AMP sequences** using deep learning models with automatic evaluation of potency, toxicity, and cell-penetrating potential.\n2. **Analyze peptide sequences** for physicochemical proper",
+      "tool_calls": [],
+      "error": null
+    }
+  ],
+  "meta": {
+    "set_file": "golden_prompts.yaml",
+    "replay_of": "20260501_112113",
+    "source_mode": "live",
+    "source_avg_score": 1.0,
+    "fallback_to_preview_count": 0,
+    "missing_case_ids": [],
+    "env": {
+      "git_commit": "bdeb1a57",
+      "git_branch": "master",
+      "git_dirty": true,
+      "python_version": "3.12.3",
+      "platform": "Linux-6.14.6-061406-generic-x86_64-with-glibc2.39",
+      "hostname": "ubuntu-SY4104G-D12R-NV-G4",
+      "user": "ubuntu",
+      "captured_at": "2026-05-01T11:21:21.122010",
+      "prompt": {
+        "source": "source-hash:context_engine.py,context_engine.py,__init__.py",
+        "sha256_12": "53c5342962b0",
+        "length": 56017,
+        "version": null
+      }
+    }
+  }
+}

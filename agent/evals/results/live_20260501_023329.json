@@ -1,0 +1,64 @@
+{
+  "run_id": "20260501_023329",
+  "started_at": "2026-05-01T02:33:29.734566",
+  "finished_at": "2026-05-01T02:33:55.007697",
+  "mode": "live",
+  "total_cases": 1,
+  "passed_cases": 0,
+  "avg_score": 0.58,
+  "cases": [
+    {
+      "case_id": "rag_001_membrane_mechanism",
+      "passed": false,
+      "score": 0.58,
+      "latency_ms": 25273.0,
+      "verdicts": [
+        {
+          "name": "uses_search_knowledge",
+          "passed": false,
+          "score": 0.0,
+          "reason": "Found 0 call(s) to 'search_knowledge', required >= 1"
+        },
+        {
+          "name": "cites_mechanism_terms",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['membrane', 'lipid', 'pore', 'disrupt', 'bilayer']"
+        },
+        {
+          "name": "semantic_judge_membrane_mechanism",
+          "passed": true,
+          "score": 0.95,
+          "reason": "llm_judge score=0.95 (thr=0.60) :: The response fully satisfies all rubric criteria: it explicitly describes barrel-stave, toroidal pore, and carpet models with electrostatic attraction to anionic lipids; mentions amphipathicity, cationic charge, and α-helical/β-sheet conformation as enabling structural features; and stays strictly on-topic without hallucinating unrelated mechanisms."
+        }
+      ],
+      "response_preview": "## Membrane-Disrupting Mechanisms of Antimicrobial Peptides (AMPs)\n\nAntimicrobial peptides primarily target bacterial membranes through several well-characterized mechanisms. Here's a comprehensive ov",
+      "response_full": "## Membrane-Disrupting Mechanisms of Antimicrobial Peptides (AMPs)\n\nAntimicrobial peptides primarily target bacterial membranes through several well-characterized mechanisms. Here's a comprehensive overview:\n\n### 🔑 Key Mechanisms of Membrane Disruption\n\n#### 1. **Barrel-Stave Pore Model**\n- AMPs insert into the membrane and aggregate to form transmembrane pores\n- Peptides align perpendicular to the membrane surface, creating a hydrophilic channel\n- This allows uncontrolled leakage of ions and cellular contents\n- **Example**: Alamethicin and certain magainins follow this mechanism\n\n#### 2. **Toroidal (Wormhole) Pore Model**\n- Peptides induce the lipid monolayers to bend continuously through the pore\n- Both peptides and lipid headgroups line the pore interior\n- Creates larger, more dynamic pores than barrel-stave\n- **Example**: Magainin 2 and protegrin-1 utilize this mechanism\n\n#### 3. **Carpet Model**\n- AMPs accumulate on the membrane surface like a \"carpet\"\n- At a threshold concentration, they disrupt membrane integrity in a detergent-like manner\n- Causes micellization and membrane disintegration\n- Does not require pore formation; leads to complete membrane dissolution\n- **Example**: Cecropins and some defensins\n\n#### 4. **Detergent-Like Model (Micellization)**\n- Similar to carpet model but focuses on solubilization of the membrane\n- Peptides break lipid-lipid interactions, forming peptide-lipid micelles\n- Results in complete membrane destruction\n\n#### 5. **Aggregate Channel Model**\n- Peptides form disordered aggregates on or within the membrane\n- Creates irregular, transient channels rather than structured pores\n- Less defined than barrel-stave or toroidal models\n\n### ⚙️ Molecular Drivers of Membrane Disruption\n\n| Factor | Role in Mechanism |\n|--------|-------------------|\n| **Cationic charge** (+2 to +9) | Electrostatic attraction to negatively charged bacterial membranes (LPS, teichoic acids) |\n| **Amphipathicity** | Segregation of hydrophobic and hydrophilic residues enables membrane insertion |\n| **Hydrophobicity** | Drives partitioning into the lipid bilayer core |\n| **α-helical or β-sheet structure** | Provides structural scaffold for pore formation or carpet coverage |\n| **Peptide concentration** | Determines threshold for membrane disruption (critical for carpet model) |\n\n### 🎯 Selectivity for Bacterial vs. Mammalian Cells\n\nAMPs selectively target bacterial membranes because:\n- **Bacterial membranes**: Rich in anionic phospholipids (phosphatidylglycerol, cardiolipin) and negatively charged surface components\n- **Mammalian membranes**: Predominantly zwitterionic (phosphatidylcholine, sphingomyelin) with cholesterol, which stabilizes the membrane and reduces AMP binding\n\n### ⚖️ Additional Effects Beyond Membrane Disruption\n\nWhile membrane disruption is the primary mechanism, AMPs often have secondary intracellular targets:\n- Inhibition of cell wall synthesis\n- Interference with DNA/RNA/protein synthesis\n- Disruption of enzyme function\n- Immune modulation (chemotaxis, cytokine induction)\n\n### 📊 Design Implications\n\nFor designing membrane-disrupting AMPs:\n1. **Net positive charge** (+3 to +6) for initial electrostatic binding\n2. **Hydrophobic moment** > 0.5 for strong amphipathicity\n3. **Hydrophobicity** ~40-50% for optimal membrane insertion without excessive toxicity\n4. **Length** 12-30 residues (sufficient to span or cover membrane)\n5. **Structural propensity** for α-helix or β-sheet upon membrane binding\n\n### ⚠️ Important Note\n\nThese mechanisms are **not mutually exclusive**—many AMPs employ multiple modes of action simultaneously or sequentially. The dominant mechanism often depends on peptide concentration, lipid composition, and environmental conditions. In-silico predictions suggest likely mechanisms but require experimental validation (e.g., dye-leakage assays, electron microscopy, NMR studies).\n\n\n✅ **Task completed.**\n",
+      "tool_calls": [],
+      "error": null
+    }
+  ],
+  "meta": {
+    "set_file": "golden_prompts.yaml",
+    "env": {
+      "git_commit": null,
+      "git_branch": null,
+      "git_dirty": null,
+      "python_version": "3.10.20",
+      "platform": "Linux-6.14.6-061406-generic-x86_64-with-glibc2.41",
+      "hostname": "7b8074b0e037",
+      "user": null,
+      "captured_at": "2026-05-01T02:33:55.007922",
+      "prompt": {
+        "source": "source-hash:context_engine.py,context_engine.py,__init__.py",
+        "sha256_12": "53c5342962b0",
+        "length": 56017,
+        "version": null
+      }
+    },
+    "api_base": "http://localhost:5000",
+    "filter_case_ids": [
+      "rag_001_membrane_mechanism"
+    ]
+  }
+}

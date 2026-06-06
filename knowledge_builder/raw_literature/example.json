@@ -1,0 +1,10 @@
+{
+  "source": "example.txt",
+  "title": "example",
+  "content": "We designed an antimicrobial peptide KLWKKIKKLAKKV targeting E.coli.\nThe peptide adopts an amphipathic α-helical structure with a net charge of +5.\nMIC against E.coli was 12.5 μM. The mechanism involves membrane disruption\nthrough pore formation in the bacterial membrane.\n\nAnother sequence RRWRIVVIRK showed excellent activity against S.aureus with\nMIC of 8.2 μM. This cationic peptide contains high lysine and arginine content.",
+  "metadata": {
+    "file_type": ".txt",
+    "original_size": 433,
+    "processed_by": "prepare_raw_json.py"
+  }
+}

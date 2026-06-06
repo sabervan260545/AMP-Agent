@@ -1,0 +1,15 @@
+# Single-case smoke set used to validate the live-mode plumbing.
+# Prompt is intentionally short so the backend responds quickly.
+cases:
+  - id: smoke_live_hello
+    category: smoke
+    prompt: "Say hello in one short English sentence."
+    language: en
+    timeout_sec: 120
+    expected_behaviors:
+      - name: non_empty_response
+        scorer: response_contains_any
+        params:
+          any_of: ["hello", "hi", "greet"]
+          case_sensitive: false
+        weight: 1.0

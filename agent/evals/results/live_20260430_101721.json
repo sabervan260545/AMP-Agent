@@ -1,0 +1,69 @@
+{
+  "run_id": "20260430_101721",
+  "started_at": "2026-04-30T10:16:53.404955",
+  "finished_at": "2026-04-30T10:17:21.950466",
+  "mode": "live",
+  "total_cases": 3,
+  "passed_cases": 3,
+  "avg_score": 1.0,
+  "cases": [
+    {
+      "case_id": "smoke_001_greeting",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 1997.14,
+      "verdicts": [
+        {
+          "name": "greets_back",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['hello']"
+        }
+      ],
+      "response_preview": "Hello!",
+      "tool_calls": [],
+      "error": null
+    },
+    {
+      "case_id": "smoke_002_zh_greeting",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 22713.61,
+      "verdicts": [
+        {
+          "name": "has_zh_intro",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['AMP', '抗菌肽', '助手', '设计']"
+        }
+      ],
+      "response_preview": "你好！我是AMP-Agent，一个专注于抗菌肽智能设计、活性预测与安全性评估的AI科研助手。",
+      "tool_calls": [],
+      "error": null
+    },
+    {
+      "case_id": "smoke_003_capabilities",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 3834.19,
+      "verdicts": [
+        {
+          "name": "mentions_capabilities",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['design', 'analy', 'predict']"
+        }
+      ],
+      "response_preview": "I can design novel antimicrobial peptide sequences with potency and safety predictions, analyze peptide properties and predict their activity, and search scientific literature for AMP design principle",
+      "tool_calls": [],
+      "error": null
+    }
+  ],
+  "meta": {
+    "set_file": "golden_prompts.yaml",
+    "api_base": "http://localhost:5000",
+    "filter_categories": [
+      "smoke"
+    ]
+  }
+}

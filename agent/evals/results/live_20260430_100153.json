@@ -1,0 +1,104 @@
+{
+  "run_id": "20260430_100153",
+  "started_at": "2026-04-30T10:01:24.398115",
+  "finished_at": "2026-04-30T10:01:53.929763",
+  "mode": "live",
+  "total_cases": 5,
+  "passed_cases": 5,
+  "avg_score": 1.0,
+  "cases": [
+    {
+      "case_id": "smoke_001_greeting",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 3171.94,
+      "verdicts": [
+        {
+          "name": "greets_back",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['hello']"
+        }
+      ],
+      "response_preview": "Hello! I'm ready to assist you with antimicrobial peptide design and analysis.",
+      "tool_calls": [],
+      "error": null
+    },
+    {
+      "case_id": "smoke_002_zh_greeting",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 10319.56,
+      "verdicts": [
+        {
+          "name": "has_zh_intro",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['AMP', '抗菌肽', '助手', '设计']"
+        }
+      ],
+      "response_preview": "你好！我是AMP-Agent，一个专为抗菌肽序列设计、活性预测与构效关系分析而生的AI科学助手。",
+      "tool_calls": [],
+      "error": null
+    },
+    {
+      "case_id": "smoke_003_capabilities",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 3414.54,
+      "verdicts": [
+        {
+          "name": "mentions_capabilities",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['design', 'analy', 'predict']"
+        }
+      ],
+      "response_preview": "I can: (1) design novel antimicrobial peptides with predicted activity and safety profiles, (2) analyze peptide sequences for physicochemical properties and structural features, and (3) retrieve and s",
+      "tool_calls": [],
+      "error": null
+    },
+    {
+      "case_id": "edge_001_ambiguous",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 5929.42,
+      "verdicts": [
+        {
+          "name": "asks_for_clarification",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['which', 'please', 'specific']"
+        }
+      ],
+      "response_preview": "I can assist you with designing novel antimicrobial peptides, analyzing specific sequences for their properties and predicted activity, or answering scientific questions based on the latest AMP litera",
+      "tool_calls": [],
+      "error": null
+    },
+    {
+      "case_id": "edge_002_nonsense_sequence",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 6695.07,
+      "verdicts": [
+        {
+          "name": "rejects_invalid",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['not a valid']"
+        }
+      ],
+      "response_preview": "I'm unable to analyze that sequence because \"12345XYZ@@@\" is not a valid peptide sequence. Peptide sequences should only contain standard single-letter amino acid codes (A, C, D, E, F, G, H, I, K, L, ",
+      "tool_calls": [],
+      "error": null
+    }
+  ],
+  "meta": {
+    "set_file": "golden_prompts.yaml",
+    "api_base": "http://localhost:5000",
+    "filter_categories": [
+      "smoke",
+      "edge_case"
+    ]
+  }
+}

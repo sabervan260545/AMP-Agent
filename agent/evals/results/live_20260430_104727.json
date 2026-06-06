@@ -1,0 +1,80 @@
+{
+  "run_id": "20260430_104727",
+  "started_at": "2026-04-30T10:47:27.892174",
+  "finished_at": "2026-04-30T10:47:40.254754",
+  "mode": "live",
+  "total_cases": 3,
+  "passed_cases": 3,
+  "avg_score": 1.0,
+  "cases": [
+    {
+      "case_id": "smoke_001_greeting",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 4603.03,
+      "verdicts": [
+        {
+          "name": "greets_back",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['hello']"
+        }
+      ],
+      "response_preview": "Hello, I am the AMP-Agent, ready to help you design and analyze antimicrobial peptides!",
+      "tool_calls": [],
+      "error": null
+    },
+    {
+      "case_id": "smoke_002_zh_greeting",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 3383.17,
+      "verdicts": [
+        {
+          "name": "has_zh_intro",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['AMP', '抗菌肽', '助手', '设计']"
+        }
+      ],
+      "response_preview": "我是AMP-Agent，专注于抗菌肽设计、分析与假设生成的智能科学助手。",
+      "tool_calls": [],
+      "error": null
+    },
+    {
+      "case_id": "smoke_003_capabilities",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 4375.72,
+      "verdicts": [
+        {
+          "name": "mentions_capabilities",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['design', 'analy', 'predict']"
+        }
+      ],
+      "response_preview": "I can:\n1. **Design novel antimicrobial peptides** with predicted activity, safety, and cell-penetration properties\n2. **Analyze and optimize peptide sequences** for potency, selectivity, and structura",
+      "tool_calls": [],
+      "error": null
+    }
+  ],
+  "meta": {
+    "set_file": "golden_prompts.yaml",
+    "env": {
+      "git_commit": null,
+      "git_branch": null,
+      "git_dirty": null,
+      "python_version": "3.10.20",
+      "platform": "Linux-6.14.6-061406-generic-x86_64-with-glibc2.41",
+      "hostname": "7b8074b0e037",
+      "user": null,
+      "captured_at": "2026-04-30T10:46:40.074080"
+    },
+    "api_base": "http://localhost:5000",
+    "retry": 1,
+    "filter_suites": [
+      "smoke"
+    ]
+  }
+}

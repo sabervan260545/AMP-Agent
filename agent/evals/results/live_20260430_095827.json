@@ -1,0 +1,32 @@
+{
+  "run_id": "20260430_095827",
+  "started_at": "2026-04-30T09:58:24.809374",
+  "finished_at": "2026-04-30T09:58:27.197822",
+  "mode": "live",
+  "total_cases": 1,
+  "passed_cases": 1,
+  "avg_score": 1.0,
+  "cases": [
+    {
+      "case_id": "smoke_live_hello",
+      "passed": true,
+      "score": 1.0,
+      "latency_ms": 2388.34,
+      "verdicts": [
+        {
+          "name": "non_empty_response",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['hello']"
+        }
+      ],
+      "response_preview": "Hello!",
+      "tool_calls": [],
+      "error": null
+    }
+  ],
+  "meta": {
+    "set_file": "smoke_live.yaml",
+    "api_base": "http://localhost:5000"
+  }
+}

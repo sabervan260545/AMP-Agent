@@ -1,0 +1,299 @@
+version: '3.8'
+
+# ============================================================================
+# Minimal Release Mode
+# ----------------------------------------------------------------------------
+# This release ships only the coordination layer (Flask `backend` +
+# React `frontend` + Postgres). All AMP microservices are kept as
+# DIRECTORY PLACEHOLDERS under `services/*/` with an `IMPLEMENTATION.md`
+# that documents how to restore each one from the upstream source.
+#
+# The 9 microservice blocks (generator / mic / macrel / hemolysis /
+# cpp / structure / hydramp / diff-amp / amp-pgat-abpp) have been
+# commented out below. Re-activate them after you have cloned the
+# corresponding upstream implementation into each service directory
+# (see QUICKSTART.md → "Minimal Release Mode").
+# ============================================================================
+
+services:
+  # ==========================================================================
+  # [ DISABLED - directory placeholder ]  structure (ESMFold)
+  # See services/07-structure/IMPLEMENTATION.md
+  # ==========================================================================
+  # structure:
+  #   image: amp-generator-platform-structure
+  #   container_name: amp-structure
+  #   build: ./services/07-structure
+  #   ports:
+  #     - "8006:8000"
+  #   volumes:
+  #     - ./data/models/esmfold:/app/models
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             device_ids: ['1']
+  #             capabilities: [gpu]
+  #   networks:
+  #     - amp-net
+
+  # ==========================================================================
+  # [ DISABLED - directory placeholder ]  hemolysis (HemoPI2)
+  # See services/05-hemolysis/IMPLEMENTATION.md
+  # ==========================================================================
+  # hemolysis:
+  #   image: amp-generator-platform-hemolysis
+  #   container_name: amp-hemolysis
+  #   build: ./services/05-hemolysis
+  #   ports:
+  #     - "8004:8000"
+  #   volumes:
+  #     - ./data/models/hemolysis:/app/models
+  #   environment:
+  #     - CUDA_VISIBLE_DEVICES=0
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             device_ids: ['2']
+  #             capabilities: [gpu]
+  #   networks:
+  #     - amp-net
+
+  # ==========================================================================
+  # [ DISABLED - directory placeholder ]  cpp (CPPpred)
+  # See services/06-cpp/IMPLEMENTATION.md
+  # ==========================================================================
+  # cpp:
+  #   image: amp-generator-platform-cpp
+  #   container_name: amp-cpp
+  #   build: ./services/06-cpp
+  #   ports:
+  #     - "8005:8000"
+  #   volumes:
+  #     - ./data/models/cpp:/app/models
+  #     - /home/ubuntu/.cache/huggingface/hub:/root/.cache/huggingface/hub:ro
+  #   environment:
+  #     - CUDA_VISIBLE_DEVICES=0
+  #     - TRANSFORMERS_OFFLINE=1
+  #     - HF_DATASETS_OFFLINE=1
+  #     - HF_HUB_OFFLINE=1
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             device_ids: ['2']
+  #             capabilities: [gpu]
+  #   networks:
+  #     - amp-net
+
+  # ==========================================================================
+  # [ DISABLED - directory placeholder ]  generator (AMP-Designer / AMP-GPT)
+  # See services/01-amp-designer/IMPLEMENTATION.md
+  # ==========================================================================
+  # generator:
+  #   image: amp-generator-platform-amp-designer
+  #   container_name: amp-designer
+  #   build: ./services/01-amp-designer
+  #   ports:
+  #     - "8001:8001"
+  #   volumes:
+  #     - ./data/models/amp-gpt:/app/models/amp-gpt
+  #     - ./data/models/amp-prompt:/app/models/amp-prompt
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             device_ids: ['3']
+  #             capabilities: [gpu]
+  #   networks:
+  #     - amp-net
+
+  # ==========================================================================
+  # [ DISABLED - directory placeholder ]  mic (3-model MIC ensemble)
+  # See services/04-mic/IMPLEMENTATION.md
+  # ==========================================================================
+  # mic:
+  #   image: amp-generator-platform-mic
+  #   container_name: amp-mic
+  #   build: ./services/04-mic
+  #   ports:
+  #     - "8003:8000"
+  #   volumes:
+  #     - ./data/models/mic:/app/models
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             device_ids: ['3']
+  #             capabilities: [gpu]
+  #   networks:
+  #     - amp-net
+
+  # ==========================================================================
+  # [ DISABLED - directory placeholder ]  macrel (AMP classifier)
+  # See services/03-macrel/IMPLEMENTATION.md
+  # ==========================================================================
+  # macrel:
+  #   image: amp-generator-platform-macrel
+  #   container_name: amp-macrel
+  #   build: ./services/03-macrel
+  #   ports:
+  #     - "8002:8000"
+  #   environment:
+  #     - MACREL_GPU_DEVICE=-1
+  #   networks:
+  #     - amp-net
+
+  # ==========================================================================
+  # [ DISABLED - directory placeholder ]  hydramp (CVAE generator)
+  # See services/09-hydramp/IMPLEMENTATION.md
+  # ==========================================================================
+  # hydramp:
+  #   image: amp-generator-platform-hydramp
+  #   build: ./services/09-hydramp
+  #   container_name: amp-hydramp
+  #   ports:
+  #     - "8008:8000"
+  #   volumes:
+  #     - ./data/models/hydramp:/app/model_weights
+  #   environment:
+  #     - CUDA_VISIBLE_DEVICES=-1
+  #   networks:
+  #     - amp-net
+  #   restart: "no"
+
+  # ==========================================================================
+  # knowledge-builder (knowledge-base PDF/CSV ingest, still shipped as code)
+  # ==========================================================================
+  knowledge-builder:
+    build: ./knowledge_builder
+    container_name: amp-knowledge-builder
+    volumes:
+      - ./knowledge_builder/raw_documents:/app/raw_documents
+      - ./knowledge_builder/raw_literature:/app/raw_literature
+      - ./knowledge_builder/integrated_knowledge_base:/app/integrated_knowledge_base
+      - ./data/models/huggingface:/root/.cache/huggingface
+      - ./knowledge_builder:/app
+      - /home/ubuntu/.cache/huggingface/hub:/root/.cache/huggingface/hub:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python run_pdf_processing.py
+    networks:
+      - amp-net
+
+  # ==========================================================================
+  # [ DISABLED - directory absent in this release ]  diff-amp
+  # The `services/10-diff-amp/` directory was removed in the minimal release.
+  # ==========================================================================
+  # diff-amp:
+  #   image: amp-generator-platform-diff-amp
+  #   build:
+  #     context: ./services/10-diff-amp
+  #   container_name: amp-diff-amp
+  #   ports:
+  #     - "8009:8000"
+  #   volumes:
+  #     - ./services/10-diff-amp:/app
+  #     - ./data:/data
+  #   environment:
+  #     - CUDA_VISIBLE_DEVICES=-1
+  #   networks:
+  #     - amp-net
+  #   restart: "no"
+
+  # ==========================================================================
+  # [ DISABLED - directory placeholder ]  amp-pgat-abpp
+  # See services/11-pgat-abpp/IMPLEMENTATION.md
+  # ==========================================================================
+  # amp-pgat-abpp:
+  #   image: amp-generator-platform-pgat-abpp
+  #   build: ./services/11-pgat-abpp
+  #   container_name: amp-pgat-abpp
+  #   ports:
+  #     - "8010:8000"
+  #   volumes:
+  #     - ./services/11-pgat-abpp:/app
+  #     - ./data:/data
+  #     - ./data/models/prott5:/models/prott5
+  #   environment:
+  #     - CUDA_VISIBLE_DEVICES=-1
+  #     - PROTT5_MODEL_NAME=/models/prott5
+  #     - PGAT_USE_SIMPLE_EMBEDDING=0
+  #   networks:
+  #     - amp-net
+  #   restart: "no"
+
+  # ==========================================================================
+  # Postgres (ontology store — always shipped)
+  # ==========================================================================
+  postgres:
+    image: ankane/pgvector:latest
+    container_name: amp-postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=amp_user
+      - POSTGRES_PASSWORD=your_password_here
+      - POSTGRES_DB=amp_ontology
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    networks:
+      - amp-net
+
+  # ==========================================================================
+  # Flask Backend API
+  # ----------------------------------------------------------------------------
+  # Note (Minimal Release Mode): `depends_on` lists only `postgres`. All
+  # prediction / generation microservices are directory placeholders in
+  # this release; re-add them here when you re-enable their blocks above.
+  # ==========================================================================
+  backend:
+    image: amp-generator-platform-backend
+    container_name: amp-backend
+    build: ./backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+      - ./agent:/app/agent
+      - ./visualization:/app/visualization
+      - ./data:/app/data
+      - ./knowledge_builder:/data/amp-generator-platform/knowledge_builder
+      - /home/ubuntu/.cache/huggingface:/root/.cache/huggingface
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=development
+      - DASHSCOPE_API_KEY=${DASHSCOPE_API_KEY}
+      - ONTOLOGY_PG_DSN=postgresql://amp_user:your_password_here@amp-postgres:5432/amp_ontology
+    networks:
+      - amp-net
+    depends_on:
+      - postgres
+    restart: unless-stopped
+
+  # ==========================================================================
+  # React Frontend
+  # ==========================================================================
+  frontend:
+    image: amp-generator-platform-frontend
+    container_name: amp-frontend
+    build: ./frontend
+    ports:
+      - "80:80"
+    networks:
+      - amp-net
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+networks:
+  amp-net:
+    driver: bridge

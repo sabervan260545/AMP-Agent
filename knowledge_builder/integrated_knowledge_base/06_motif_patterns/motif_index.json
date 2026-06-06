@@ -1,0 +1,35 @@
+{
+  "files": {
+    "all_positive": {
+      "file": "all_pos.txt",
+      "size": "20.9KB",
+      "path": "/data/amp-generator-platform/knowledge_builder/integrated_knowledge_base/07_motif_patterns/all_pos.txt"
+    },
+    "all_negative": {
+      "file": "all_neg.txt",
+      "size": "14.8KB",
+      "path": "/data/amp-generator-platform/knowledge_builder/integrated_knowledge_base/07_motif_patterns/all_neg.txt"
+    },
+    "pos_motif_1": {
+      "file": "pos_motif_1.txt",
+      "size": "1.7KB",
+      "path": "/data/amp-generator-platform/knowledge_builder/integrated_knowledge_base/07_motif_patterns/pos_motif_1.txt"
+    },
+    "pos_motif_2": {
+      "file": "pos_motif_2.txt",
+      "size": "69.5KB",
+      "path": "/data/amp-generator-platform/knowledge_builder/integrated_knowledge_base/07_motif_patterns/pos_motif_2.txt"
+    },
+    "neg_motif_1": {
+      "file": "neg_motif_1.txt",
+      "size": "1.6KB",
+      "path": "/data/amp-generator-platform/knowledge_builder/integrated_knowledge_base/07_motif_patterns/neg_motif_1.txt"
+    },
+    "neg_motif_2": {
+      "file": "neg_motif_2.txt",
+      "size": "19.6KB",
+      "path": "/data/amp-generator-platform/knowledge_builder/integrated_knowledge_base/07_motif_patterns/neg_motif_2.txt"
+    }
+  },
+  "description": "溶血性相关的序列motif模式，用于识别和避免有害序列特征"
+}

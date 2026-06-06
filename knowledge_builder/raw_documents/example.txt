@@ -1,0 +1,7 @@
+We designed an antimicrobial peptide KLWKKIKKLAKKV targeting E.coli.
+The peptide adopts an amphipathic α-helical structure with a net charge of +5.
+MIC against E.coli was 12.5 μM. The mechanism involves membrane disruption
+through pore formation in the bacterial membrane.
+
+Another sequence RRWRIVVIRK showed excellent activity against S.aureus with
+MIC of 8.2 μM. This cationic peptide contains high lysine and arginine content.

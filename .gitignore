@@ -1,0 +1,139 @@
+# ============================================================================
+# AMP-Agent Platform — .gitignore
+# 发布仓库忽略规则 (release-grade)
+# ----------------------------------------------------------------------------
+# 原则:
+#   1. 源码、文档、配置示例 -> 进入仓库
+#   2. 密钥、大模型、数据库、日志、缓存、依赖 -> 永不进入仓库
+# ============================================================================
+
+# ---------- [1] 密钥与环境变量 (最高优先级) ----------
+.env
+.env.*
+!.env.example
+agent/.env
+backend/.env
+frontend/.env
+services/*/.env
+*.pem
+*.key
+*_rsa
+*_rsa.pub
+*.crt
+*.p12
+
+# ---------- [2] Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# ---------- [3] 虚拟环境 ----------
+venv/
+.venv/
+env/
+ENV/
+temp_dl_env/
+
+# ---------- [4] 前端依赖与产物 ----------
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+.parcel-cache/
+yarn-error.log
+npm-debug.log*
+pnpm-debug.log*
+
+# ---------- [5] 大模型权重与二进制 ----------
+data/models/
+data/models/**
+services/*/models/
+services/*/model_weights/
+services/*/checkpoints/
+*.h5
+*.sav
+*.pkl
+*.pickle
+*.bin
+*.onnx
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.ckpt
+*.tflite
+
+# ---------- [6] 数据库与运行态 ----------
+data/postgres/
+data/cache/
+data/workflows/
+data/structures/
+data/vector_store/
+data/pgat_runs/
+data/amp_platform.db
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+agent/knowledge_base/*.db
+agent/knowledge_base/cache/
+# Runtime vector cache (rebuilt by knowledge_builder/rebuild_index.py)
+knowledge_builder/integrated_knowledge_base/vector_store/
+knowledge_builder/**/vector_store/
+
+# Proprietary literature corpus (do NOT ship to public repos).
+# Only the `example.*` file is kept as a format specimen.
+knowledge_builder/raw_documents/*
+!knowledge_builder/raw_documents/example.txt
+!knowledge_builder/raw_documents/.gitkeep
+knowledge_builder/raw_literature/*
+!knowledge_builder/raw_literature/example.json
+!knowledge_builder/raw_literature/.gitkeep
+**/chroma.sqlite3
+
+# ---------- [7] 基准测试与大型输出 ----------
+benchmark_output/
+benchmark_output_3runs/
+benchmark_output_repro/
+benchmark_output_repro.log
+
+# ---------- [8] 日志与临时文件 ----------
+agent/logs/
+logs/
+*.log
+build.log
+*.tmp
+*.swp
+*.pid
+*.bak
+
+# ---------- [9] IDE / 编辑器 ----------
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+
+# ---------- [10] 操作系统 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- [11] Docker ----------
+.dockerignore
+
+# ---------- [12] 项目内部归档与临时目录 ----------
+.archive/

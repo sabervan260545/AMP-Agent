@@ -1,0 +1,308 @@
+# Golden prompts for the AMP Agent eval harness.
+# Keep each case self-contained and deterministic enough to score reliably.
+# Scorer names must match entries in scorers.SCORER_REGISTRY.
+#
+# Categories:
+#   smoke                - basic liveness / greeting / formatting
+#   generation_basic     - single-generator AMP design
+#   generation_benchmark - multi-generator comparison (user-preferred)
+#   rag_qa               - knowledge-base retrieval questions
+#   structure            - 3D structure folding / analysis
+#   mutation             - site mutation / optimization
+#   edge_case            - graceful handling of ambiguous prompts
+
+cases:
+  # ---------------------------------------------------------------
+  # Smoke tests - cheap, fast, liveness signals
+  # ---------------------------------------------------------------
+  - id: smoke_001_greeting
+    category: smoke
+    suite: smoke
+    language: en
+    prompt: "Say hello in one short English sentence."
+    tags: [smoke, fast]
+    timeout_sec: 60
+    expected_behaviors:
+      - name: greets_back
+        scorer: response_contains_any
+        params:
+          any_of: ["hello", "hi", "greet", "assistant"]
+          case_sensitive: false
+        weight: 1.0
+
+  - id: smoke_002_zh_greeting
+    category: smoke
+    suite: smoke
+    language: zh
+    prompt: "你好，请用一句中文简要介绍你自己。"
+    tags: [smoke, chinese]
+    timeout_sec: 60
+    expected_behaviors:
+      - name: has_zh_intro
+        scorer: response_contains_any
+        params:
+          any_of: ["AMP", "抗菌肽", "助手", "设计"]
+        weight: 1.0
+
+  - id: smoke_003_capabilities
+    category: smoke
+    suite: smoke
+    language: en
+    prompt: "What can you do? List at most three capabilities."
+    tags: [smoke]
+    timeout_sec: 60
+    expected_behaviors:
+      - name: mentions_capabilities
+        scorer: response_contains_any
+        params:
+          any_of: ["generate", "design", "analy", "predict"]
+          case_sensitive: false
+        weight: 1.0
+
+  # ---------------------------------------------------------------
+  # Generation benchmarks
+  # ---------------------------------------------------------------
+  - id: gen_001_basic_five
+    category: generation_basic
+    suite: nightly
+    language: en
+    prompt: "Design 5 AMPs against Gram-negative bacteria."
+    tags: [basic_generation, param_extraction]
+    timeout_sec: 300
+    expected_behaviors:
+      - name: invokes_generator
+        scorer: tool_name_count
+        params:
+          tool: tool_generate_amp
+          min_count: 1
+        weight: 2.0
+      - name: mentions_count
+        scorer: response_contains_any
+        params:
+          any_of: ["5 ", "five", "peptides"]
+          case_sensitive: false
+        weight: 1.0
+
+  - id: gen_002_zh_ten_gramneg
+    category: generation_basic
+    suite: nightly
+    language: zh
+    prompt: "生成10条针对大肠杆菌的抗菌肽，并给出基本性质。"
+    tags: [chinese, generation]
+    timeout_sec: 300
+    expected_behaviors:
+      - name: invokes_generator
+        scorer: tool_name_count
+        params:
+          tool: tool_generate_amp
+          min_count: 1
+        weight: 2.0
+      - name: mentions_properties
+        scorer: response_contains_any
+        params:
+          any_of: ["MIC", "电荷", "疏水", "性质", "charge"]
+        weight: 1.0
+
+  - id: gen_003_three_generators_compare
+    category: generation_benchmark
+    suite: nightly
+    language: zh
+    prompt: "请用三种生成器各自生成抗革兰氏阴性菌的肽，并比较他们的优缺点"
+    tags: [user_preferred, multi_generator]
+    timeout_sec: 420
+    expected_behaviors:
+      - name: calls_three_generators
+        scorer: tool_name_count
+        params:
+          tool: tool_generate_amp
+          min_count: 3
+        weight: 2.0
+      - name: mentions_all_three
+        scorer: response_contains_any
+        params:
+          all_of: ["AMP-Designer", "HydrAMP", "Diff-AMP"]
+          case_sensitive: false
+        weight: 1.5
+      - name: produces_comparison_signal
+        scorer: response_contains_any
+        params:
+          any_of: ["|", "对比", "优点", "缺点", "comparison", "pros", "cons"]
+          case_sensitive: false
+        weight: 1.0
+
+  # ---------------------------------------------------------------
+  # RAG / knowledge QA
+  # ---------------------------------------------------------------
+  - id: rag_001_membrane_mechanism
+    category: rag_qa
+    suite: nightly
+    language: en
+    prompt: "What is the membrane-disrupting mechanism of antimicrobial peptides?"
+    tags: [knowledge_base, literature]
+    timeout_sec: 180
+    expected_behaviors:
+      - name: uses_search_knowledge
+        scorer: tool_name_count
+        params:
+          tool: search_knowledge
+          min_count: 1
+        weight: 2.0
+      - name: cites_mechanism_terms
+        scorer: response_contains_any
+        params:
+          any_of: ["membrane", "lipid", "pore", "disrupt", "bilayer"]
+          case_sensitive: false
+        weight: 1.0
+      - name: semantic_judge_membrane_mechanism
+        scorer: llm_judge
+        params:
+          rubric: |
+            A good answer must:
+            (1) directly describe how antimicrobial peptides disrupt bacterial
+                membranes (e.g. barrel-stave, toroidal pore, carpet model,
+                electrostatic attraction to anionic lipids);
+            (2) mention at least one structural feature of the peptides that
+                enables the disruption (amphipathicity, cationic charge,
+                alpha-helical / beta-sheet conformation);
+            (3) stay on topic and avoid hallucinating unrelated mechanisms.
+          threshold: 0.6
+          on_error: pass_with_warning
+        weight: 2.0
+
+  - id: rag_002_resistance
+    category: rag_qa
+    suite: nightly
+    language: en
+    prompt: "Why do antimicrobial peptides rarely induce bacterial resistance?"
+    tags: [knowledge_base, mechanism]
+    timeout_sec: 180
+    expected_behaviors:
+      - name: uses_search_knowledge
+        scorer: tool_name_count
+        params:
+          tool: search_knowledge
+          min_count: 1
+        weight: 2.0
+      - name: mentions_resistance_terms
+        scorer: response_contains_any
+        params:
+          any_of: ["resistance", "mutation", "target", "mechanism", "evolve"]
+          case_sensitive: false
+        weight: 1.0
+
+  - id: rag_003_zh_toxicity
+    category: rag_qa
+    suite: nightly
+    language: zh
+    prompt: "抗菌肽的溶血毒性主要受哪些结构因素影响？"
+    tags: [knowledge_base, toxicity, chinese]
+    timeout_sec: 180
+    expected_behaviors:
+      - name: uses_search_knowledge
+        scorer: tool_name_count
+        params:
+          tool: search_knowledge
+          min_count: 1
+        weight: 2.0
+      - name: mentions_toxicity_factors
+        scorer: response_contains_any
+        params:
+          any_of: ["疏水", "电荷", "两亲", "hydrophob", "charge", "amphipath"]
+          case_sensitive: false
+        weight: 1.0
+
+  # ---------------------------------------------------------------
+  # Structure analysis
+  # ---------------------------------------------------------------
+  - id: struct_001_fold_sequence
+    category: structure
+    suite: nightly
+    language: en
+    prompt: "Fold the peptide KWKLFKKIEKVGQNVRDGIIKAGPAVAVVGQATQIAK and describe its secondary structure."
+    tags: [structure, folding]
+    timeout_sec: 300
+    expected_behaviors:
+      - name: invokes_structure_tool
+        scorer: tool_name_count
+        params:
+          tool: tool_fold_structure
+          min_count: 1
+        weight: 2.0
+      - name: mentions_structure_terms
+        scorer: response_contains_any
+        params:
+          any_of: ["helix", "helical", "sheet", "coil", "alpha", "secondary"]
+          case_sensitive: false
+        weight: 1.0
+
+  - id: struct_002_analyze_pdb
+    category: structure
+    suite: nightly
+    language: en
+    prompt: "Analyze the amphipathic profile of LLGDFFRKSKEKIGKEFKRIVQRIKDFLR."
+    tags: [structure, amphipathicity]
+    timeout_sec: 300
+    expected_behaviors:
+      - name: mentions_amphipathic
+        scorer: response_contains_any
+        params:
+          any_of: ["amphipath", "hydrophob", "charge", "helix"]
+          case_sensitive: false
+        weight: 1.0
+
+  # ---------------------------------------------------------------
+  # Mutation / optimization
+  # ---------------------------------------------------------------
+  - id: mut_001_single_site
+    category: mutation
+    suite: nightly
+    language: en
+    prompt: "Suggest one single-site mutation on KWKLFKKIEKVGQN to reduce hemolysis."
+    tags: [mutation, optimization]
+    timeout_sec: 240
+    expected_behaviors:
+      - name: proposes_mutation
+        scorer: response_contains_any
+        params:
+          any_of: ["mutat", "substitut", "replace", "->", "→"]
+          case_sensitive: false
+        weight: 1.0
+      - name: mentions_hemolysis
+        scorer: response_contains_any
+        params:
+          any_of: ["hemolys", "toxic", "red blood"]
+          case_sensitive: false
+        weight: 1.0
+
+  # ---------------------------------------------------------------
+  # Edge cases
+  # ---------------------------------------------------------------
+  - id: edge_001_ambiguous
+    category: edge_case
+    suite: release
+    language: en
+    prompt: "Help me."
+    tags: [edge, vague]
+    timeout_sec: 60
+    expected_behaviors:
+      - name: asks_for_clarification
+        scorer: response_contains_any
+        params:
+          any_of: ["?", "clarif", "what", "which", "please", "specific"]
+          case_sensitive: false
+        weight: 1.0
+
+  - id: edge_002_nonsense_sequence
+    category: edge_case
+    suite: release
+    language: en
+    prompt: "Analyze the peptide 12345XYZ@@@."
+    tags: [edge, invalid_input]
+    timeout_sec: 120
+    expected_behaviors:
+      - name: rejects_invalid
+        scorer: response_contains_any
+        params:
+          any_of: ["invalid", "not a valid", "cannot", "unrecognized", "error"]
+          case_sensitive: false
+        weight: 1.0

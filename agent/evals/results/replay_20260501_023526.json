@@ -1,0 +1,64 @@
+{
+  "run_id": "20260501_023526",
+  "mode": "replay",
+  "started_at": "2026-05-01T02:35:26.225237",
+  "finished_at": "2026-05-01T02:35:26.225241",
+  "total_cases": 1,
+  "passed_cases": 0,
+  "avg_score": 0.58,
+  "cases": [
+    {
+      "case_id": "rag_001_membrane_mechanism",
+      "passed": false,
+      "score": 0.58,
+      "latency_ms": 2191.46,
+      "verdicts": [
+        {
+          "name": "uses_search_knowledge",
+          "passed": false,
+          "score": 0.0,
+          "reason": "Found 0 call(s) to 'search_knowledge', required >= 1"
+        },
+        {
+          "name": "cites_mechanism_terms",
+          "passed": true,
+          "score": 1.0,
+          "reason": "any_of: matched ['membrane', 'lipid', 'pore', 'disrupt', 'bilayer']"
+        },
+        {
+          "name": "semantic_judge_membrane_mechanism",
+          "passed": true,
+          "score": 0.95,
+          "reason": "llm_judge score=0.95 (thr=0.60) :: The response fully satisfies all rubric criteria: it explicitly describes barrel-stave, toroidal pore, and carpet models with electrostatic attraction to anionic lipids; mentions amphipathicity, cationic charge, and α-helical/β-sheet conformation as enabling structural features; and stays strictly on-topic without hallucinating unrelated mechanisms."
+        }
+      ],
+      "response_preview": "## Membrane-Disrupting Mechanisms of Antimicrobial Peptides (AMPs)\n\nAntimicrobial peptides primarily target bacterial membranes through several well-characterized mechanisms. Here's a comprehensive ov",
+      "tool_calls": [],
+      "error": null
+    }
+  ],
+  "meta": {
+    "set_file": "golden_prompts.yaml",
+    "replay_of": "20260501_023329",
+    "source_mode": "live",
+    "source_avg_score": 0.58,
+    "fallback_to_preview_count": 0,
+    "missing_case_ids": [],
+    "env": {
+      "git_commit": null,
+      "git_branch": null,
+      "git_dirty": null,
+      "python_version": "3.10.20",
+      "platform": "Linux-6.14.6-061406-generic-x86_64-with-glibc2.41",
+      "hostname": "7b8074b0e037",
+      "user": null,
+      "captured_at": "2026-05-01T02:33:55.007922",
+      "prompt": {
+        "source": "source-hash:context_engine.py,context_engine.py,__init__.py",
+        "sha256_12": "53c5342962b0",
+        "length": 56017,
+        "version": null
+      }
+    }
+  }
+}

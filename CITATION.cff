@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+title: "AMP-Agent: An End-to-End LLM-Driven Platform for Autonomous Antimicrobial Peptide Design"
+abstract: >
+  AMP-Agent is an autonomous antimicrobial peptide (AMP) design platform that
+  couples a large language model (Qwen) with a fleet of specialized
+  microservices for generation, multi-objective evaluation, structural
+  validation, and knowledge-guided feedback. The platform implements a fully
+  automated loop from natural-language requirements to Pareto-ranked peptide
+  candidates with 3D structural evidence.
+type: software
+authors:
+  - name: "Chinfo Lab"
+keywords:
+  - antimicrobial peptide
+  - AMP design
+  - large language model
+  - agentic AI
+  - multi-objective optimization
+  - Pareto ranking
+  - ESMFold
+  - retrieval-augmented generation
+license: MIT
+version: "3.0"
+date-released: 2026-04-30
+repository-code: "https://github.com/your-org/amp-agent"
