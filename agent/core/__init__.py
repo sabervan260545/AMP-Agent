@@ -4,21 +4,21 @@
 """
 AMP Agent Core Module
 =====================
-核心引擎组件
+Core engine components
 
-导出:
-    - ContextEngine: 上下文引擎（从原文件导入）
-    - TEXTS: 多语言文本（从原文件导入）
-    - AgentState: 状态管理器
-    - ConversationManager: 对话管理器
-    - AMPAgentEngine: 核心引擎类
+Exports:
+    - ContextEngine: Context engine (imported from original file)
+    - TEXTS: Multilingual texts (imported from original file)
+    - AgentState: State manager
+    - ConversationManager: Conversation manager
+    - AMPAgentEngine: Core engine class
 """
 
-# 原有组件（保持向后兼容）
+# Legacy components (maintained for backward compatibility)
 try:
     from .context_engine import ContextEngine
 except ImportError:
-    # 如果文件不存在，使用占位符
+    # Fallback placeholder if file does not exist
     class ContextEngine:
         @staticmethod
         def build_system_prompt(language: str = "en") -> str:
@@ -32,17 +32,17 @@ except ImportError:
     except ImportError:
         TEXTS = {"en": {}}
 
-# 新增组件
+# New components
 from .agent_state import AgentState
 from .conversation_manager import ConversationManager
 from .amp_agent_engine import AMPAgentEngine
 
 __all__ = [
-    # 原有组件
+    # Legacy components
     'ContextEngine',
     'TEXTS',
     
-    # 新增组件
+    # New components
     'AgentState',
     'ConversationManager',
     'AMPAgentEngine'
