@@ -4,7 +4,8 @@
 """
 AMP Agent State Management
 ==========================
-Agent 状态管理类，负责管理对话历史、全局数据框、可视化状态等。
+Agent state management class, responsible for managing conversation history,
+global dataframe, visualization state, etc.
 """
 
 import logging
@@ -16,23 +17,23 @@ logger = logging.getLogger(__name__)
 
 class AgentState:
     """
-    Agent 状态管理器
+    Agent state manager
     
-    职责:
-    1. 管理对话历史
-    2. 管理全局序列数据框
-    3. 管理可视化生成状态
-    4. 管理当前用户输入
+    Responsibilities:
+    1. Manage conversation history
+    2. Manage global sequence dataframe
+    3. Manage visualization generation state
+    4. Manage current user input
     
     Attributes:
-        conversation_history: List[Dict] - 对话历史记录
-        global_df: pd.DataFrame - 所有生成的序列数据
-        visualization_generated: bool - 是否已生成可视化
-        current_user_input: str - 当前用户输入
+        conversation_history: List[Dict] - Conversation history records
+        global_df: pd.DataFrame - All generated sequence data
+        visualization_generated: bool - Whether visualization has been generated
+        current_user_input: str - Current user input
     """
     
     def __init__(self):
-        """初始化 Agent 状态"""
+        """Initialize Agent state"""
         self.conversation_history: List[Dict[str, str]] = []
         self.global_df: Optional[pd.DataFrame] = None
         self.visualization_generated: bool = False
@@ -42,11 +43,11 @@ class AgentState:
     
     def add_message(self, role: str, content: str):
         """
-        添加对话消息
+        Add a conversation message
         
         Args:
-            role: "user" 或 "assistant"
-            content: 消息内容
+            role: "user" or "assistant"
+            content: Message content
         """
         self.conversation_history.append({
             "role": role,
@@ -55,19 +56,19 @@ class AgentState:
         logger.debug(f"Added {role} message: {content[:50]}...")
     
     def clear_history(self):
-        """清空对话历史"""
+        """Clear conversation history"""
         self.conversation_history = []
         logger.info("Conversation history cleared")
     
     def get_history(self, last_n: Optional[int] = None) -> List[Dict[str, str]]:
         """
-        获取对话历史
+        Get conversation history
         
         Args:
-            last_n: 如果指定，只返回最近 N 条消息
+            last_n: If specified, return only the last N messages
         
         Returns:
-            对话历史列表
+            List of conversation history
         """
         if last_n is None:
             return self.conversation_history
@@ -75,52 +76,52 @@ class AgentState:
     
     def set_global_df(self, df: pd.DataFrame):
         """
-        设置全局数据框
+        Set global dataframe
         
         Args:
-            df: 包含序列信息的 DataFrame
+            df: DataFrame containing sequence information
         """
         self.global_df = df
         logger.debug(f"Global DF updated with {len(df)} sequences")
     
     def get_global_df(self) -> Optional[pd.DataFrame]:
-        """获取全局数据框"""
+        """Get global dataframe"""
         return self.global_df
     
     def mark_visualization_generated(self):
-        """标记可视化已生成"""
+        """Mark visualization as generated"""
         self.visualization_generated = True
         logger.debug("Visualization marked as generated")
     
     def reset_visualization(self):
-        """重置可视化状态"""
+        """Reset visualization state"""
         self.visualization_generated = False
         logger.debug("Visualization state reset")
     
     def is_visualization_generated(self) -> bool:
-        """检查可视化是否已生成"""
+        """Check whether visualization has been generated"""
         return self.visualization_generated
     
     def set_current_input(self, user_input: str):
         """
-        设置当前用户输入
+        Set current user input
         
         Args:
-            user_input: 用户输入文本
+            user_input: User input text
         """
         self.current_user_input = user_input
         logger.debug(f"Current input set: {user_input[:50]}...")
     
     def get_current_input(self) -> str:
-        """获取当前用户输入"""
+        """Get current user input"""
         return self.current_user_input
     
     def get_statistics(self) -> Dict[str, Any]:
         """
-        获取状态统计信息
+        Get state statistics
         
         Returns:
-            包含统计数据的字典
+            Dictionary containing statistical data
         """
         return {
             "conversation_turns": len(self.conversation_history),
@@ -131,10 +132,10 @@ class AgentState:
     
     def to_dict(self) -> Dict[str, Any]:
         """
-        将状态转换为字典（用于序列化）
+        Convert state to dictionary (for serialization)
         
         Returns:
-            状态字典
+            State dictionary
         """
         return {
             "conversation_history": self.conversation_history,
@@ -146,13 +147,13 @@ class AgentState:
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> 'AgentState':
         """
-        从字典加载状态
+        Load state from dictionary
         
         Args:
-            data: 状态字典
+            data: State dictionary
         
         Returns:
-            AgentState 实例
+            AgentState instance
         """
         state = cls()
         state.conversation_history = data.get('conversation_history', [])
