@@ -3,8 +3,9 @@
 
 """
 AMP Agent Conversation Manager
-==============================
-对话管理器，负责格式化消息、管理思考状态、生成响应等。
+===============================
+Conversation manager, responsible for formatting messages, managing thinking state,
+generating responses, etc.
 """
 
 import logging
@@ -15,21 +16,21 @@ logger = logging.getLogger(__name__)
 
 class ConversationManager:
     """
-    对话管理器
+    Conversation manager
     
-    职责:
-    1. 格式化用户和助手消息
-    2. 管理思考过程记录
-    3. 生成结构化响应
-    4. 处理多轮对话上下文
+    Responsibilities:
+    1. Format user and assistant messages
+    2. Manage thinking process records
+    3. Generate structured responses
+    4. Handle multi-turn conversation context
     """
     
     def __init__(self, language: str = "zh"):
         """
-        初始化对话管理器
+        Initialize conversation manager
         
         Args:
-            language: 界面语言 ("en", "zh", "auto")
+            language: Interface language ("en", "zh", "auto")
         """
         self.language = language
         self.thinking_history: List[str] = []
@@ -38,13 +39,13 @@ class ConversationManager:
     
     def format_user_message(self, user_input: str) -> Dict[str, str]:
         """
-        格式化用户消息
+        Format user message
         
         Args:
-            user_input: 用户输入文本
+            user_input: User input text
         
         Returns:
-            格式化的消息字典
+            Formatted message dictionary
         """
         return {
             "role": "user",
@@ -53,13 +54,13 @@ class ConversationManager:
     
     def format_assistant_message(self, content: str) -> Dict[str, str]:
         """
-        格式化助手消息
+        Format assistant message
         
         Args:
-            content: 助手回复内容
+            content: Assistant response content
         
         Returns:
-            格式化的消息字典
+            Formatted message dictionary
         """
         return {
             "role": "assistant",
@@ -68,21 +69,21 @@ class ConversationManager:
     
     def add_thought(self, thought: str):
         """
-        添加思考过程记录
+        Record a thinking process entry
         
         Args:
-            thought: 思考内容
+            thought: Thinking content
         """
         self.thinking_history.append(thought)
         logger.debug(f"Thought added: {thought[:50]}...")
     
     def clear_thoughts(self):
-        """清空思考历史"""
+        """Clear thinking history"""
         self.thinking_history = []
         logger.debug("Thinking history cleared")
     
     def get_thoughts(self) -> List[str]:
-        """获取所有思考记录"""
+        """Get all thinking records"""
         return self.thinking_history
     
     def format_react_response(
@@ -93,16 +94,16 @@ class ConversationManager:
         observation: Optional[Any] = None
     ) -> str:
         """
-        格式化 ReAct 模式的响应
+        Format a ReAct-style response
         
         Args:
-            thought: 思考内容
-            action: 工具名称（如果有）
-            action_input: 工具参数（如果有）
-            observation: 工具执行结果（如果有）
+            thought: Thinking content
+            action: Tool name (if any)
+            action_input: Tool arguments (if any)
+            observation: Tool execution result (if any)
         
         Returns:
-            格式化的响应字符串
+            Formatted response string
         """
         response_parts = [f"Thought: {thought}"]
         
@@ -117,85 +118,85 @@ class ConversationManager:
     
     def extract_final_answer(self, response: str) -> Optional[str]:
         """
-        从响应中提取最终答案
+        Extract final answer from response
         
         Args:
-            response: 完整的响应字符串
+            response: Complete response string
         
         Returns:
-            最终答案，如果没有则返回 None
+            Final answer, or None if not found
         """
-        # 查找 "Final Answer:" 标记
+        # Look for "Final Answer:" marker
         if "Final Answer:" in response:
             return response.split("Final Answer:")[-1].strip()
         return None
     
     def has_final_answer(self, response: str) -> bool:
         """
-        检查响应是否包含最终答案
+        Check whether response contains a final answer
         
         Args:
-            response: 响应字符串
+            response: Response string
         
         Returns:
-            True 如果包含最终答案
+            True if final answer is present
         """
         return self.extract_final_answer(response) is not None
     
     def stream_response(self, chunks: List[str]) -> Generator[str, None, None]:
         """
-        流式生成响应
+        Stream response chunks
         
         Args:
-            chunks: 文本块列表
+            chunks: List of text chunks
         
         Yields:
-            逐个产生文本块
+            Text chunks one by one
         """
         for chunk in chunks:
             yield chunk
     
     def format_tool_result(self, tool_name: str, result: Any) -> str:
         """
-        格式化工具执行结果
+        Format tool execution result
         
         Args:
-            tool_name: 工具名称
-            result: 执行结果
+            tool_name: Tool name
+            result: Execution result
         
         Returns:
-            格式化的结果字符串
+            Formatted result string
         """
-        return f"**{tool_name} 执行结果**:\n{result}"
+        return f"**{tool_name} result**:\n{result}"
     
     def format_error_message(self, error: str, suggestion: Optional[str] = None) -> str:
         """
-        格式化错误消息
+        Format error message
         
         Args:
-            error: 错误描述
-            suggestion: 建议的解决方案
+            error: Error description
+            suggestion: Suggested solution
         
         Returns:
-            格式化的错误消息
+            Formatted error message
         """
-        msg = f"❌ **错误**: {error}"
+        msg = f"❌ **Error**: {error}"
         if suggestion:
-            msg += f"\n\n💡 **建议**: {suggestion}"
+            msg += f"\n\n💡 **Suggestion**: {suggestion}"
         return msg
     
     def format_success_message(self, message: str, details: Optional[str] = None) -> str:
         """
-        格式化成功消息
+        Format success message
         
         Args:
-            message: 成功消息
-            details: 详细信息
+            message: Success message
+            details: Additional details
         
         Returns:
-            格式化的成功消息
+            Formatted success message
         """
-        msg = f"✅ **成功**: {message}"
+        msg = f"✅ **Success**: {message}"
         if details:
             msg += f"\n\n{details}"
         return msg
@@ -207,21 +208,21 @@ class ConversationManager:
         max_history: int = 5
     ) -> str:
         """
-        构建上下文摘要
+        Build context summary
         
         Args:
-            user_input: 当前用户输入
-            recent_history: 最近的对话历史
-            max_history: 最多包含的历史消息数
+            user_input: Current user input
+            recent_history: Recent conversation history
+            max_history: Maximum number of history messages to include
         
         Returns:
-            上下文摘要字符串
+            Context summary string
         """
-        context_lines = [f"用户：{user_input}"]
+        context_lines = [f"User: {user_input}"]
         
-        # 添加最近的历史（倒序）
+        # Include recent history (reverse order)
         for msg in reversed(recent_history[-max_history:]):
-            role = "用户" if msg['role'] == 'user' else "助手"
+            role = "User" if msg['role'] == 'user' else "Assistant"
             content = msg['content'][:100] + "..." if len(msg['content']) > 100 else msg['content']
             context_lines.append(f"{role}: {content}")
         
